@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../pageObjects/LoginPage');
 require('dotenv').config(); 
 
-test('User can login and reach dashboard', async ({ page }) => {
+test.only('User can login and reach dashboard', async ({ page }) => {
   const loginPage = new LoginPage(page);
 
   await loginPage.goto();

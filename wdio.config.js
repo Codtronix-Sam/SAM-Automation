@@ -1,8 +1,8 @@
 exports.config = {
     runner: 'local',
     specs: [
-             './mobile-tests/driverCheckIn.spec.js',
-       // './mobile-tests/submitAccidentForms.spec.js' // <-- Add your second spec here
+         //    './mobile-tests/driverCheckIn.spec.js',
+       './mobile-tests/submitAccidentForms.spec.js' // <-- Add your second spec here
     ], maxInstances: 1,
     capabilities: [{
         platformName: 'Android',

@@ -79,21 +79,6 @@ test.only('Verify Add Driver functionality', async ({ page }) => {
     } catch (err) {
         console.error(`❌ Appium script failed:\n${err.message}`);
     }
-
-    await page.reload();
-
-    await driversPage.approveDocs();
-
-    try {
-        const emailFromTemp = JSON.parse(fs.readFileSync('tempDriverData.json', 'utf-8')).email;
-        process.env.LOGIN_EMAIL = emailFromTemp;
-        process.env.LOGIN_PASSWORD = '12345678A';
-
-        execSync('node mobile-tests/driverLogin.spec.js', { stdio: 'inherit', env: process.env });
-        console.log(`✅ Second Appium login script completed successfully`);
-    } catch (err) {
-        console.error(`❌ Second Appium login script failed:\n${err.message}`);
-        throw err;
-    }
+    
 
 });

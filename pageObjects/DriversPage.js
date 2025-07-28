@@ -30,6 +30,10 @@ class DriversPage {
     this.verticalIcon = page.locator('svg[data-testid="MoreVertIcon"]');
     this.viewDriverProfile = page.locator("//p[normalize-space()='View Driver Profile']");
     this.approveBtn = page.locator("(//button[@type='button'][normalize-space()='Approve'])[1]");
+    this.approveBtn2 = page.locator(
+      "(//button[@type='button' and normalize-space()='Approve'])[2] | (//button[@type='button' and normalize-space()='Approve'])[1]"
+    );
+
 
 
   }
@@ -38,16 +42,16 @@ class DriversPage {
     return this.page.locator(`//li[@role='option' and text()='${optionText}']`);
   }
 
-  async approveDocs(){
+  async approveDocs() {
 
     await this.approveBtn.click();
-    await this.approveBtn.click();
+    await this.approveBtn2.click();
   }
 
   async getOtpFromDriverProfile() {
     const otp = await this.page.locator("//p[normalize-space()='OTP']/following-sibling::p[1]").textContent();
     return otp.trim();
-}
+  }
   async createDriver(email, fName, lName, contactNumber) {
 
     await this.addNewDriver.click();

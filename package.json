@@ -8,10 +8,12 @@
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
     "test:staging": "dotenv -e .env.staging -- npx playwright test --headed",
+    "test:staging1": "dotenv -e .env.staging -- npx playwright test --headed",
     "test:clone": "dotenv -e .env.clone -- npx playwright test",
     "test:prod": "dotenv -e .env.production -- npx playwright test",
     "auth:setup": "dotenv -e .env.staging -- node auth/setupAuth.js",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "test:onboarding2": "dotenv -e .env.staging -- npx playwright test tests/onBoardingStage2.spec.js --headed"
   },
   "devDependencies": {
     "@playwright/test": "^1.53.0",
@@ -21,6 +23,7 @@
     "@wdio/mocha-framework": "^9.16.2",
     "@wdio/spec-reporter": "^9.16.2",
     "@wdio/visual-service": "^8.0.4",
+    "allure-playwright": "^3.3.2",
     "appium": "^2.19.0",
     "appium-uiautomator2-driver": "^4.2.4",
     "dotenv": "^16.5.0",
