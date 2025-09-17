@@ -2,7 +2,7 @@
 const { faker } = require('@faker-js/faker');
 
 module.exports = {
-  dspName: 'Ratnam & Co.',
+  dspName: 'SAM Onboarding Team',
   filters: {
     customer: 'Amazon',
     customerFilterText: 'Customer Name: Amazon',

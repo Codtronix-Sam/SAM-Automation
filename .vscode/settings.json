@@ -1,0 +1,12 @@
+{
+  "mcp.servers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  },
+  "chat.mcp.assisted.nuget.enabled": true,
+  "chat.mcp.serverSampling": {},
+  "github.copilot.mcp.enabled": true,
+  "github.copilot.experimental.enableChat": true
+}

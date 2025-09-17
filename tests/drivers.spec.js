@@ -8,16 +8,7 @@ const util = require('util');
 //const execAsync = util.promisify(exec);
 require('dotenv').config();
 
-async function setup(page) {
-    const dashboard = new AdminDashboardPage(page);
-    const driversPage = new DriversPage(page);
-
-    await page.goto(`${process.env.BASE_URL}/admin/dashboard`);
-    await dashboard.searchDSP(testData.dspName);
-    await dashboard.openDSPPanel();
-
-    return { dashboard, driversPage };
-}
+const { setup } = require('../helpers/setup');
 
 test('Switch between drivers tabs', async ({ page }) => {
     const { driversPage } = await setup(page);
@@ -53,7 +44,7 @@ test('Verify the driver search', async ({ page }) => {
     await driversPage.verifyDriverSearch(testData.driver.searchKeyword);
 });
 
-test.only('Verify Add Driver functionality', async ({ page }) => {
+test('Verify Add Driver functionality', async ({ page }) => {
     test.setTimeout(90_000)
     const { driversPage } = await setup(page);
 
@@ -65,20 +56,20 @@ test.only('Verify Add Driver functionality', async ({ page }) => {
 
     await driversPage.navigateToCreatedDriverProfile(email);
 
-    const otp = await driversPage.getOtpFromDriverProfile();
-    console.log("Driver Email:", email);
-    console.log("OTP:", otp);
+    // const otp = await driversPage.getOtpFromDriverProfile();
+    // console.log("Driver Email:", email);
+    // console.log("OTP:", otp);
 
 
 
-    fs.writeFileSync('tempDriverData.json', JSON.stringify({ email, otp }));
+    // fs.writeFileSync('tempDriverData.json', JSON.stringify({ email, otp }));
 
-    try {
-        const output = execSync('node mobile-tests/driverOnboarding.spec.js', { stdio: 'inherit' });
-        console.log(`📱 Appium script completed successfully`);
-    } catch (err) {
-        console.error(`❌ Appium script failed:\n${err.message}`);
-    }
+    // try {
+    //     const output = execSync('node mobile-tests/driverOnboarding.spec.js', { stdio: 'inherit' });
+    //     console.log(`📱 Appium script completed successfully`);
+    // } catch (err) {
+    //     console.error(`❌ Appium script failed:\n${err.message}`);
+    // }
     
 
 });

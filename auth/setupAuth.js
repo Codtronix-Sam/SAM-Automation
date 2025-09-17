@@ -1,19 +1,37 @@
 const { chromium } = require('@playwright/test');
-require('dotenv').config({ path: '.env.staging' });
+require('dotenv').config({ path: `.env.${process.env.ENV || 'staging'}` });
 
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await chromium.launch({ headless: false });
   const page = await browser.newPage();
 
-  await page.goto(process.env.BASE_URL);
-  await page.locator('input[type="email"]').fill(process.env.EMAIL);
-  await page.locator('input[type="password"]').fill(process.env.PASSWORD);
+  const role = (process.env.ROLE || 'superadmin').toLowerCase();
+
+  // 🚀 remove trailing slash from BASE_URL
+  const baseUrl = process.env.BASE_URL.replace(/\/$/, '');
+
+  // Login
+  await page.goto(baseUrl);
+  await page.locator('input[type="email"]').fill(process.env[`${role.toUpperCase()}_EMAIL`]);
+  await page.locator('input[type="password"]').fill(process.env[`${role.toUpperCase()}_PASSWORD`]);
   await page.locator('button[type="submit"]').click();
 
-  await page.waitForURL(`${process.env.BASE_URL}/admin/dashboard`);
+  // Expected dashboards
+  const dashboards = {
+    superadmin: '/admin/dashboard',
+    admin: '/dsp/dashboard',  
+    dsp: '/dsp/dashboard',
+    osm: '/dsp/dashboard',
+    director: '/dsp/dashboard'
+  };
 
-  await page.context().storageState({ path: 'storage/stagingAuth.json' });
+  const expectedDashboard = dashboards[role] || '/admin/dashboard';
+
+  // ✅ More flexible wait (handles query params, etc.)
+  await page.waitForURL(new RegExp(`${expectedDashboard}.*`), { timeout: 60000 });
+
+  // Save storage state
+  await page.context().storageState({ path: `storage/${process.env.ENV}-${role}.json` });
 
   await browser.close();
-})
-();
+})();
