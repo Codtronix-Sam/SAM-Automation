@@ -1,0 +1,4 @@
+[Fatal Error] Shift operation failed: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('body > div:nth-child(4) > div:nth-child(3) > form:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)')
+

@@ -15,7 +15,7 @@
     "test:onboarding2": "dotenv -e .env.staging -- npx playwright test tests/onBoardingStage2.spec.js --headed"
   },
   "devDependencies": {
-    "@playwright/test": "^1.53.0",
+    "@playwright/test": "^1.56.1",
     "@wdio/appium-service": "^9.17.0",
     "@wdio/cli": "^9.16.2",
     "@wdio/local-runner": "^9.16.2",

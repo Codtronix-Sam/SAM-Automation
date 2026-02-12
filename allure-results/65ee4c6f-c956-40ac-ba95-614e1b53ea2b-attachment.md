@@ -1,0 +1,57 @@
+# Page snapshot
+
+```yaml
+- text: Add New Rate
+- paragraph: Rate Name *
+- textbox "Driver from wise": Darren Watts 22 Newtree next
+- paragraph: Admin Fee Rate Before VAT *
+- text: £
+- spinbutton: "150"
+- text: VAT 20%
+- checkbox [checked]
+- text: This tax rate will be applied to your fee calculation.
+- paragraph: Admin Fee Rate After VAT
+- textbox [disabled]: £180
+- paragraph: Invoice Model *
+- combobox: Ratnam Invoicing
+- paragraph: Select Driver *
+- combobox: Custom
+- textbox "Search and select driver by name..."
+- text: Drivers
+- separator
+- img
+- text: Haroon Riaz Ratnam Invoicing
+- checkbox [disabled]
+- text: IT Import Tester Ratnam Invoicing
+- checkbox [disabled]
+- text: Nn New next Ratnam Invoicing
+- checkbox [disabled]
+- text: Nn New next Ratnam Invoicing
+- checkbox [disabled]
+- text: Nn Newtree next Ratnam Invoicing
+- checkbox
+- text: JR Jagadeesan Rangaraj Ratnam Invoicing
+- checkbox [disabled]
+- text: JR Jagadeesan Rangaraj Ratnam Invoicing
+- checkbox
+- text: DC Data Cell4 Ratnam Invoicing
+- checkbox [disabled]
+- text: AK Alex K Ratnam Invoicing
+- checkbox [disabled]
+- text: nm no man Ratnam Invoicing
+- checkbox
+- navigation "pagination navigation":
+  - list:
+    - listitem:
+      - button "Go to previous page" [disabled]
+    - listitem:
+      - button "page 1": "1"
+    - listitem:
+      - button "Go to page 2": "2"
+    - listitem:
+      - button "Go to page 3": "3"
+    - listitem:
+      - button "Go to next page"
+- button "Cancel"
+- button "Add"
+```

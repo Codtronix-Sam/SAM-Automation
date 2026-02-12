@@ -1,0 +1,149 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading [level=6] [ref=e16]: Settings
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e21]: Amazon Express Depot
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - textbox [ref=e26]:
+            - /placeholder: Search...
+            - text: Codtronix
+      - generic [ref=e27]:
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - button [ref=e42] [cursor=pointer]:
+              - img [ref=e44]
+          - listitem [ref=e49]:
+            - button [ref=e50] [cursor=pointer]:
+              - img [ref=e52]
+          - listitem [ref=e58]:
+            - button [ref=e59] [cursor=pointer]:
+              - img [ref=e61]
+          - listitem [ref=e65]:
+            - button [ref=e66] [cursor=pointer]:
+              - img [ref=e68]
+          - listitem [ref=e75]:
+            - button [ref=e76] [cursor=pointer]:
+              - img [ref=e78]
+          - listitem [ref=e83]:
+            - button [ref=e84] [cursor=pointer]:
+              - img [ref=e86]
+          - listitem [ref=e88]:
+            - button [ref=e89] [cursor=pointer]:
+              - img [ref=e91]
+          - listitem [ref=e95]:
+            - button [ref=e96] [cursor=pointer]:
+              - img [ref=e98]
+          - listitem [ref=e103]:
+            - button [ref=e104] [cursor=pointer]:
+              - img [ref=e106]
+          - listitem [ref=e108]:
+            - button [ref=e109] [cursor=pointer]:
+              - img [ref=e111]
+          - listitem [ref=e114]:
+            - button [ref=e115] [cursor=pointer]:
+              - img [ref=e117]
+        - generic [ref=e120]:
+          - button [ref=e121] [cursor=pointer]:
+            - img [ref=e122]
+          - button [ref=e127] [cursor=pointer]:
+            - img [ref=e128]
+      - main [ref=e132]:
+        - generic [ref=e133]:
+          - generic [ref=e135]:
+            - paragraph [ref=e137] [cursor=pointer]: General Settings
+            - paragraph [ref=e139] [cursor=pointer]: Payment Details
+            - paragraph [ref=e141] [cursor=pointer]: User Management
+            - paragraph [ref=e143] [cursor=pointer]: DSP Mapper
+            - paragraph [ref=e145] [cursor=pointer]: Payment Settings
+          - generic [ref=e146]:
+            - tablist [ref=e151]:
+              - tab [selected] [ref=e152] [cursor=pointer]: Admin Fee Rate
+              - tab [ref=e153] [cursor=pointer]: General Settings
+              - tab [ref=e154] [cursor=pointer]: Rate Card
+            - tabpanel [ref=e156]:
+              - generic [ref=e160]:
+                - generic [ref=e162]:
+                  - generic [ref=e163]:
+                    - heading [level=6] [ref=e164]: Admin Fee Rate
+                    - generic [ref=e166]: "1"
+                  - generic [ref=e167]:
+                    - button [ref=e168] [cursor=pointer]:
+                      - img [ref=e170]
+                      - text: Filters
+                    - button [ref=e172] [cursor=pointer]:
+                      - img [ref=e174]
+                      - text: Add New Rate
+                - grid [ref=e177]:
+                  - generic [ref=e178]:
+                    - rowgroup [ref=e179]:
+                      - row [ref=e180]:
+                        - columnheader [ref=e181] [cursor=pointer]:
+                          - generic [ref=e183]: Name
+                        - columnheader [ref=e184] [cursor=pointer]:
+                          - generic [ref=e186]: Admin Fee Before VAT
+                        - columnheader [ref=e187] [cursor=pointer]:
+                          - generic [ref=e189]: Invoice Model
+                        - columnheader [ref=e190] [cursor=pointer]:
+                          - generic [ref=e192]: VAT Status
+                        - columnheader [ref=e193] [cursor=pointer]:
+                          - generic [ref=e195]: Drivers
+                        - columnheader [ref=e196] [cursor=pointer]:
+                          - generic [ref=e198]: Admin Fee After VAT
+                        - columnheader [ref=e199]
+                    - rowgroup [ref=e200]:
+                      - row [ref=e201]:
+                        - cell [ref=e202]: Codtronix
+                        - cell [ref=e203]: £15
+                        - cell [ref=e204]:
+                          - generic [ref=e205]: Ratnam Invoicing
+                        - cell [ref=e206]:
+                          - generic [ref=e208]: "Yes"
+                        - cell [ref=e209]:
+                          - button [ref=e210] [cursor=pointer]:
+                            - img [ref=e212]
+                            - generic [ref=e214]: Add Drivers
+                        - cell [ref=e215]: £18
+                        - cell [ref=e216]:
+                          - button [ref=e217] [cursor=pointer]:
+                            - img [ref=e218]
+                  - generic [ref=e221]:
+                    - generic [ref=e222]:
+                      - paragraph [ref=e223]: "Results per page:"
+                      - generic [ref=e224]:
+                        - combobox [ref=e225] [cursor=pointer]: "10"
+                        - textbox: "10"
+                        - img
+                        - group
+                    - navigation [ref=e227]:
+                      - list [ref=e228]:
+                        - listitem [ref=e229]:
+                          - button [disabled]:
+                            - img
+                        - listitem [ref=e230]:
+                          - button [ref=e231] [cursor=pointer]: "1"
+                        - listitem [ref=e232]:
+                          - button [disabled]:
+                            - img
+  - dialog "Are you sure you want to delete this rate?" [ref=e235]:
+    - heading "Are you sure you want to delete this rate?" [level=2] [ref=e236]
+    - generic [ref=e237]: This rate will be permanently removed from your records.
+    - generic [ref=e239]:
+      - button "No" [ref=e240] [cursor=pointer]: "No"
+      - button "yes" [ref=e241] [cursor=pointer]: "yes"
+```

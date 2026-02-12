@@ -4,7 +4,7 @@ class AdminDashboardPage {
    */
   constructor(page) {
     this.page = page;
-    this.searchInput = page.locator('input[type="text"]');
+    this.searchInput = page.getByPlaceholder('Search by Name');
   }
 
   async searchDSP(dspName) {
@@ -14,7 +14,7 @@ class AdminDashboardPage {
   }
 
   async openDSPPanel() {
-    const menuButton = this.page.locator('[data-testid="dsp-menu-button"]').first();
+    const menuButton = this.page.locator('[data-testid="MoreVertIcon"]').first();
     await menuButton.click();
 
     const dspPanelButton = this.page.getByRole('button', { name: 'DSP PANEL' });

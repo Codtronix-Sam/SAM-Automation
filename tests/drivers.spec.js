@@ -10,6 +10,13 @@ require('dotenv').config();
 
 const { setup } = require('../helpers/setup');
 
+test('Verify navigation to Drivers module and default Active tab', async ({ page }) => {
+    const { driversPage } = await setup(page);
+
+    await driversPage.gotoDriversModule();
+    await expect(page.locator("//p[normalize-space()='Active Drivers']")).toBeVisible();
+});
+
 test('Switch between drivers tabs', async ({ page }) => {
     const { driversPage } = await setup(page);
 
@@ -30,9 +37,31 @@ test('Verify the Customer Name filter in Active Drivers', async ({ page }) => {
 
     await driversPage.gotoDriversModule();
     await driversPage.filterByCustomer(testData.filters.customer);
-    await driversPage.verifyFilterApplied(
+    await driversPage.verifyFilterAppliedCustomer(
         testData.filters.expectedResult,
-        testData.filters.customerFilterText
+        testData.filters.customerFilterText//p[normalize-space()='Active Drivers']
+    );
+});
+
+test.only('Verify the Depot filter in Active Drivers', async ({ page }) => {
+    const { driversPage } = await setup(page);
+
+    await driversPage.gotoDriversModule();
+    await driversPage.filterByDepot(testData.filters.customer);
+    await driversPage.verifyFilterAppliedDepot(
+        testData.filters.expectedResult,
+        testData.filters.customerFilterText//p[normalize-space()='Active Drivers']
+    );
+});
+
+test.only('Verify the Model Name filter in Active Drivers', async ({ page }) => {
+    const { driversPage } = await setup(page);
+
+    await driversPage.gotoDriversModule();
+    await driversPage.filterByModel(testData.filters.customer);
+    await driversPage.verifyFilterAppliedModel(
+        testData.filters.expectedResult,
+        testData.filters.customerFilterText//p[normalize-space()='Active Drivers']
     );
 });
 

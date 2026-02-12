@@ -11,7 +11,9 @@ class DriversPage {
     this.onboardingTab = page.locator("//p[normalize-space()='Onboarding Drivers']");
     this.inactiveTab = page.locator("(//p[normalize-space()='Inactive Drivers'])[1]");
     this.filterButton = page.locator("//button[normalize-space()='Filters']");
-    this.customerDropdown = page.locator("(//div[@role='combobox'])[1]");
+    this.customerDropdown = page.locator("(//div[@role='combobox'])[2]");
+    this.depotDropdown = page.locator("(//div[@role='combobox'])[3]");
+    this.modelNameDropdown = page.locator("(//div[@role='combobox'])[4]");
     this.driverCountText = page.locator("text=17 Drivers");
     this.customerFilterLabel = page.locator("//span[normalize-space()='Customer Name: Amazon']");
     this.driverSearchField = page.locator('input[placeholder="Search name or email"]');
@@ -29,6 +31,8 @@ class DriversPage {
     this.verifyDriverCreation = page.locator("(//div[contains(text(),'New user added successfully.')])[1]");
     this.verticalIcon = page.locator('svg[data-testid="MoreVertIcon"]');
     this.viewDriverProfile = page.locator("//p[normalize-space()='View Driver Profile']");
+    this.OTPTest = page.locator("//p[normalize-space()='OTP']/following-sibling::p[1]");
+
     this.approveBtn = page.locator("(//button[@type='button'][normalize-space()='Approve'])[1]");
     this.approveBtn2 = page.locator(
       "(//button[@type='button' and normalize-space()='Approve'])[2] | (//button[@type='button' and normalize-space()='Approve'])[1]"
@@ -42,6 +46,14 @@ class DriversPage {
     return this.page.locator(`//li[@role='option' and text()='${optionText}']`);
   }
 
+  getDepotOption(depotOptionText) {
+    return this.page.locator(`//li[@role='option' and text()='${depotOptionText}']`);
+  }
+
+  getModelOption(modelOptionText) {
+    return this.page.locator(`//li[@role='option' and text()='${modelOptionText}']`);
+  }
+
   async approveDocs() {
 
     await this.approveBtn.click();
@@ -49,9 +61,10 @@ class DriversPage {
   }
 
   async getOtpFromDriverProfile() {
-    const otp = await this.page.locator("//p[normalize-space()='OTP']/following-sibling::p[1]").textContent();
+    const otp = await this.OTPTest.textContent();
     return otp.trim();
   }
+
   async createDriver(email, fName, lName, contactNumber) {
 
     await this.addNewDriver.click();
@@ -115,7 +128,31 @@ class DriversPage {
     await this.page.keyboard.press('Escape');
   }
 
-  async verifyFilterApplied(expectedText, expectedTag) {
+   async filterByDepot(depotName) {
+    await this.filterButton.click();
+    await this.depotDropdown.click();
+    await this.getDepotOption(depotName).click();
+    await this.page.keyboard.press('Escape');
+  }
+
+  async filterByModel(modelName) {
+    await this.filterButton.click();
+    await this.modelNameDropdown.click();
+    await this.getModelOption(modelName).click();
+    await this.page.keyboard.press('Escape');
+  }
+
+  async verifyFilterAppliedCustomer(expectedText, expectedTag) {
+    await this.page.waitForSelector(`text=${expectedText}`);
+    await this.page.waitForSelector(`//span[normalize-space()='${expectedTag}']`);
+  }
+
+  async verifyFilterAppliedDepot(expectedText, expectedTag) {
+    await this.page.waitForSelector(`text=${expectedText}`);
+    await this.page.waitForSelector(`//span[normalize-space()='${expectedTag}']`);
+  }
+
+  async verifyFilterAppliedModel(expectedText, expectedTag) {
     await this.page.waitForSelector(`text=${expectedText}`);
     await this.page.waitForSelector(`//span[normalize-space()='${expectedTag}']`);
   }

@@ -1,0 +1,151 @@
+# Page snapshot
+
+```yaml
+- img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+      - text: Dashboard
+  - listitem:
+    - button "Payment Status":
+      - img
+      - text: Payment Status
+  - listitem:
+    - button "VAT-UTR":
+      - img
+      - text: VAT-UTR
+  - listitem:
+    - button "Customers":
+      - img
+      - text: Customers
+  - listitem:
+    - button "Agreements Keys":
+      - img
+      - text: Agreements Keys
+  - listitem:
+    - button "Roles":
+      - img
+      - text: Roles
+- main:
+  - heading "Dashboard" [level=6]
+  - button "Profile Settings"
+  - paragraph: Welcome Back, super
+  - img
+  - heading "0" [level=1]
+  - heading "Total DSPs" [level=5]
+  - paragraph
+  - img
+  - heading "0" [level=1]
+  - heading "Active Drivers" [level=5]
+  - paragraph
+  - img
+  - heading "0" [level=1]
+  - heading "Onboarding Drivers" [level=5]
+  - paragraph
+  - img
+  - heading "0" [level=1]
+  - heading "Pending Signatures" [level=5]
+  - paragraph
+  - text: App Users 0 Pending App Download 0 Invoice Viewed 0
+  - paragraph: Active DSPs
+  - paragraph: Inactive DSPs
+  - button "Add new DSP"
+  - heading "DSPs" [level=6]
+  - text: 11 Dsps
+  - button:
+    - img
+  - textbox "Search by Name"
+  - grid:
+    - rowgroup:
+      - row "DSP Name Contact Status Product/s":
+        - columnheader "DSP Name"
+        - columnheader "Contact"
+        - columnheader "Status"
+        - columnheader "Product/s"
+        - columnheader
+    - rowgroup:
+      - row "SAM Onboarding Teams +4403206083111 Active":
+        - cell "SAM Onboarding Teams"
+        - cell "+4403206083111"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Kaizen Logistics Ltd +449213300992 Active":
+        - cell "Kaizen Logistics Ltd"
+        - cell "+449213300992"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Corrda Logistics Ltd +447909993997 Active":
+        - cell "Corrda Logistics Ltd"
+        - cell "+447909993997"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Besa Logistics Ltd +440776700819 Active":
+        - cell "Besa Logistics Ltd"
+        - cell "+440776700819"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "OJ Logistics Ltd +447782555242 Active":
+        - cell "OJ Logistics Ltd"
+        - cell "+447782555242"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Forge +4412377463222 Active":
+        - cell "Forge"
+        - cell "+4412377463222"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Nexus11 +4409324324832 Active":
+        - cell "Nexus11"
+        - cell "+4409324324832"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Test DSP section +4477854888555 Active":
+        - cell "Test DSP section"
+        - cell "+4477854888555"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+      - row "Nexus11 +44undefined Active":
+        - cell "Nexus11"
+        - cell "+44undefined"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+    - navigation "pagination navigation":
+      - list:
+        - listitem:
+          - button "Go to previous page" [disabled]: Previous
+        - listitem:
+          - button "page 1": "1"
+        - listitem:
+          - button "Go to page 2": "2"
+        - listitem:
+          - button "Go to next page": Next
+- img
+```

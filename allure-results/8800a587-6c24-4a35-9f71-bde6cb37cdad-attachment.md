@@ -1,0 +1,50 @@
+# Page snapshot
+
+```yaml
+- img
+- heading "Payments" [level=6]
+- text: Select Depot
+- textbox "Search..."
+- button "Profile Settings":
+  - img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+  - listitem:
+    - button "My Drivers":
+      - img
+  - listitem:
+    - button "Scheduling":
+      - img
+  - listitem:
+    - button "Payments":
+      - img
+  - listitem:
+    - button "Reports":
+      - img
+  - listitem:
+    - button "Knowledge Base":
+      - img
+  - listitem:
+    - button "FAQ":
+      - img
+  - listitem:
+    - button "Vehicle Management":
+      - img
+  - listitem:
+    - button "Devices"
+  - listitem:
+    - button "Agreements":
+      - img
+  - listitem:
+    - button "Depots":
+      - img
+- button "Admin Dashboard":
+  - img
+- button "Settings":
+  - img
+- progressbar:
+  - img
+- img
+```

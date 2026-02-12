@@ -1,0 +1,208 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading "Profile" [level=6] [ref=e16]
+      - generic [ref=e17]:
+        - button [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button "Profile Settings" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+    - generic [ref=e26]:
+      - generic [ref=e28]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - button "Dashboard" [ref=e32] [cursor=pointer]:
+              - generic "Dashboard" [ref=e33]:
+                - img [ref=e34]
+          - listitem [ref=e39]:
+            - button "My Drivers" [ref=e40] [cursor=pointer]:
+              - generic "My Drivers" [ref=e41]:
+                - img [ref=e42]
+          - listitem [ref=e48]:
+            - button "Scheduling" [ref=e49] [cursor=pointer]:
+              - generic "Scheduling" [ref=e50]:
+                - img [ref=e51]
+          - listitem [ref=e55]:
+            - button "Payments" [ref=e56] [cursor=pointer]:
+              - generic "Payments" [ref=e57]:
+                - img [ref=e58]
+          - listitem [ref=e65]:
+            - button "Reports" [ref=e66] [cursor=pointer]:
+              - generic "Reports" [ref=e67]:
+                - img [ref=e68]
+          - listitem [ref=e73]:
+            - button "Knowledge Base" [ref=e74] [cursor=pointer]:
+              - generic "Knowledge Base" [ref=e75]:
+                - img [ref=e76]
+          - listitem [ref=e78]:
+            - button "FAQ" [ref=e79] [cursor=pointer]:
+              - generic "FAQ" [ref=e80]:
+                - img [ref=e81]
+          - listitem [ref=e85]:
+            - button "Vehicle Management" [ref=e86] [cursor=pointer]:
+              - generic "Vehicle Management" [ref=e87]:
+                - img [ref=e88]
+          - listitem [ref=e93]:
+            - button "Devices" [ref=e94] [cursor=pointer]:
+              - generic "Devices" [ref=e95]:
+                - img [ref=e96]
+          - listitem [ref=e98]:
+            - button "Agreements" [ref=e99] [cursor=pointer]:
+              - generic "Agreements" [ref=e100]:
+                - img [ref=e101]
+          - listitem [ref=e104]:
+            - button "Depots" [ref=e105] [cursor=pointer]:
+              - generic "Depots" [ref=e106]:
+                - img [ref=e107]
+        - generic [ref=e110]:
+          - button "Admin Dashboard" [ref=e111] [cursor=pointer]:
+            - img [ref=e112]
+          - button "Settings" [ref=e117] [cursor=pointer]:
+            - img [ref=e118]
+      - main [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]:
+              - paragraph [ref=e127] [cursor=pointer]: Personal Details
+              - paragraph [ref=e129] [cursor=pointer]: Financial Details
+              - paragraph [ref=e131] [cursor=pointer]: Deductions
+              - paragraph [ref=e133] [cursor=pointer]: Engagement Details
+              - paragraph [ref=e135] [cursor=pointer]: Van Check
+              - paragraph [ref=e137] [cursor=pointer]: Accident Form
+              - paragraph [ref=e139] [cursor=pointer]: Notes
+              - paragraph [ref=e141] [cursor=pointer]: Safety Training
+            - button "Offboard Driver" [ref=e143] [cursor=pointer]: Offboard Driver
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - generic [ref=e148]: Nn
+                  - generic [ref=e149]:
+                    - heading "New next" [level=6] [ref=e150]
+                    - generic [ref=e152] [cursor=pointer]: Active
+                - generic [ref=e153]:
+                  - button [ref=e154] [cursor=pointer]:
+                    - img [ref=e155]
+                  - button [ref=e157] [cursor=pointer]:
+                    - img [ref=e158]
+              - generic [ref=e160]:
+                - img [ref=e162]
+                - generic [ref=e164]:
+                  - paragraph [ref=e165]: Personal Details
+                  - paragraph
+              - generic [ref=e166]:
+                - paragraph [ref=e167]: Full Name
+                - paragraph [ref=e168]: New next
+              - generic [ref=e169]:
+                - paragraph [ref=e170]: National Insurance number
+                - paragraph [ref=e171]: HN791142C
+              - generic [ref=e172]:
+                - paragraph [ref=e173]: Email
+                - link "abdulwahsssabas3181@gmail.com" [ref=e175] [cursor=pointer]:
+                  - /url: mailto:abdulwahsssabas3181@gmail.com
+              - generic [ref=e176]:
+                - paragraph [ref=e177]: Date of Birth
+                - paragraph [ref=e178]: 21-06-2005
+              - generic [ref=e179]:
+                - paragraph [ref=e180]: Reference No.
+                - paragraph [ref=e181]: RATNAM--000000NaN
+              - generic [ref=e182]:
+                - paragraph [ref=e183]: Transporter ID
+                - paragraph [ref=e184]: N/A
+              - generic [ref=e185]:
+                - paragraph [ref=e186]: Nationality
+                - paragraph [ref=e187]: British
+              - generic [ref=e188]:
+                - paragraph [ref=e189]: Contact Number
+                - paragraph [ref=e190]: "7737171511"
+              - generic [ref=e191]:
+                - paragraph [ref=e192]: Admin Fee
+                - paragraph [ref=e193]: N/A
+              - generic [ref=e194]:
+                - paragraph [ref=e195]: Self Billing
+                - paragraph [ref=e196]: "No"
+              - generic [ref=e197]:
+                - generic [ref=e198]:
+                  - img [ref=e200]
+                  - generic [ref=e203]:
+                    - paragraph [ref=e204]: Address
+                    - paragraph
+                - button [ref=e205] [cursor=pointer]:
+                  - img [ref=e206]
+              - generic [ref=e208]:
+                - generic [ref=e209]:
+                  - paragraph [ref=e210]: Current Address (19 years, 5 months)
+                  - paragraph [ref=e211]: Ipswich Suffolk, , IP45HY, United Kingdom
+                - button [ref=e212] [cursor=pointer]:
+                  - img [ref=e213]
+              - generic [ref=e215]:
+                - img [ref=e217]
+                - generic [ref=e219]:
+                  - paragraph [ref=e220]: Next of Kin
+                  - paragraph
+              - generic [ref=e221]:
+                - paragraph [ref=e222]: Name
+                - paragraph [ref=e223]: N/A
+              - generic [ref=e224]:
+                - paragraph [ref=e225]: Email
+                - paragraph [ref=e226]: N/A
+              - generic [ref=e227]:
+                - paragraph [ref=e228]: Contact Number
+                - paragraph [ref=e229]: N/A
+              - generic [ref=e230]:
+                - paragraph [ref=e231]: Relationship
+                - paragraph [ref=e232]: N/A
+              - generic [ref=e233]:
+                - generic [ref=e234]:
+                  - img [ref=e236]
+                  - generic [ref=e239]:
+                    - paragraph [ref=e240]: Onsite Training Details
+                    - paragraph
+                - button [ref=e241] [cursor=pointer]:
+                  - img [ref=e242]
+              - generic [ref=e244]:
+                - paragraph [ref=e245]: Location Name
+                - paragraph [ref=e246]: N/A
+              - generic [ref=e247]:
+                - paragraph [ref=e248]: Address
+                - paragraph [ref=e249]: N/A
+              - generic [ref=e250]:
+                - generic [ref=e252]:
+                  - paragraph [ref=e253]: Date
+                  - paragraph [ref=e254]: N/A
+                - generic [ref=e256]:
+                  - paragraph [ref=e257]: Time
+                  - paragraph [ref=e258]: N/A
+            - generic [ref=e259]:
+              - generic [ref=e261]:
+                - paragraph [ref=e263] [cursor=pointer]: Evidence
+                - paragraph [ref=e265] [cursor=pointer]: Background
+              - button "Drivers Licence (Confirmed on 04-06-2025 by Mohammad Rabi) Download Verify" [ref=e267] [cursor=pointer]:
+                - generic [ref=e269]:
+                  - generic [ref=e271]:
+                    - paragraph [ref=e272]: Drivers Licence
+                    - paragraph [ref=e273]: (Confirmed on 04-06-2025 by Mohammad Rabi)
+                  - generic [ref=e274]:
+                    - button [ref=e275]:
+                      - img [ref=e276]
+                    - button "Download" [ref=e278]:
+                      - img [ref=e280]
+                      - text: Download
+                    - button "Verify" [ref=e282]: Verify
+                - img [ref=e284]
+              - button "Right to Work (Confirmed on 04-06-2025 by Mohammad Rabi)" [ref=e287] [cursor=pointer]:
+                - generic [ref=e289]:
+                  - generic [ref=e291]:
+                    - paragraph [ref=e292]: Right to Work
+                    - paragraph [ref=e293]: (Confirmed on 04-06-2025 by Mohammad Rabi)
+                  - button [ref=e295]:
+                    - img [ref=e296]
+                - img [ref=e299]
+  - img
+```

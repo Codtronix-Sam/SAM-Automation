@@ -1,0 +1,148 @@
+# Page snapshot
+
+```yaml
+- img
+- heading "Dashboard" [level=6]
+- button "Profile Settings":
+  - img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+  - listitem:
+    - button "My Drivers":
+      - img
+  - listitem:
+    - button "Scheduling":
+      - img
+  - listitem:
+    - button "Payments":
+      - img
+  - listitem:
+    - button "Reports":
+      - img
+  - listitem:
+    - button "Knowledge Base":
+      - img
+  - listitem:
+    - button "FAQ":
+      - img
+  - listitem:
+    - button "Vehicle Management":
+      - img
+  - listitem:
+    - button "Devices"
+  - listitem:
+    - button "Agreements":
+      - img
+  - listitem:
+    - button "Depots":
+      - img
+- button "Admin Dashboard":
+  - img
+- button "Settings":
+  - img
+- main:
+  - paragraph: SAM (SAM Onboarding Teams)
+  - paragraph: Welcome Back, SAM Onboarding
+  - img
+  - heading "0" [level=1]
+  - heading "Active Drivers" [level=5]
+  - paragraph: Drivers that are currently available to do routes for SAM Onboarding Teams
+  - img
+  - heading "0" [level=1]
+  - heading "Inactive Drivers" [level=5]
+  - paragraph: Drivers that are currently not available to do routes for SAM Onboarding Teams
+  - img
+  - heading "0" [level=1]
+  - heading "Total Drivers" [level=5]
+  - paragraph: Drivers that are present for SAM Onboarding Teams
+  - img
+  - heading "0" [level=1]
+  - heading "Missing Payment" [level=5]
+  - paragraph: Drivers that have missing payment details for SAM Onboarding Teams
+  - paragraph: Onboarding Applications
+  - img:
+    - img
+    - text: 0 Initial Applications
+    - img
+    - text: 0 Additional Applications 0%
+  - paragraph: Payment Method
+  - img:
+    - img
+    - text: 0 Invoicing with SAM
+    - img
+    - text: 0 Full Accountancy 0%
+  - paragraph: UTR Coverage
+  - img:
+    - img
+    - text: 0 Drivers with UTR
+    - img
+    - text: 0 Drivers without UTR 0%
+  - paragraph: VAT Coverage
+  - img:
+    - img
+    - text: 0 Drivers with VAT
+    - img
+    - text: 0 Drivers without VAT 0%
+  - paragraph: Notifications (0)
+  - paragraph: Driver Licence Evidence
+  - img
+  - img:
+    - img
+  - paragraph: Pending Documents
+  - paragraph: Evidence requested to be re-upload
+  - img
+  - paragraph: "0"
+  - img
+  - img:
+    - img
+  - paragraph: In Review
+  - paragraph: Driver Evidence uploaded by Driver for Review
+  - img
+  - paragraph: "0"
+  - img
+  - img:
+    - img
+  - paragraph: Expiring Soon
+  - paragraph: Driver evidence that is due to expire within 60 days
+  - img
+  - paragraph: "0"
+  - img
+  - img:
+    - img
+  - paragraph: Expired Document
+  - paragraph: Re-uploaded evidence that needs to be approved
+  - img
+  - paragraph: "0"
+  - paragraph: Right to Work Evidence
+  - img
+  - img:
+    - img
+  - paragraph: Pending Documents
+  - paragraph: Evidence requested to be re-upload
+  - img
+  - paragraph: "0"
+  - img
+  - img:
+    - img
+  - paragraph: In Review
+  - paragraph: Right to Work Evidence uploaded by Driver for Review
+  - img
+  - paragraph: "0"
+  - img
+  - img:
+    - img
+  - paragraph: Expiring Soon
+  - paragraph: Right to Work Evidence that is due to expire within 60 days
+  - img
+  - paragraph: "0"
+  - img
+  - img:
+    - img
+  - paragraph: Expired Document
+  - paragraph: Re-uploaded evidence that needs to be approved
+  - img
+  - paragraph: "0"
+- img
+```

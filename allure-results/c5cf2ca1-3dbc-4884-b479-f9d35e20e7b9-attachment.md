@@ -1,0 +1,85 @@
+# Page snapshot
+
+```yaml
+- img
+- heading "Settings" [level=6]
+- text: Amazon Express Depot
+- textbox "Search...": Darren Watts Rates
+- button:
+  - img
+- button "Profile Settings":
+  - img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+  - listitem:
+    - button "My Drivers":
+      - img
+  - listitem:
+    - button "Scheduling":
+      - img
+  - listitem:
+    - button "Payments":
+      - img
+  - listitem:
+    - button "Reports":
+      - img
+  - listitem:
+    - button "Knowledge Base":
+      - img
+  - listitem:
+    - button "FAQ":
+      - img
+  - listitem:
+    - button "Vehicle Management":
+      - img
+  - listitem:
+    - button "Devices"
+  - listitem:
+    - button "Agreements":
+      - img
+  - listitem:
+    - button "Depots":
+      - img
+- button "Admin Dashboard":
+  - img
+- button "Settings":
+  - img
+- main:
+  - paragraph: General Settings
+  - paragraph: Payment Details
+  - paragraph: User Management
+  - paragraph: DSP Mapper
+  - paragraph: Payment Settings
+  - tablist:
+    - tab "Admin Fee Rate" [selected]
+    - tab "General Settings"
+    - tab "Rate Card"
+  - tabpanel:
+    - heading "Admin Fee Rate" [level=6]
+    - text: "0"
+    - button "Filters"
+    - button "Add New Rate"
+    - grid:
+      - rowgroup:
+        - row "Name Admin Fee Before VAT Invoice Model VAT Status Drivers Admin Fee After VAT":
+          - columnheader "Name"
+          - columnheader "Admin Fee Before VAT"
+          - columnheader "Invoice Model"
+          - columnheader "VAT Status"
+          - columnheader "Drivers"
+          - columnheader "Admin Fee After VAT"
+          - columnheader
+      - text: NO DATA AVAILABLE.
+      - rowgroup
+      - paragraph: "Results per page:"
+      - combobox: "10"
+      - navigation "pagination navigation":
+        - list:
+          - listitem:
+            - button "Go to previous page" [disabled]
+          - listitem:
+            - button "Go to next page" [disabled]
+- img
+```

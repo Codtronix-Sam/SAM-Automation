@@ -1,5 +1,5 @@
 const { chromium } = require('@playwright/test');
-require('dotenv').config({ path: `.env.${process.env.ENV || 'staging'}` });
+require('dotenv').config({ path: `.env.${process.env.ENV || 'clone'}` });
 
 (async () => {
   const browser = await chromium.launch({ headless: false });

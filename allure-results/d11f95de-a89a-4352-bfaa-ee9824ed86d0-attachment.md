@@ -1,0 +1,283 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading [level=6] [ref=e16]: Create Invoice
+      - generic [ref=e17]:
+        - button [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+        - button [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+    - generic [ref=e26]:
+      - generic [ref=e28]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - button [ref=e32] [cursor=pointer]:
+              - img [ref=e34]
+          - listitem [ref=e39]:
+            - button [ref=e40] [cursor=pointer]:
+              - img [ref=e42]
+          - listitem [ref=e48]:
+            - button [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+          - listitem [ref=e55]:
+            - button [ref=e56] [cursor=pointer]:
+              - img [ref=e58]
+          - listitem [ref=e65]:
+            - button [ref=e66] [cursor=pointer]:
+              - img [ref=e68]
+          - listitem [ref=e73]:
+            - button [ref=e74] [cursor=pointer]:
+              - img [ref=e76]
+          - listitem [ref=e78]:
+            - button [ref=e79] [cursor=pointer]:
+              - img [ref=e81]
+          - listitem [ref=e85]:
+            - button [ref=e86] [cursor=pointer]:
+              - img [ref=e88]
+          - listitem [ref=e93]:
+            - button [ref=e94] [cursor=pointer]:
+              - img [ref=e96]
+          - listitem [ref=e98]:
+            - button [ref=e99] [cursor=pointer]:
+              - img [ref=e101]
+          - listitem [ref=e104]:
+            - button [ref=e105] [cursor=pointer]:
+              - img [ref=e107]
+        - generic [ref=e110]:
+          - button [ref=e111] [cursor=pointer]:
+            - img [ref=e112]
+          - button [ref=e117] [cursor=pointer]:
+            - img [ref=e118]
+      - main [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e125]: Create New Invoice
+          - generic [ref=e127]:
+            - generic [ref=e129]:
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: Driver *
+                  - generic [ref=e135] [cursor=pointer]:
+                    - generic [ref=e137]: Import Tester
+                    - img [ref=e139]
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Admin Fee
+                  - generic [ref=e145] [cursor=pointer]:
+                    - generic [ref=e147]: Admin fee rate for import tester with VAT
+                    - img [ref=e149]
+                - generic [ref=e151]:
+                  - generic [ref=e152]: Invoice Status
+                  - generic [ref=e154]:
+                    - generic [ref=e156]: pending
+                    - img [ref=e158]
+                - generic [ref=e160]:
+                  - generic [ref=e161]: Invoice Date *
+                  - generic [ref=e163]:
+                    - textbox [ref=e164] [cursor=pointer]:
+                      - /placeholder: DD/MM/YYYY
+                      - text: 28/11/2025
+                    - button [ref=e166] [cursor=pointer]:
+                      - img [ref=e167]
+                    - group
+                - generic [ref=e169]:
+                  - generic [ref=e170]: Invoice Creation Date *
+                  - generic [ref=e172]:
+                    - textbox [disabled] [ref=e173]: 12/11/2025
+                    - group
+                - generic [ref=e174]:
+                  - generic [ref=e175]: Driver Reference Number
+                  - generic [ref=e177]:
+                    - textbox [disabled] [ref=e178]: RATNAM--000000NaN
+                    - group
+                - generic [ref=e179]:
+                  - generic [ref=e180]: VAT Number
+                  - generic [ref=e182]:
+                    - textbox [disabled] [ref=e183]: "321232132"
+                    - group
+                - generic [ref=e184]:
+                  - generic [ref=e185]: Invoicing Model
+                  - generic [ref=e187]:
+                    - textbox [disabled] [ref=e188]: Ratnam Invoicing
+                    - group
+                - generic [ref=e189]:
+                  - generic [ref=e190]: Invoice Reference ID
+                  - generic [ref=e192]:
+                    - textbox [disabled] [ref=e193]: "-----"
+                    - group
+                - generic [ref=e194]:
+                  - generic [ref=e195]: Period Date
+                  - generic [ref=e197]:
+                    - textbox [disabled] [ref=e198]: Week 48 23-11-2025 - 29-11-2025
+                    - group
+              - generic [ref=e199]:
+                - generic [ref=e200]: Income
+                - generic [ref=e201]:
+                  - table [ref=e202]:
+                    - rowgroup [ref=e203]:
+                      - row [ref=e204]:
+                        - columnheader [ref=e205]:
+                          - generic [ref=e206]: Income Name
+                        - columnheader [ref=e207]:
+                          - generic [ref=e208]: QTY
+                        - columnheader [ref=e209]:
+                          - generic [ref=e210]: Rate
+                        - columnheader [ref=e211]:
+                          - generic [ref=e212]: Total
+                        - columnheader [ref=e213]
+                    - rowgroup [ref=e214]:
+                      - row [ref=e215]:
+                        - cell [ref=e216]:
+                          - generic [ref=e217]:
+                            - generic [ref=e218] [cursor=pointer]:
+                              - generic [ref=e220]: Search income name
+                              - img [ref=e222]
+                            - paragraph [ref=e224]: Rate card is required
+                        - cell [ref=e225]:
+                          - generic [ref=e227]:
+                            - spinbutton [ref=e228]: "1"
+                            - group
+                        - cell [ref=e229]:
+                          - generic [ref=e231]:
+                            - textbox [disabled] [ref=e232]: "--"
+                            - group
+                        - cell [ref=e233]:
+                          - generic [ref=e235]:
+                            - textbox [disabled] [ref=e236]: "--"
+                            - group
+                        - cell [ref=e237]:
+                          - button [disabled]:
+                            - img
+                  - generic [ref=e238]:
+                    - button [ref=e239] [cursor=pointer]:
+                      - img [ref=e240]
+                      - generic [ref=e242]: Add Income
+                    - generic [ref=e243]: "Total Income: £0.00"
+              - generic [ref=e244]:
+                - generic [ref=e245]: Deduction
+                - generic [ref=e246]:
+                  - table [ref=e247]:
+                    - rowgroup [ref=e248]:
+                      - row [ref=e249]:
+                        - columnheader [ref=e250]:
+                          - generic [ref=e251]: Deduction Name
+                        - columnheader [ref=e252]:
+                          - generic [ref=e253]: QTY
+                        - columnheader [ref=e254]:
+                          - generic [ref=e255]: Rate
+                        - columnheader [ref=e256]:
+                          - generic [ref=e257]: Total
+                    - rowgroup [ref=e258]:
+                      - row [ref=e259]:
+                        - cell [ref=e260]:
+                          - generic [ref=e261]: No deductions added
+                  - generic [ref=e262]:
+                    - button [ref=e263] [cursor=pointer]:
+                      - img [ref=e264]
+                      - generic [ref=e266]: Add Deduction
+                    - generic [ref=e267]: "Total Deduction: £0.00"
+              - generic [ref=e268]:
+                - generic [ref=e269]: Admin Fee
+                - generic [ref=e270]:
+                  - table [ref=e271]:
+                    - rowgroup [ref=e272]:
+                      - row [ref=e273]:
+                        - columnheader [ref=e274]:
+                          - generic [ref=e275]: Admin Fee Name
+                        - columnheader [ref=e276]:
+                          - generic [ref=e277]: QTY
+                        - columnheader [ref=e278]:
+                          - generic [ref=e279]: Rate
+                        - columnheader [ref=e280]:
+                          - generic [ref=e281]: Total
+                    - rowgroup [ref=e282]:
+                      - row [ref=e283]:
+                        - cell [ref=e284]:
+                          - generic [ref=e285]: Admin fee rate for import tester with VAT
+                        - cell [ref=e286]:
+                          - generic [ref=e287]: "1"
+                        - cell [ref=e288]:
+                          - generic [ref=e289]: £18
+                        - cell [ref=e290]:
+                          - generic [ref=e291]: £18
+                  - generic [ref=e293]: "Total Admin Fee: £18"
+            - generic [ref=e295]:
+              - generic [ref=e296]:
+                - generic [ref=e297]:
+                  - generic [ref=e298]: Invoice Summary
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: Net
+                    - generic [ref=e301]: £-18.00
+                  - generic [ref=e302]:
+                    - generic [ref=e303]: VAT
+                    - generic [ref=e304]: £0.00
+                  - generic [ref=e305]:
+                    - generic [ref=e306]: Gross (Total to be paid to Driver)
+                    - generic [ref=e307]: £-18.00
+                  - separator [ref=e308]
+                  - generic [ref=e309]:
+                    - generic [ref=e310]: Grand Total
+                    - generic [ref=e311]: £-18.00
+                - generic [ref=e312]:
+                  - generic [ref=e313]: Payment Summary
+                  - generic [ref=e314]:
+                    - generic [ref=e315]: Total to be Paid to Driver
+                    - generic [ref=e316]: £--
+                  - generic [ref=e317]:
+                    - generic [ref=e318]: Paid to Driver
+                    - generic [ref=e319]: £--
+                  - generic [ref=e320]:
+                    - generic [ref=e321]: Balance
+                    - generic [ref=e322]: £--
+              - generic [ref=e323]:
+                - button [ref=e324] [cursor=pointer]: Cancel
+                - button [ref=e325] [cursor=pointer]: Create Invoice
+  - generic [ref=e327]:
+    - generic [ref=e330]:
+      - img [ref=e332]
+      - textbox "Search..." [active] [ref=e334]
+      - group
+    - list [ref=e336]:
+      - button "Standard 9 Hour route - £130.50" [ref=e337] [cursor=pointer]:
+        - generic [ref=e339]: Standard 9 Hour route - £130.50
+      - button "Ride Along - £130.50" [ref=e340] [cursor=pointer]:
+        - generic [ref=e342]: Ride Along - £130.50
+      - button "Test rate card for copy - £50.00" [ref=e343] [cursor=pointer]:
+        - generic [ref=e345]: Test rate card for copy - £50.00
+      - button "Test Rate Card - £106.00" [ref=e346] [cursor=pointer]:
+        - generic [ref=e348]: Test Rate Card - £106.00
+      - button "with deduction - £25.00" [ref=e349] [cursor=pointer]:
+        - generic [ref=e351]: with deduction - £25.00
+      - button "Ride Along - £130.50" [ref=e352] [cursor=pointer]:
+        - generic [ref=e354]: Ride Along - £130.50
+      - button "Codtronix - £10.00" [ref=e355] [cursor=pointer]:
+        - generic [ref=e357]: Codtronix - £10.00
+      - button "Additional Pay - £0" [ref=e358] [cursor=pointer]:
+        - generic [ref=e360]: Additional Pay - £0
+      - button "Bonus - £0" [ref=e361] [cursor=pointer]:
+        - generic [ref=e363]: Bonus - £0
+      - button "BYOD - £0" [ref=e364] [cursor=pointer]:
+        - generic [ref=e366]: BYOD - £0
+      - button "Rescue - £0" [ref=e367] [cursor=pointer]:
+        - generic [ref=e369]: Rescue - £0
+      - button "Seasonal Incentive - £0" [ref=e370] [cursor=pointer]:
+        - generic [ref=e372]: Seasonal Incentive - £0
+      - button "Other Pay - £0" [ref=e373] [cursor=pointer]:
+        - generic [ref=e375]: Other Pay - £0
+      - button "Additional Pay - £0" [ref=e376] [cursor=pointer]:
+        - generic [ref=e378]: Additional Pay - £0
+      - button "Bonus - £0" [ref=e379] [cursor=pointer]:
+        - generic [ref=e381]: Bonus - £0
+      - button "BYOD - £0" [ref=e382] [cursor=pointer]:
+        - generic [ref=e384]: BYOD - £0
+      - button "Rescue - £0" [ref=e385] [cursor=pointer]:
+        - generic [ref=e387]: Rescue - £0
+      - button "Seasonal Incentive - £0" [ref=e388] [cursor=pointer]:
+        - generic [ref=e390]: Seasonal Incentive - £0
+      - button "Other Pay - £0" [ref=e391] [cursor=pointer]:
+        - generic [ref=e393]: Other Pay - £0
+```

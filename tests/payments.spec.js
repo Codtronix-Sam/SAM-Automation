@@ -2,6 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { AdminDashboardPage } = require('../pageObjects/AdminDashboardPage');
 const { PaymentsPage } = require('../pageObjects/PaymentsPage');
 const testData = require('../testData');
+const { invoiceData } = require('../testData');
 require('dotenv').config();
 
 async function setup(page) {
@@ -34,4 +35,21 @@ test('Verify Pay Day selection', async ({ page }) => {
     await paymentsPage.openAmzExpressDepot();
     await paymentsPage.clickPaymentsAndInvociesDD();
     await paymentsPage.payDaySelection();
-})
+});
+
+test('Create invoice with driver-priority rate card', async ({ page }) => {
+    const { paymentsPage } = await setup(page);
+
+    await paymentsPage.gotoPaymentsModule();
+    await paymentsPage.createInvoiceWithDriverPriorityRateCard();
+});
+
+test('Verify if payday is applied correctly in listing', async ({ page }) => {
+    const { paymentsPage } = await setup(page);
+
+    await paymentsPage.gotoPaymentsModule();
+    await paymentsPage.createInvoiceWithDriverPriorityRateCard();
+    await paymentsPage.clickPaymentsAndInvociesDD();
+    await paymentsPage.verifyPaydayInListing();
+});
+

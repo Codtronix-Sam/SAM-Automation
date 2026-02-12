@@ -1,0 +1,164 @@
+# Page snapshot
+
+```yaml
+- img
+- heading "Invoicing" [level=6]
+- text: Amazon Express Depot
+- textbox "Search..."
+- button "Profile Settings":
+  - img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+  - listitem:
+    - button "My Drivers":
+      - img
+  - listitem:
+    - button "Scheduling":
+      - img
+  - listitem:
+    - button "Payments":
+      - img
+  - listitem:
+    - button "Reports":
+      - img
+  - listitem:
+    - button "Knowledge Base":
+      - img
+  - listitem:
+    - button "FAQ":
+      - img
+  - listitem:
+    - button "Vehicle Management":
+      - img
+  - listitem:
+    - button "Devices"
+  - listitem:
+    - button "Agreements":
+      - img
+  - listitem:
+    - button "Depots":
+      - img
+- button "Admin Dashboard":
+  - img
+- button "Settings":
+  - img
+- main:
+  - link "Payments":
+    - /url: /dsp/finance/payments
+  - link "Deductions":
+    - /url: /dsp/finance/deductions
+  - link "Invoicing":
+    - /url: /dsp/finance/invoicing
+  - heading "Invoices" [level=6]
+  - text: 2 Invoices
+  - button
+  - text: Week 41 12-10-2025 - 18-10-2025
+  - button
+  - button "Add New Invoice"
+  - button "Approve Payments" [disabled]
+  - button
+  - button "Filters"
+  - button "Columns":
+    - img
+    - text: Columns
+  - grid:
+    - rowgroup:
+      - row "Select all rows Date Driver Reference No Invoice Number Driver Name Transport ID Invoice Type Invoice Items Income Total Deduction Item Total Deduction Amount Net VAT Gross Admin Fee Paid to Driver Pay Day Pay Date":
+        - columnheader "Select all rows":
+          - checkbox "Select all rows"
+        - columnheader "Date"
+        - columnheader "Driver Reference No"
+        - columnheader "Invoice Number"
+        - columnheader "Driver Name"
+        - columnheader "Transport ID"
+        - columnheader "Invoice Type"
+        - columnheader "Invoice Items"
+        - columnheader "Income Total"
+        - columnheader "Deduction Item"
+        - columnheader "Total Deduction Amount"
+        - columnheader "Net"
+        - columnheader "VAT"
+        - columnheader "Gross"
+        - columnheader "Admin Fee"
+        - columnheader "Paid to Driver"
+        - columnheader "Pay Day"
+        - columnheader "Pay Date"
+    - rowgroup:
+      - row "Select row 15/10/2025 RAT003 INV0003 HR Haroon Riaz kelivvora12@gmail.com N/A Ratnam Accountancy 0 £0.00 0 £0.00 £40.00 £0.00 £40.00 £10.00 £0.00 TUESDAY 28/10/2025":
+        - cell "Select row":
+          - checkbox "Select row"
+        - cell "15/10/2025"
+        - cell "RAT003"
+        - cell "INV0003"
+        - cell "HR Haroon Riaz kelivvora12@gmail.com":
+          - text: HR
+          - paragraph: Haroon Riaz
+          - paragraph: kelivvora12@gmail.com
+        - cell "N/A"
+        - cell "Ratnam Accountancy"
+        - cell "0":
+          - paragraph: "0"
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "0":
+          - paragraph: "0"
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "£40.00":
+          - paragraph: £40.00
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "£40.00":
+          - paragraph: £40.00
+        - cell "£10.00":
+          - paragraph: £10.00
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "TUESDAY"
+        - cell "28/10/2025"
+      - row "Select row 14/10/2025 RATNAM--000000NaN INV0008 IT Import Tester abdulwahabas3181@gmail.com N/A Ratnam Invoicing +1 £25.00 +1 £5.00 £5.80 £0.00 £5.80 £11.00 £0.00 TUESDAY 21/10/2025":
+        - cell "Select row":
+          - checkbox "Select row"
+        - cell "14/10/2025"
+        - cell "RATNAM--000000NaN"
+        - cell "INV0008"
+        - cell "IT Import Tester abdulwahabas3181@gmail.com":
+          - text: IT
+          - paragraph: Import Tester
+          - paragraph: abdulwahabas3181@gmail.com
+        - cell "N/A"
+        - cell "Ratnam Invoicing"
+        - cell "+1":
+          - paragraph: "+1"
+        - cell "£25.00":
+          - paragraph: £25.00
+        - cell "+1":
+          - paragraph: "+1"
+        - cell "£5.00":
+          - paragraph: £5.00
+        - cell "£5.80":
+          - paragraph: £5.80
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "£5.80":
+          - paragraph: £5.80
+        - cell "£11.00":
+          - paragraph: £11.00
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "TUESDAY"
+        - cell "21/10/2025"
+    - paragraph: "Results per page:"
+    - combobox: "10"
+    - navigation "pagination navigation":
+      - list:
+        - listitem:
+          - button "Go to previous page" [disabled]
+        - listitem:
+          - button "page 1": "1"
+        - listitem:
+          - button "Go to next page" [disabled]
+- img
+```

@@ -1,0 +1,161 @@
+# Page snapshot
+
+```yaml
+- img
+- heading "Payments" [level=6]
+- text: Amazon Express Depot
+- textbox "Search..."
+- button "Profile Settings":
+  - img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+  - listitem:
+    - button "My Drivers":
+      - img
+  - listitem:
+    - button "Scheduling":
+      - img
+  - listitem:
+    - button "Payments":
+      - img
+  - listitem:
+    - button "Reports":
+      - img
+  - listitem:
+    - button "Knowledge Base":
+      - img
+  - listitem:
+    - button "FAQ":
+      - img
+  - listitem:
+    - button "Vehicle Management":
+      - img
+  - listitem:
+    - button "Devices"
+  - listitem:
+    - button "Agreements":
+      - img
+  - listitem:
+    - button "Depots":
+      - img
+- button "Admin Dashboard":
+  - img
+- button "Settings":
+  - img
+- main:
+  - link "Payments":
+    - /url: /dsp/finance/payments
+  - link "Deductions":
+    - /url: /dsp/finance/deductions
+  - link "Invoicing":
+    - /url: /dsp/finance/invoicing
+  - heading "Payments" [level=6]
+  - text: "2"
+  - button "This Week"
+  - button "This Month"
+  - button "Last Week"
+  - button "Select custom date range"
+  - button
+  - heading "Week 42" [level=6]
+  - paragraph: 12-10-2025 - 18-10-2025
+  - button
+  - button "Payment & Invoice"
+  - button "Approve Payments" [disabled]
+  - button "Filters"
+  - button "Payments"
+  - grid:
+    - rowgroup:
+      - row "Select all rows Date Reference No Invoice Reference ID Driver Name Gross VAT Admin Fee Refund Fee Deduction Reference ID Total Deduction amount Net Pay Day Status Actions":
+        - columnheader "Select all rows":
+          - checkbox "Select all rows"
+        - columnheader "Date"
+        - columnheader "Reference No"
+        - columnheader "Invoice Reference ID"
+        - columnheader "Driver Name"
+        - columnheader "Gross"
+        - columnheader "VAT"
+        - columnheader "Admin Fee"
+        - columnheader "Refund Fee"
+        - columnheader "Deduction Reference ID"
+        - columnheader "Total Deduction amount"
+        - columnheader "Net"
+        - columnheader "Pay Day"
+        - columnheader "Status"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "Select row 14-10-2025 RAT003 INV0003 HR Haroon Riaz kelivvora12@gmail.com £40.00 £0.00 - - Select Deduction Reference ID £0.00 £40.00 TUESDAY Pending":
+        - cell "Select row":
+          - checkbox "Select row"
+        - cell "14-10-2025":
+          - paragraph: 14-10-2025
+        - cell "RAT003"
+        - cell "INV0003"
+        - cell "HR Haroon Riaz kelivvora12@gmail.com":
+          - text: HR
+          - paragraph: Haroon Riaz
+          - paragraph: kelivvora12@gmail.com
+        - cell "£40.00":
+          - paragraph: £40.00
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "-":
+          - paragraph: "-"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Select Deduction Reference ID":
+          - paragraph: Select Deduction Reference ID
+          - button
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "£40.00":
+          - paragraph: £40.00
+        - cell "TUESDAY":
+          - paragraph: TUESDAY
+        - cell "Pending"
+        - cell:
+          - button
+      - row "Select row 14-10-2025 RATNAM--000000NaN INV0008 IT Import Tester abdulwahabas3181@gmail.com £5.80 £0.00 - - Select Deduction Reference ID £0.00 £5.80 TUESDAY Test pagination 2":
+        - cell "Select row":
+          - checkbox "Select row"
+        - cell "14-10-2025":
+          - paragraph: 14-10-2025
+        - cell "RATNAM--000000NaN"
+        - cell "INV0008"
+        - cell "IT Import Tester abdulwahabas3181@gmail.com":
+          - text: IT
+          - paragraph: Import Tester
+          - paragraph: abdulwahabas3181@gmail.com
+        - cell "£5.80":
+          - paragraph: £5.80
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "-":
+          - paragraph: "-"
+        - cell "-":
+          - paragraph: "-"
+        - cell "Select Deduction Reference ID":
+          - paragraph: Select Deduction Reference ID
+          - button
+        - cell "£0.00":
+          - paragraph: £0.00
+        - cell "£5.80":
+          - paragraph: £5.80
+        - cell "TUESDAY":
+          - paragraph: TUESDAY
+        - cell "Test pagination 2"
+        - cell:
+          - button
+    - paragraph: "Results per page:"
+    - combobox: "10"
+    - navigation "pagination navigation":
+      - list:
+        - listitem:
+          - button "Go to previous page" [disabled]
+        - listitem:
+          - button "page 1": "1"
+        - listitem:
+          - button "Go to next page" [disabled]
+- img
+```

@@ -1,0 +1,181 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading "Settings" [level=6] [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e21]: Amazon Express Depot
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - textbox "Search..." [ref=e26]: Darren Admin Rate fees
+      - generic [ref=e27]:
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button "Profile Settings" [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+    - generic [ref=e36]:
+      - generic [ref=e38]:
+        - list [ref=e40]:
+          - listitem [ref=e41]:
+            - button "Dashboard" [ref=e42] [cursor=pointer]:
+              - generic "Dashboard" [ref=e43]:
+                - img [ref=e44]
+          - listitem [ref=e49]:
+            - button "My Drivers" [ref=e50] [cursor=pointer]:
+              - generic "My Drivers" [ref=e51]:
+                - img [ref=e52]
+          - listitem [ref=e58]:
+            - button "Scheduling" [ref=e59] [cursor=pointer]:
+              - generic "Scheduling" [ref=e60]:
+                - img [ref=e61]
+          - listitem [ref=e65]:
+            - button "Payments" [ref=e66] [cursor=pointer]:
+              - generic "Payments" [ref=e67]:
+                - img [ref=e68]
+          - listitem [ref=e75]:
+            - button "Reports" [ref=e76] [cursor=pointer]:
+              - generic "Reports" [ref=e77]:
+                - img [ref=e78]
+          - listitem [ref=e83]:
+            - button "Knowledge Base" [ref=e84] [cursor=pointer]:
+              - generic "Knowledge Base" [ref=e85]:
+                - img [ref=e86]
+          - listitem [ref=e88]:
+            - button "FAQ" [ref=e89] [cursor=pointer]:
+              - generic "FAQ" [ref=e90]:
+                - img [ref=e91]
+          - listitem [ref=e95]:
+            - button "Vehicle Management" [ref=e96] [cursor=pointer]:
+              - generic "Vehicle Management" [ref=e97]:
+                - img [ref=e98]
+          - listitem [ref=e103]:
+            - button "Devices" [ref=e104] [cursor=pointer]:
+              - generic "Devices" [ref=e105]:
+                - img [ref=e106]
+          - listitem [ref=e108]:
+            - button "Agreements" [ref=e109] [cursor=pointer]:
+              - generic "Agreements" [ref=e110]:
+                - img [ref=e111]
+          - listitem [ref=e114]:
+            - button "Depots" [ref=e115] [cursor=pointer]:
+              - generic "Depots" [ref=e116]:
+                - img [ref=e117]
+        - generic [ref=e120]:
+          - button "Admin Dashboard" [ref=e121] [cursor=pointer]:
+            - img [ref=e122]
+          - button "Settings" [ref=e127] [cursor=pointer]:
+            - img [ref=e128]
+      - main [ref=e132]:
+        - generic [ref=e133]:
+          - generic [ref=e135]:
+            - paragraph [ref=e137] [cursor=pointer]: General Settings
+            - paragraph [ref=e139] [cursor=pointer]: Payment Details
+            - paragraph [ref=e141] [cursor=pointer]: User Management
+            - paragraph [ref=e143] [cursor=pointer]: DSP Mapper
+            - paragraph [ref=e145] [cursor=pointer]: Payment Settings
+          - generic [ref=e146]:
+            - tablist [ref=e151]:
+              - tab "Admin Fee Rate" [selected] [ref=e152] [cursor=pointer]: Admin Fee Rate
+              - tab "General Settings" [ref=e153] [cursor=pointer]: General Settings
+              - tab "Rate Card" [ref=e154] [cursor=pointer]: Rate Card
+            - tabpanel [ref=e156]:
+              - generic [ref=e160]:
+                - generic [ref=e162]:
+                  - generic [ref=e163]:
+                    - heading "Admin Fee Rate" [level=6] [ref=e164]
+                    - generic [ref=e166]: "3"
+                  - generic [ref=e167]:
+                    - button "Filters" [ref=e168] [cursor=pointer]:
+                      - img [ref=e170]
+                      - text: Filters
+                    - button "Add New Rate" [ref=e172] [cursor=pointer]:
+                      - img [ref=e174]
+                      - text: Add New Rate
+                - grid [ref=e177]:
+                  - generic [ref=e178]:
+                    - rowgroup [ref=e179]:
+                      - row "Name Admin Fee Before VAT Invoice Model VAT Status Drivers Admin Fee After VAT" [ref=e180]:
+                        - columnheader "Name" [ref=e181] [cursor=pointer]:
+                          - generic [ref=e183]: Name
+                        - columnheader "Admin Fee Before VAT" [ref=e184] [cursor=pointer]:
+                          - generic [ref=e186]: Admin Fee Before VAT
+                        - columnheader "Invoice Model" [ref=e187] [cursor=pointer]:
+                          - generic [ref=e189]: Invoice Model
+                        - columnheader "VAT Status" [ref=e190] [cursor=pointer]:
+                          - generic [ref=e192]: VAT Status
+                        - columnheader "Drivers" [ref=e193] [cursor=pointer]:
+                          - generic [ref=e195]: Drivers
+                        - columnheader "Admin Fee After VAT" [ref=e196] [cursor=pointer]:
+                          - generic [ref=e198]: Admin Fee After VAT
+                        - columnheader [ref=e199]
+                    - rowgroup [ref=e200]:
+                      - row "Darren Admin Rate feess £150 Ratnam Invoicing Yes Add Drivers £180" [ref=e201]:
+                        - cell "Darren Admin Rate feess" [ref=e202]
+                        - cell "£150" [ref=e203]
+                        - cell "Ratnam Invoicing" [ref=e204]:
+                          - generic [ref=e205]: Ratnam Invoicing
+                        - cell "Yes" [ref=e206]:
+                          - generic [ref=e208]: "Yes"
+                        - cell "Add Drivers" [ref=e209]:
+                          - button "Add Drivers" [ref=e210] [cursor=pointer]:
+                            - img [ref=e212]
+                            - generic [ref=e214]: Add Drivers
+                        - cell "£180" [ref=e215]
+                        - cell [ref=e216]:
+                          - button [ref=e217] [cursor=pointer]:
+                            - img [ref=e218]
+                      - row "Darren Admin Rate feesww £150 Ratnam Invoicing Yes Add Drivers £180" [ref=e221]:
+                        - cell "Darren Admin Rate feesww" [ref=e222]
+                        - cell "£150" [ref=e223]
+                        - cell "Ratnam Invoicing" [ref=e224]:
+                          - generic [ref=e225]: Ratnam Invoicing
+                        - cell "Yes" [ref=e226]:
+                          - generic [ref=e228]: "Yes"
+                        - cell "Add Drivers" [ref=e229]:
+                          - button "Add Drivers" [ref=e230] [cursor=pointer]:
+                            - img [ref=e232]
+                            - generic [ref=e234]: Add Drivers
+                        - cell "£180" [ref=e235]
+                        - cell [ref=e236]:
+                          - button [ref=e237] [cursor=pointer]:
+                            - img [ref=e238]
+                      - row "Darren Admin Rate fees £150 Ratnam Invoicing Yes Newtree next £180" [ref=e241]:
+                        - cell "Darren Admin Rate fees" [ref=e242]
+                        - cell "£150" [ref=e243]
+                        - cell "Ratnam Invoicing" [ref=e244]:
+                          - generic [ref=e245]: Ratnam Invoicing
+                        - cell "Yes" [ref=e246]:
+                          - generic [ref=e248]: "Yes"
+                        - cell "Newtree next" [ref=e249]:
+                          - generic [ref=e250]: Newtree next
+                        - cell "£180" [ref=e251]
+                        - cell [ref=e252]:
+                          - button [ref=e253] [cursor=pointer]:
+                            - img [ref=e254]
+                  - generic [ref=e257]:
+                    - generic [ref=e258]:
+                      - paragraph [ref=e259]: "Results per page:"
+                      - generic [ref=e260]:
+                        - combobox [ref=e261] [cursor=pointer]: "10"
+                        - textbox: "10"
+                        - img
+                        - group
+                    - navigation "pagination navigation" [ref=e263]:
+                      - list [ref=e264]:
+                        - listitem [ref=e265]:
+                          - button "Go to previous page" [disabled]:
+                            - img
+                        - listitem [ref=e266]:
+                          - button "page 1" [ref=e267] [cursor=pointer]: "1"
+                        - listitem [ref=e268]:
+                          - button "Go to next page" [disabled]:
+                            - img
+  - img
+```

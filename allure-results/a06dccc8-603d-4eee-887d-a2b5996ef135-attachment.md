@@ -1,0 +1,132 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+      - button "Profile Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+    - generic [ref=e20]:
+      - list [ref=e24]:
+        - listitem [ref=e25]:
+          - button "Dashboard" [ref=e26] [cursor=pointer]:
+            - generic "Dashboard" [ref=e27]:
+              - img [ref=e28]
+        - listitem [ref=e33]:
+          - button "Payment Status" [ref=e34] [cursor=pointer]:
+            - generic "Payment Status" [ref=e35]:
+              - img [ref=e36]
+        - listitem [ref=e42]:
+          - button "VAT-UTR" [ref=e43] [cursor=pointer]:
+            - generic "VAT-UTR" [ref=e44]:
+              - img [ref=e45]
+        - listitem [ref=e51]:
+          - button "Customers" [ref=e52] [cursor=pointer]:
+            - generic "Customers" [ref=e53]:
+              - img [ref=e54]
+        - listitem [ref=e60]:
+          - button "Agreements Keys" [ref=e61] [cursor=pointer]:
+            - generic "Agreements Keys" [ref=e62]:
+              - img [ref=e63]
+        - listitem [ref=e66]:
+          - button "Roles" [ref=e67] [cursor=pointer]:
+            - generic "Roles" [ref=e68]:
+              - img [ref=e69]
+        - listitem [ref=e72]:
+          - button "Accounts" [ref=e73] [cursor=pointer]:
+            - generic "Accounts" [ref=e74]:
+              - img [ref=e75]
+      - main [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e84]: Hi super 👋
+            - generic [ref=e85]: Welcome Back
+          - generic [ref=e86]:
+            - generic [ref=e88]:
+              - generic [ref=e91]:
+                - img [ref=e93]
+                - generic [ref=e95]: Total DSPs
+              - generic [ref=e97]:
+                - generic [ref=e98]: DSPs that are present for SAM Onboarding Team
+                - generic [ref=e101]: "0"
+            - generic [ref=e103]:
+              - generic [ref=e106]:
+                - img [ref=e108]
+                - generic [ref=e110]: Active Drivers
+              - generic [ref=e112]:
+                - generic [ref=e113]: Drivers that are present for SAM Onboarding Team
+                - generic [ref=e116]: "0"
+            - generic [ref=e118]:
+              - generic [ref=e121]:
+                - img [ref=e123]
+                - generic [ref=e125]: Onboarding Drivers
+              - generic [ref=e127]:
+                - generic [ref=e128]: Drivers that are present for SAM Onboarding Team
+                - generic [ref=e131]: "0"
+            - generic [ref=e133]:
+              - generic [ref=e136]:
+                - img [ref=e138]
+                - generic [ref=e140]: Pending Signature
+              - generic [ref=e142]:
+                - generic [ref=e143]: Drivers that are present for SAM Onboarding Team
+                - generic [ref=e146]: "0"
+            - generic [ref=e148]:
+              - generic [ref=e151]:
+                - img [ref=e152]
+                - generic [ref=e154]: Mobile app
+              - generic [ref=e156]:
+                - generic [ref=e157]:
+                  - generic [ref=e158]: App User
+                  - generic [ref=e159]: "0"
+                - generic [ref=e161]:
+                  - generic [ref=e162]: Pending Request
+                  - generic [ref=e163]: "0"
+          - generic [ref=e164]:
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - heading "DSPs" [level=6] [ref=e168]
+                - generic [ref=e170]: 0 Dsps
+                - generic [ref=e172]:
+                  - generic [ref=e175] [cursor=pointer]: Active DSPs
+                  - generic [ref=e178] [cursor=pointer]: Inactive DSPs
+              - generic [ref=e179]:
+                - generic [ref=e181]:
+                  - button [ref=e183] [cursor=pointer]:
+                    - img [ref=e184]
+                  - textbox "Search by Name" [active] [ref=e186]: For automation
+                  - button [ref=e188] [cursor=pointer]:
+                    - img [ref=e189]
+                  - group
+                - button "Add DSP" [ref=e191] [cursor=pointer]:
+                  - img [ref=e193]
+                  - text: Add DSP
+            - grid [ref=e196]:
+              - generic [ref=e197]:
+                - rowgroup [ref=e198]:
+                  - row "DSP Contact Number Status Products" [ref=e199]:
+                    - columnheader "DSP" [ref=e200]:
+                      - generic [ref=e202]: DSP
+                    - columnheader "Contact Number" [ref=e203]:
+                      - generic [ref=e205]: Contact Number
+                    - columnheader "Status" [ref=e206]:
+                      - generic [ref=e208]: Status
+                    - columnheader "Products" [ref=e209]:
+                      - generic [ref=e211]: Products
+                    - columnheader [ref=e212]
+                - generic [ref=e214]: NO DATA AVAILABLE.
+                - rowgroup
+              - navigation "pagination navigation" [ref=e216]:
+                - list [ref=e217]:
+                  - listitem [ref=e218]:
+                    - button "Go to previous page" [disabled]:
+                      - img
+                      - text: Previous
+                  - listitem [ref=e219]:
+                    - button "Go to next page" [disabled]:
+                      - text: Next
+                      - img
+  - img
+```

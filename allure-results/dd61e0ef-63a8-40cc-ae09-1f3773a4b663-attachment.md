@@ -1,0 +1,86 @@
+# Page snapshot
+
+```yaml
+- img
+- list:
+  - listitem:
+    - button "Dashboard":
+      - img
+      - text: Dashboard
+  - listitem:
+    - button "Payment Status":
+      - img
+      - text: Payment Status
+  - listitem:
+    - button "VAT-UTR":
+      - img
+      - text: VAT-UTR
+  - listitem:
+    - button "Customers":
+      - img
+      - text: Customers
+  - listitem:
+    - button "Agreements Keys":
+      - img
+      - text: Agreements Keys
+  - listitem:
+    - button "Roles":
+      - img
+      - text: Roles
+- main:
+  - heading "Dashboard" [level=6]
+  - button "Profile Settings"
+  - paragraph: Welcome Back, super
+  - img
+  - heading "0" [level=1]
+  - heading "Total DSPs" [level=5]
+  - paragraph
+  - img
+  - heading "0" [level=1]
+  - heading "Active Drivers" [level=5]
+  - paragraph
+  - img
+  - heading "0" [level=1]
+  - heading "Onboarding Drivers" [level=5]
+  - paragraph
+  - img
+  - heading "0" [level=1]
+  - heading "Pending Signatures" [level=5]
+  - paragraph
+  - text: App Users 0 Pending App Download 0 Invoice Viewed 0
+  - paragraph: Active DSPs
+  - paragraph: Inactive DSPs
+  - button "Add new DSP"
+  - heading "DSPs" [level=6]
+  - text: 1 Dsps
+  - button:
+    - img
+  - textbox "Search by Name": SAM Onboarding Teams
+  - button
+  - grid:
+    - rowgroup:
+      - row "DSP Name Contact Status Product/s":
+        - columnheader "DSP Name"
+        - columnheader "Contact"
+        - columnheader "Status"
+        - columnheader "Product/s"
+        - columnheader
+    - rowgroup:
+      - row "SAM Onboarding Teams +4403206083111 Active":
+        - cell "SAM Onboarding Teams"
+        - cell "+4403206083111"
+        - cell "Active"
+        - cell:
+          - img
+        - cell:
+          - button
+    - navigation "pagination navigation":
+      - list:
+        - listitem:
+          - button "Go to previous page" [disabled]: Previous
+        - listitem:
+          - button "page 1": "1"
+        - listitem:
+          - button "Go to next page" [disabled]: Next
+- img
+```
