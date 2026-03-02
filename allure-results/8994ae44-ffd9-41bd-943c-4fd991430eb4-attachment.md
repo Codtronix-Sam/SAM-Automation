@@ -1,0 +1,373 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading [level=6] [ref=e16]: Payments
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e21]: Amz Depot
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - textbox [ref=e26]:
+            - /placeholder: Search...
+      - button [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - button [ref=e37] [cursor=pointer]:
+              - img [ref=e39]
+          - listitem [ref=e44]:
+            - button [ref=e45] [cursor=pointer]:
+              - img [ref=e47]
+          - listitem [ref=e53]:
+            - button [ref=e54] [cursor=pointer]:
+              - img [ref=e56]
+          - listitem [ref=e60]:
+            - button [ref=e61] [cursor=pointer]:
+              - img [ref=e63]
+          - listitem [ref=e70]:
+            - button [ref=e71] [cursor=pointer]:
+              - img [ref=e73]
+          - listitem [ref=e78]:
+            - button [ref=e79] [cursor=pointer]:
+              - img [ref=e81]
+          - listitem [ref=e83]:
+            - button [ref=e84] [cursor=pointer]:
+              - img [ref=e86]
+          - listitem [ref=e90]:
+            - button [ref=e91] [cursor=pointer]:
+              - img [ref=e93]
+          - listitem [ref=e98]:
+            - button [ref=e99] [cursor=pointer]:
+              - img [ref=e101]
+          - listitem [ref=e103]:
+            - button [ref=e104] [cursor=pointer]:
+              - img [ref=e106]
+          - listitem [ref=e109]:
+            - button [ref=e110] [cursor=pointer]:
+              - img [ref=e112]
+          - listitem [ref=e115]:
+            - button [ref=e116] [cursor=pointer]:
+              - img [ref=e118]
+        - generic [ref=e122]:
+          - button [ref=e123] [cursor=pointer]:
+            - img [ref=e124]
+          - button [ref=e129] [cursor=pointer]:
+            - img [ref=e130]
+      - main [ref=e134]:
+        - generic [ref=e136]:
+          - generic [ref=e138]:
+            - link [ref=e139] [cursor=pointer]:
+              - /url: /dsp/finance/payments
+              - text: Payments
+            - link [ref=e140] [cursor=pointer]:
+              - /url: /dsp/finance/deductions
+              - text: Deductions
+          - generic [ref=e141]:
+            - generic [ref=e143] [cursor=pointer]: Few Actions Required for this week - View Insights
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - generic [ref=e146]:
+                  - generic [ref=e147]:
+                    - heading [level=6] [ref=e148]: Invoices
+                    - generic [ref=e150]: 6 Invoices
+                    - generic [ref=e154] [cursor=pointer]:
+                      - button [ref=e155]:
+                        - img [ref=e156]
+                      - heading [level=6] [ref=e158]: Week 8
+                      - paragraph [ref=e159]: 15-02-2026 - 21-02-2026
+                      - button [ref=e160]:
+                        - img [ref=e161]
+                  - generic [ref=e163]:
+                    - generic [ref=e165]:
+                      - button [ref=e166] [cursor=pointer]:
+                        - img [ref=e168]
+                        - text: Add New Invoice
+                      - button [ref=e170] [cursor=pointer]: Approve Payments
+                      - button [ref=e171] [cursor=pointer]: Bulk Update
+                      - button [ref=e172] [cursor=pointer]:
+                        - img [ref=e173]
+                    - button [ref=e175] [cursor=pointer]:
+                      - img [ref=e177]
+                      - text: Filters
+                    - button [ref=e179] [cursor=pointer]:
+                      - img [ref=e181]
+                      - text: Columns
+                - generic [ref=e185]:
+                  - button [ref=e187] [cursor=pointer]: Adjust Shortfall (3)
+                  - button [ref=e189] [cursor=pointer]: Delete (6)
+              - grid [ref=e191]:
+                - generic [ref=e192]:
+                  - rowgroup [ref=e193]:
+                    - row [ref=e194]:
+                      - columnheader [ref=e195]:
+                        - generic [ref=e197] [cursor=pointer]:
+                          - checkbox [checked] [ref=e198]
+                          - img [ref=e199]
+                      - columnheader [ref=e201] [cursor=pointer]:
+                        - generic [ref=e203]: Invoice Date
+                      - columnheader [ref=e204] [cursor=pointer]:
+                        - generic [ref=e206]: Invoice Creation Date
+                      - columnheader [ref=e207] [cursor=pointer]:
+                        - generic [ref=e209]: Driver Name
+                      - columnheader [ref=e210] [cursor=pointer]:
+                        - generic [ref=e212]: Invoice Ref. No.
+                      - columnheader [ref=e213] [cursor=pointer]:
+                        - generic [ref=e215]: Status
+                      - columnheader [ref=e216] [cursor=pointer]:
+                        - generic [ref=e218]: Invoicing Model
+                      - columnheader [ref=e219] [cursor=pointer]:
+                        - generic [ref=e221]: Net
+                      - columnheader [ref=e222] [cursor=pointer]:
+                        - generic [ref=e224]: VAT
+                      - columnheader [ref=e225] [cursor=pointer]:
+                        - generic [ref=e227]: Gross
+                      - columnheader [ref=e228] [cursor=pointer]:
+                        - generic [ref=e230]: Total to be Paid to Driver
+                      - columnheader [ref=e231]:
+                        - generic [ref=e233]: Actions
+                  - rowgroup [ref=e234]:
+                    - row [selected] [ref=e235] [cursor=pointer]:
+                      - cell [ref=e236]:
+                        - generic [ref=e237]:
+                          - checkbox [checked] [ref=e238]
+                          - img [ref=e239]
+                      - cell [ref=e241]:
+                        - paragraph [ref=e243]: 21/02/2026
+                      - cell [ref=e244]:
+                        - paragraph [ref=e246]: 29/01/2026
+                      - cell [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: OA
+                          - generic [ref=e251]:
+                            - paragraph [ref=e252]: OSMs AdminFeeVat
+                            - paragraph [ref=e253]: aliabdelrazik2021@gmail.com
+                      - cell [ref=e254]:
+                        - paragraph [ref=e256]: INV0245
+                      - cell [ref=e257]:
+                        - generic [ref=e259]: Unpaid
+                      - cell [ref=e260]:
+                        - paragraph [ref=e262]: Ratnam Invoicing
+                      - cell [ref=e263]:
+                        - paragraph [ref=e265]: £10768.84
+                      - cell [ref=e266]:
+                        - paragraph [ref=e268]: £2402.93
+                      - cell [ref=e269]:
+                        - paragraph [ref=e271]: £13171.77
+                      - cell [ref=e272]:
+                        - paragraph [ref=e274]: £13171.77
+                      - cell [ref=e275]:
+                        - button [ref=e277]:
+                          - img [ref=e278]
+                    - row [selected] [ref=e280] [cursor=pointer]:
+                      - cell [ref=e281]:
+                        - generic [ref=e282]:
+                          - checkbox [checked] [ref=e283]
+                          - img [ref=e284]
+                      - cell [ref=e286]:
+                        - paragraph [ref=e288]: 21/02/2026
+                      - cell [ref=e289]:
+                        - paragraph [ref=e291]: 29/01/2026
+                      - cell [ref=e292]:
+                        - generic [ref=e294]:
+                          - generic [ref=e295]: IN
+                          - generic [ref=e296]:
+                            - paragraph [ref=e297]: InvNoDriverVAT NoAdminFeeVAT
+                            - paragraph [ref=e298]: andrius.bulatovas@gmail.com
+                      - cell [ref=e299]:
+                        - paragraph [ref=e301]: INV0244
+                      - cell [ref=e302]:
+                        - generic [ref=e304]: Unpaid
+                      - cell [ref=e305]:
+                        - paragraph [ref=e307]: Ratnam Invoicing
+                      - cell [ref=e308]:
+                        - paragraph [ref=e310]: £47.50
+                      - cell [ref=e311]:
+                        - paragraph [ref=e313]: £0.00
+                      - cell [ref=e314]:
+                        - paragraph [ref=e316]: £47.50
+                      - cell [ref=e317]:
+                        - paragraph [ref=e319]: £47.50
+                      - cell [ref=e320]:
+                        - button [ref=e322]:
+                          - img [ref=e323]
+                    - row [selected] [ref=e325] [cursor=pointer]:
+                      - cell [ref=e326]:
+                        - generic [ref=e327]:
+                          - checkbox [checked] [ref=e328]
+                          - img [ref=e329]
+                      - cell [ref=e331]:
+                        - paragraph [ref=e333]: 21/02/2026
+                      - cell [ref=e334]:
+                        - paragraph [ref=e336]: 29/01/2026
+                      - cell [ref=e337]:
+                        - generic [ref=e339]:
+                          - generic [ref=e340]: IN
+                          - generic [ref=e341]:
+                            - paragraph [ref=e342]: InvDriverVAT NoAdminFeeVAT
+                            - paragraph [ref=e343]: opex00000@inbox.lv
+                      - cell [ref=e344]:
+                        - paragraph [ref=e346]: INV0243
+                      - cell [ref=e347]:
+                        - generic [ref=e349]: Unpaid
+                      - cell [ref=e350]:
+                        - paragraph [ref=e352]: Ratnam Invoicing
+                      - cell [ref=e353]:
+                        - paragraph [ref=e355]: £32.50
+                      - cell [ref=e356]:
+                        - paragraph [ref=e358]: £18.00
+                      - cell [ref=e359]:
+                        - paragraph [ref=e361]: £50.50
+                      - cell [ref=e362]:
+                        - paragraph [ref=e364]: £50.50
+                      - cell [ref=e365]:
+                        - button [ref=e367]:
+                          - img [ref=e368]
+                    - row [selected] [ref=e370] [cursor=pointer]:
+                      - cell [ref=e371]:
+                        - generic [ref=e372]:
+                          - checkbox [checked] [ref=e373]
+                          - img [ref=e374]
+                      - cell [ref=e376]:
+                        - paragraph [ref=e377]: 21/02/2026
+                      - cell [ref=e378]:
+                        - paragraph [ref=e379]: 19/12/2025
+                      - cell [ref=e380]:
+                        - generic [ref=e381]:
+                          - generic [ref=e382]: cn
+                          - generic [ref=e383]:
+                            - paragraph [ref=e384]: cope nope
+                            - paragraph [ref=e385]: cope@train.com
+                      - cell [ref=e386]:
+                        - paragraph [ref=e387]: INV0132
+                      - cell [ref=e388]:
+                        - generic [ref=e389]: Unpaid
+                      - cell [ref=e390]:
+                        - paragraph [ref=e391]: Ratnam Invoicing
+                      - cell [ref=e392]:
+                        - paragraph [ref=e393]: £96.21
+                      - cell [ref=e394]:
+                        - paragraph [ref=e395]: £0.00
+                      - cell [ref=e396]:
+                        - paragraph [ref=e397]: £96.21
+                      - cell [ref=e398]:
+                        - paragraph [ref=e399]: £96.21
+                      - cell [ref=e400]:
+                        - button [ref=e401]:
+                          - img [ref=e402]
+                    - row [selected] [ref=e404] [cursor=pointer]:
+                      - cell [ref=e405]:
+                        - generic [ref=e406]:
+                          - checkbox [checked] [ref=e407]
+                          - img [ref=e408]
+                      - cell [ref=e410]:
+                        - paragraph [ref=e411]: 21/02/2026
+                      - cell [ref=e412]:
+                        - paragraph [ref=e413]: 18/12/2025
+                      - cell [ref=e414]:
+                        - generic [ref=e415]:
+                          - generic [ref=e416]: DN
+                          - generic [ref=e417]:
+                            - paragraph [ref=e418]: DriverVATs NoAdminFeeVAT
+                            - paragraph [ref=e419]: st.anthony80@gmail.com
+                      - cell [ref=e420]:
+                        - paragraph [ref=e421]: INV0125
+                      - cell [ref=e422]:
+                        - generic [ref=e423]: Unpaid
+                      - cell [ref=e424]:
+                        - paragraph [ref=e425]: Ratnam Accountancy
+                      - cell [ref=e426]:
+                        - paragraph [ref=e427]: £87.90
+                      - cell [ref=e428]:
+                        - paragraph [ref=e429]: £25.90
+                      - cell [ref=e430]:
+                        - paragraph [ref=e431]: £113.80
+                      - cell [ref=e432]:
+                        - paragraph [ref=e433]: £119.90
+                      - cell [ref=e434]:
+                        - button [ref=e435]:
+                          - img [ref=e436]
+                    - row [selected] [ref=e438] [cursor=pointer]:
+                      - cell [ref=e439]:
+                        - generic [ref=e440]:
+                          - checkbox [checked] [ref=e441]
+                          - img [ref=e442]
+                      - cell [ref=e444]:
+                        - paragraph [ref=e445]: 21/02/2026
+                      - cell [ref=e446]:
+                        - paragraph [ref=e447]: 18/12/2025
+                      - cell [ref=e448]:
+                        - generic [ref=e449]:
+                          - generic [ref=e450]: FA
+                          - generic [ref=e451]:
+                            - paragraph [ref=e452]: Fleet AdminFeeVAT
+                            - paragraph [ref=e453]: baldealiu062@gmail.com
+                      - cell [ref=e454]:
+                        - paragraph [ref=e455]: INV0124
+                      - cell [ref=e456]:
+                        - generic [ref=e457]: Unpaid
+                      - cell [ref=e458]:
+                        - paragraph [ref=e459]: Ratnam Invoicing
+                      - cell [ref=e460]:
+                        - paragraph [ref=e461]: £104.90
+                      - cell [ref=e462]:
+                        - paragraph [ref=e463]: £0.00
+                      - cell [ref=e464]:
+                        - paragraph [ref=e465]: £104.90
+                      - cell [ref=e466]:
+                        - paragraph [ref=e467]: £104.90
+                      - cell [ref=e468]:
+                        - button [ref=e469]:
+                          - img [ref=e470]
+                - generic [ref=e472]:
+                  - generic [ref=e473]:
+                    - paragraph [ref=e474]: "Results per page:"
+                    - generic [ref=e475]:
+                      - combobox [ref=e476] [cursor=pointer]: "10"
+                      - textbox: "10"
+                      - img
+                      - group
+                  - navigation [ref=e478]:
+                    - list [ref=e479]:
+                      - listitem [ref=e480]:
+                        - button [disabled]:
+                          - img
+                      - listitem [ref=e481]:
+                        - button [ref=e482] [cursor=pointer]: "1"
+                      - listitem [ref=e483]:
+                        - button [disabled]:
+                          - img
+  - generic [ref=e486]:
+    - generic [ref=e487]:
+      - heading [level=6] [ref=e489]: Bulk Update Invoices
+      - button [ref=e490] [cursor=pointer]:
+        - img [ref=e491]
+    - generic [ref=e495]:
+      - generic [ref=e496]: Update status for 6 selected invoices
+      - generic [ref=e499]:
+        - combobox [expanded] [ref=e500] [cursor=pointer]:
+          - paragraph [ref=e501]: Select invoice status
+        - img
+        - group
+      - generic [ref=e502]:
+        - button [ref=e503] [cursor=pointer]: Cancel
+        - button [disabled]: Update 6 Invoices
+  - listbox [ref=e506]:
+    - option "Incorrect" [active] [ref=e507] [cursor=pointer]: Incorrect
+    - option "Payment On Hold" [ref=e508] [cursor=pointer]: Payment On Hold
+    - option "Unpaid" [ref=e509] [cursor=pointer]: Unpaid
+    - option "Paid" [ref=e510] [cursor=pointer]: Paid
+    - option "For pagination 3" [ref=e511] [cursor=pointer]: For pagination 3
+    - option "Test mandartory" [ref=e512] [cursor=pointer]: Test mandartory
+    - option "Test pagination 2" [ref=e513] [cursor=pointer]: Test pagination 2
+    - option "Pass" [ref=e514] [cursor=pointer]: Pass
+    - option "lie" [ref=e515] [cursor=pointer]: lie
+```

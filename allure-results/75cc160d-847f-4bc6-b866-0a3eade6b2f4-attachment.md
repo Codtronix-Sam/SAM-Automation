@@ -1,0 +1,364 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading "Payments" [level=6] [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e21]: Amz Depot
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - textbox "Search..." [ref=e26]
+      - button "Profile Settings" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - button "Dashboard" [ref=e37] [cursor=pointer]:
+              - generic "Dashboard" [ref=e38]:
+                - img [ref=e39]
+          - listitem [ref=e44]:
+            - button "My Drivers" [ref=e45] [cursor=pointer]:
+              - generic "My Drivers" [ref=e46]:
+                - img [ref=e47]
+          - listitem [ref=e53]:
+            - button "Scheduling" [ref=e54] [cursor=pointer]:
+              - generic "Scheduling" [ref=e55]:
+                - img [ref=e56]
+          - listitem [ref=e60]:
+            - button "Payments" [active] [ref=e61] [cursor=pointer]:
+              - generic "Payments" [ref=e62]:
+                - img [ref=e63]
+          - listitem [ref=e70]:
+            - button "Reports" [ref=e71] [cursor=pointer]:
+              - generic "Reports" [ref=e72]:
+                - img [ref=e73]
+          - listitem [ref=e78]:
+            - button "Knowledge Base" [ref=e79] [cursor=pointer]:
+              - generic "Knowledge Base" [ref=e80]:
+                - img [ref=e81]
+          - listitem [ref=e83]:
+            - button "FAQ" [ref=e84] [cursor=pointer]:
+              - generic "FAQ" [ref=e85]:
+                - img [ref=e86]
+          - listitem [ref=e90]:
+            - button "Vehicle Management" [ref=e91] [cursor=pointer]:
+              - generic "Vehicle Management" [ref=e92]:
+                - img [ref=e93]
+          - listitem [ref=e98]:
+            - button "Devices" [ref=e99] [cursor=pointer]:
+              - generic "Devices" [ref=e100]:
+                - img [ref=e101]
+          - listitem [ref=e103]:
+            - button "Agreements" [ref=e104] [cursor=pointer]:
+              - generic "Agreements" [ref=e105]:
+                - img [ref=e106]
+          - listitem [ref=e109]:
+            - button "Depots" [ref=e110] [cursor=pointer]:
+              - generic "Depots" [ref=e111]:
+                - img [ref=e112]
+          - listitem [ref=e115]:
+            - button "Account Settings" [ref=e116] [cursor=pointer]:
+              - generic "Account Settings" [ref=e117]:
+                - img [ref=e118]
+        - generic [ref=e122]:
+          - button "Admin Dashboard" [ref=e123] [cursor=pointer]:
+            - img [ref=e124]
+          - button "Settings" [ref=e129] [cursor=pointer]:
+            - img [ref=e130]
+      - main [ref=e134]:
+        - generic [ref=e136]:
+          - generic [ref=e138]:
+            - link "Payments" [ref=e139] [cursor=pointer]:
+              - /url: /dsp/finance/payments
+            - link "Deductions" [ref=e140] [cursor=pointer]:
+              - /url: /dsp/finance/deductions
+          - generic [ref=e141]:
+            - generic [ref=e143] [cursor=pointer]: Few Actions Required for this week - View Insights
+            - generic [ref=e144]:
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - heading "Invoices" [level=6] [ref=e148]
+                  - generic [ref=e150]: 6 Invoices
+                  - generic [ref=e154] [cursor=pointer]:
+                    - button [ref=e155]:
+                      - img [ref=e156]
+                    - heading "Week 9" [level=6] [ref=e158]
+                    - paragraph [ref=e159]: 22-02-2026 - 28-02-2026
+                    - button [ref=e160]:
+                      - img [ref=e161]
+                - generic [ref=e163]:
+                  - generic [ref=e165]:
+                    - button "Add New Invoice" [ref=e166] [cursor=pointer]:
+                      - img [ref=e168]
+                      - text: Add New Invoice
+                    - button "Approve Payments" [disabled]
+                    - button [ref=e170] [cursor=pointer]:
+                      - img [ref=e171]
+                  - button "Filters" [ref=e173] [cursor=pointer]:
+                    - img [ref=e175]
+                    - text: Filters
+                  - button "Columns" [ref=e177] [cursor=pointer]:
+                    - img [ref=e179]
+                    - text: Columns
+              - grid [ref=e183]:
+                - generic [ref=e184]:
+                  - rowgroup [ref=e185]:
+                    - row "Select all rows Invoice Date Invoice Creation Date Driver Name Invoice Ref. No. Status Invoicing Model Net VAT Gross Total to be Paid to Driver Actions" [ref=e186]:
+                      - columnheader "Select all rows" [ref=e187]:
+                        - generic [ref=e189] [cursor=pointer]:
+                          - checkbox "Select all rows" [ref=e190]
+                          - img [ref=e191]
+                      - columnheader "Invoice Date" [ref=e193] [cursor=pointer]:
+                        - generic [ref=e195]: Invoice Date
+                      - columnheader "Invoice Creation Date" [ref=e196] [cursor=pointer]:
+                        - generic [ref=e198]: Invoice Creation Date
+                      - columnheader "Driver Name" [ref=e199] [cursor=pointer]:
+                        - generic [ref=e201]: Driver Name
+                      - columnheader "Invoice Ref. No." [ref=e202] [cursor=pointer]:
+                        - generic [ref=e204]: Invoice Ref. No.
+                      - columnheader "Status" [ref=e205] [cursor=pointer]:
+                        - generic [ref=e207]: Status
+                      - columnheader "Invoicing Model" [ref=e208] [cursor=pointer]:
+                        - generic [ref=e210]: Invoicing Model
+                      - columnheader "Net" [ref=e211] [cursor=pointer]:
+                        - generic [ref=e213]: Net
+                      - columnheader "VAT" [ref=e214] [cursor=pointer]:
+                        - generic [ref=e216]: VAT
+                      - columnheader "Gross" [ref=e217] [cursor=pointer]:
+                        - generic [ref=e219]: Gross
+                      - columnheader "Total to be Paid to Driver" [ref=e220] [cursor=pointer]:
+                        - generic [ref=e222]: Total to be Paid to Driver
+                      - columnheader "Actions" [ref=e223]:
+                        - generic [ref=e225]: Actions
+                  - rowgroup [ref=e226]:
+                    - 'row "Select row Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR" [ref=e227] [cursor=pointer]':
+                      - cell "Select row" [ref=e228]:
+                        - generic [ref=e229]:
+                          - checkbox "Select row" [ref=e230]
+                          - img [ref=e231]
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e233]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e234]':
+                          - paragraph [ref=e235]: 28/02/2026
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e236]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e237]':
+                          - paragraph [ref=e238]: 23/01/2026
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e239]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e240]':
+                          - generic [ref=e241]:
+                            - generic [ref=e242]: IN
+                            - generic [ref=e243]:
+                              - paragraph [ref=e244]: InvDriverVAT NoAdminFeeVAT
+                              - paragraph [ref=e245]: opex00000@inbox.lv
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e246]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e247]':
+                          - paragraph [ref=e248]: INV0235
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e249]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e250]':
+                          - generic [ref=e251]: pending
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e252]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e253]':
+                          - paragraph [ref=e254]: Ratnam Invoicing
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e255]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e256]':
+                          - paragraph [ref=e257]: £17.50
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e258]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e259]':
+                          - paragraph [ref=e260]: £18.00
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e261]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e262]':
+                          - paragraph [ref=e263]: £35.50
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e264]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e265]':
+                          - paragraph [ref=e266]: £35.50
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e267]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e268]':
+                          - button [ref=e269]:
+                            - img [ref=e270]
+                    - row "Select row 28/02/2026 29/01/2026 DA DriverVAT AdminFeeVAT abdulwahab3183@gmail.com INV0248 scheduled Ratnam Accountancy £61.66 £18.00 £79.66 £79.66" [ref=e272] [cursor=pointer]:
+                      - cell "Select row" [ref=e273]:
+                        - generic [ref=e274]:
+                          - checkbox "Select row" [ref=e275]
+                          - img [ref=e276]
+                      - cell "28/02/2026" [ref=e278]:
+                        - paragraph [ref=e279]: 28/02/2026
+                      - cell "29/01/2026" [ref=e280]:
+                        - paragraph [ref=e281]: 29/01/2026
+                      - cell "DA DriverVAT AdminFeeVAT abdulwahab3183@gmail.com" [ref=e282]:
+                        - generic [ref=e283]:
+                          - generic [ref=e284]: DA
+                          - generic [ref=e285]:
+                            - paragraph [ref=e286]: DriverVAT AdminFeeVAT
+                            - paragraph [ref=e287]: abdulwahab3183@gmail.com
+                      - cell "INV0248" [ref=e288]:
+                        - paragraph [ref=e289]: INV0248
+                      - cell "scheduled" [ref=e290]:
+                        - generic [ref=e291]: scheduled
+                      - cell "Ratnam Accountancy" [ref=e292]:
+                        - paragraph [ref=e293]: Ratnam Accountancy
+                      - cell "£61.66" [ref=e294]:
+                        - paragraph [ref=e295]: £61.66
+                      - cell "£18.00" [ref=e296]:
+                        - paragraph [ref=e297]: £18.00
+                      - cell "£79.66" [ref=e298]:
+                        - paragraph [ref=e299]: £79.66
+                      - cell "£79.66" [ref=e300]:
+                        - paragraph [ref=e301]: £79.66
+                      - cell [ref=e302]:
+                        - button [ref=e303]:
+                          - img [ref=e304]
+                    - row "Select row 28/02/2026 29/01/2026 DA DriverNoVAT AdminFeeVAT affannadir143+osmenabled@gmail.com INV0247 scheduled Ratnam Accountancy £22.00 £18.00 £40.00 £40.00" [ref=e306] [cursor=pointer]:
+                      - cell "Select row" [ref=e307]:
+                        - generic [ref=e308]:
+                          - checkbox "Select row" [ref=e309]
+                          - img [ref=e310]
+                      - cell "28/02/2026" [ref=e312]:
+                        - paragraph [ref=e313]: 28/02/2026
+                      - cell "29/01/2026" [ref=e314]:
+                        - paragraph [ref=e315]: 29/01/2026
+                      - cell "DA DriverNoVAT AdminFeeVAT affannadir143+osmenabled@gmail.com" [ref=e316]:
+                        - generic [ref=e317]:
+                          - generic [ref=e318]: DA
+                          - generic [ref=e319]:
+                            - paragraph [ref=e320]: DriverNoVAT AdminFeeVAT
+                            - paragraph [ref=e321]: affannadir143+osmenabled@gmail.com
+                      - cell "INV0247" [ref=e322]:
+                        - paragraph [ref=e323]: INV0247
+                      - cell "scheduled" [ref=e324]:
+                        - generic [ref=e325]: scheduled
+                      - cell "Ratnam Accountancy" [ref=e326]:
+                        - paragraph [ref=e327]: Ratnam Accountancy
+                      - cell "£22.00" [ref=e328]:
+                        - paragraph [ref=e329]: £22.00
+                      - cell "£18.00" [ref=e330]:
+                        - paragraph [ref=e331]: £18.00
+                      - cell "£40.00" [ref=e332]:
+                        - paragraph [ref=e333]: £40.00
+                      - cell "£40.00" [ref=e334]:
+                        - paragraph [ref=e335]: £40.00
+                      - cell [ref=e336]:
+                        - button [ref=e337]:
+                          - img [ref=e338]
+                    - row "Select row 28/02/2026 29/01/2026 DN DriverVATs NoAdminFeeVAT st.anthony80@gmail.com INV0246 scheduled Ratnam Accountancy £-2.00 £6.00 £4.00 £30.00" [ref=e340] [cursor=pointer]:
+                      - cell "Select row" [ref=e341]:
+                        - generic [ref=e342]:
+                          - checkbox "Select row" [ref=e343]
+                          - img [ref=e344]
+                      - cell "28/02/2026" [ref=e346]:
+                        - paragraph [ref=e347]: 28/02/2026
+                      - cell "29/01/2026" [ref=e348]:
+                        - paragraph [ref=e349]: 29/01/2026
+                      - cell "DN DriverVATs NoAdminFeeVAT st.anthony80@gmail.com" [ref=e350]:
+                        - generic [ref=e351]:
+                          - generic [ref=e352]: DN
+                          - generic [ref=e353]:
+                            - paragraph [ref=e354]: DriverVATs NoAdminFeeVAT
+                            - paragraph [ref=e355]: st.anthony80@gmail.com
+                      - cell "INV0246" [ref=e356]:
+                        - paragraph [ref=e357]: INV0246
+                      - cell "scheduled" [ref=e358]:
+                        - generic [ref=e359]: scheduled
+                      - cell "Ratnam Accountancy" [ref=e360]:
+                        - paragraph [ref=e361]: Ratnam Accountancy
+                      - cell "£-2.00" [ref=e362]:
+                        - paragraph [ref=e363]: £-2.00
+                      - cell "£6.00" [ref=e364]:
+                        - paragraph [ref=e365]: £6.00
+                      - cell "£4.00" [ref=e366]:
+                        - paragraph [ref=e367]: £4.00
+                      - cell "£30.00" [ref=e368]:
+                        - paragraph [ref=e369]: £30.00
+                      - cell [ref=e370]:
+                        - button [ref=e371]:
+                          - img [ref=e372]
+                    - row "Select row 28/02/2026 23/01/2026 OA OSMs AdminFeeVat aliabdelrazik2021@gmail.com INV0236 pending Ratnam Invoicing £73.08 £19.54 £92.62 £92.62" [ref=e374] [cursor=pointer]:
+                      - cell "Select row" [ref=e375]:
+                        - generic [ref=e376]:
+                          - checkbox "Select row" [ref=e377]
+                          - img [ref=e378]
+                      - cell "28/02/2026" [ref=e380]:
+                        - paragraph [ref=e381]: 28/02/2026
+                      - cell "23/01/2026" [ref=e382]:
+                        - paragraph [ref=e383]: 23/01/2026
+                      - cell "OA OSMs AdminFeeVat aliabdelrazik2021@gmail.com" [ref=e384]:
+                        - generic [ref=e385]:
+                          - generic [ref=e386]: OA
+                          - generic [ref=e387]:
+                            - paragraph [ref=e388]: OSMs AdminFeeVat
+                            - paragraph [ref=e389]: aliabdelrazik2021@gmail.com
+                      - cell "INV0236" [ref=e390]:
+                        - paragraph [ref=e391]: INV0236
+                      - cell "pending" [ref=e392]:
+                        - generic [ref=e393]: pending
+                      - cell "Ratnam Invoicing" [ref=e394]:
+                        - paragraph [ref=e395]: Ratnam Invoicing
+                      - cell "£73.08" [ref=e396]:
+                        - paragraph [ref=e397]: £73.08
+                      - cell "£19.54" [ref=e398]:
+                        - paragraph [ref=e399]: £19.54
+                      - cell "£92.62" [ref=e400]:
+                        - paragraph [ref=e401]: £92.62
+                      - cell "£92.62" [ref=e402]:
+                        - paragraph [ref=e403]: £92.62
+                      - cell [ref=e404]:
+                        - button [ref=e405]:
+                          - img [ref=e406]
+                    - row "Select row 28/02/2026 19/12/2025 cn cope nope cope@train.com INV0133 Paid Ratnam Invoicing £97.90 £24.00 £121.90 £121.90" [ref=e408] [cursor=pointer]:
+                      - cell "Select row" [ref=e409]:
+                        - generic [ref=e410]:
+                          - checkbox "Select row" [ref=e411]
+                          - img [ref=e412]
+                      - cell "28/02/2026" [ref=e414]:
+                        - paragraph [ref=e415]: 28/02/2026
+                      - cell "19/12/2025" [ref=e416]:
+                        - paragraph [ref=e417]: 19/12/2025
+                      - cell "cn cope nope cope@train.com" [ref=e418]:
+                        - generic [ref=e419]:
+                          - generic [ref=e420]: cn
+                          - generic [ref=e421]:
+                            - paragraph [ref=e422]: cope nope
+                            - paragraph [ref=e423]: cope@train.com
+                      - cell "INV0133" [ref=e424]:
+                        - paragraph [ref=e425]: INV0133
+                      - cell "Paid" [ref=e426]:
+                        - generic [ref=e427]: Paid
+                      - cell "Ratnam Invoicing" [ref=e428]:
+                        - paragraph [ref=e429]: Ratnam Invoicing
+                      - cell "£97.90" [ref=e430]:
+                        - paragraph [ref=e431]: £97.90
+                      - cell "£24.00" [ref=e432]:
+                        - paragraph [ref=e433]: £24.00
+                      - cell "£121.90" [ref=e434]:
+                        - paragraph [ref=e435]: £121.90
+                      - cell "£121.90" [ref=e436]:
+                        - paragraph [ref=e437]: £121.90
+                      - cell [ref=e438]:
+                        - button [ref=e439]:
+                          - img [ref=e440]
+                - generic [ref=e442]:
+                  - generic [ref=e443]:
+                    - paragraph [ref=e444]: "Results per page:"
+                    - generic [ref=e445]:
+                      - combobox [ref=e446] [cursor=pointer]: "10"
+                      - textbox: "10"
+                      - img
+                      - group
+                  - navigation "pagination navigation" [ref=e448]:
+                    - list [ref=e449]:
+                      - listitem [ref=e450]:
+                        - button "Go to previous page" [disabled]:
+                          - img
+                      - listitem [ref=e451]:
+                        - button "page 1" [ref=e452] [cursor=pointer]: "1"
+                      - listitem [ref=e453]:
+                        - button "Go to next page" [disabled]:
+                          - img
+  - img
+```

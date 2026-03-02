@@ -1,0 +1,286 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading "Create Invoice" [level=6] [ref=e16]
+      - button "Profile Settings" [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Dashboard" [ref=e27] [cursor=pointer]:
+              - generic "Dashboard" [ref=e28]:
+                - img [ref=e29]
+          - listitem [ref=e34]:
+            - button "My Drivers" [ref=e35] [cursor=pointer]:
+              - generic "My Drivers" [ref=e36]:
+                - img [ref=e37]
+          - listitem [ref=e43]:
+            - button "Scheduling" [ref=e44] [cursor=pointer]:
+              - generic "Scheduling" [ref=e45]:
+                - img [ref=e46]
+          - listitem [ref=e50]:
+            - button "Payments" [ref=e51] [cursor=pointer]:
+              - generic "Payments" [ref=e52]:
+                - img [ref=e53]
+          - listitem [ref=e60]:
+            - button "Reports" [ref=e61] [cursor=pointer]:
+              - generic "Reports" [ref=e62]:
+                - img [ref=e63]
+          - listitem [ref=e68]:
+            - button "Knowledge Base" [ref=e69] [cursor=pointer]:
+              - generic "Knowledge Base" [ref=e70]:
+                - img [ref=e71]
+          - listitem [ref=e73]:
+            - button "FAQ" [ref=e74] [cursor=pointer]:
+              - generic "FAQ" [ref=e75]:
+                - img [ref=e76]
+          - listitem [ref=e80]:
+            - button "Vehicle Management" [ref=e81] [cursor=pointer]:
+              - generic "Vehicle Management" [ref=e82]:
+                - img [ref=e83]
+          - listitem [ref=e88]:
+            - button "Devices" [ref=e89] [cursor=pointer]:
+              - generic "Devices" [ref=e90]:
+                - img [ref=e91]
+          - listitem [ref=e93]:
+            - button "Agreements" [ref=e94] [cursor=pointer]:
+              - generic "Agreements" [ref=e95]:
+                - img [ref=e96]
+          - listitem [ref=e99]:
+            - button "Depots" [ref=e100] [cursor=pointer]:
+              - generic "Depots" [ref=e101]:
+                - img [ref=e102]
+          - listitem [ref=e105]:
+            - button "Account Settings" [ref=e106] [cursor=pointer]:
+              - generic "Account Settings" [ref=e107]:
+                - img [ref=e108]
+        - generic [ref=e112]:
+          - button "Admin Dashboard" [ref=e113] [cursor=pointer]:
+            - img [ref=e114]
+          - button "Settings" [ref=e119] [cursor=pointer]:
+            - img [ref=e120]
+      - main [ref=e124]:
+        - generic [ref=e129]:
+          - generic [ref=e132]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: Driver *
+                - generic [ref=e138] [cursor=pointer]:
+                  - generic "OSMs AdminFeeVat" [ref=e140]
+                  - img [ref=e142]
+              - generic [ref=e144]:
+                - generic [ref=e145]: Admin Fee
+                - generic [ref=e148] [cursor=pointer]:
+                  - generic "Admin fee with VAT - Invoicing" [ref=e150]
+                  - img [ref=e152]
+              - generic [ref=e154]:
+                - generic [ref=e155]: Invoice Status
+                - generic [ref=e157]:
+                  - generic "pending" [ref=e159]
+                  - img [ref=e161]
+              - generic [ref=e163]:
+                - generic [ref=e164]: Week *
+                - generic [ref=e167]:
+                  - combobox [ref=e168] [cursor=pointer]:
+                    - paragraph [ref=e169]: Select Week
+                  - img
+                  - group
+                - generic [ref=e170]: Invoice date is required
+              - generic [ref=e171]:
+                - generic [ref=e172]: Invoice Creation Date *
+                - generic [ref=e174]:
+                  - textbox [disabled] [ref=e175]: 26/02/2026
+                  - group
+              - generic [ref=e176]:
+                - generic [ref=e177]: Driver Reference Number
+                - generic [ref=e179]:
+                  - textbox [disabled] [ref=e180]: RATNAM-088
+                  - group
+              - generic [ref=e181]:
+                - generic [ref=e182]: VAT Number
+                - generic [ref=e184]:
+                  - textbox [disabled] [ref=e185]: "232132132"
+                  - group
+              - generic [ref=e186]:
+                - generic [ref=e187]: Invoicing Model
+                - generic [ref=e189]:
+                  - textbox [disabled] [ref=e190]: Ratnam Invoicing
+                  - group
+              - generic [ref=e191]:
+                - generic [ref=e192]: Invoice Reference ID
+                - generic [ref=e194]:
+                  - textbox [disabled] [ref=e195]: "-----"
+                  - group
+            - generic [ref=e196]:
+              - generic [ref=e197]: Income
+              - generic [ref=e198]:
+                - table [ref=e199]:
+                  - rowgroup [ref=e200]:
+                    - row "Income Name QTY Rate Total" [ref=e201]:
+                      - columnheader "Income Name" [ref=e202]:
+                        - generic [ref=e203]: Income Name
+                      - columnheader "QTY" [ref=e204]:
+                        - generic [ref=e205]: QTY
+                      - columnheader "Rate" [ref=e206]:
+                        - generic [ref=e207]: Rate
+                      - columnheader "Total" [ref=e208]:
+                        - generic [ref=e209]: Total
+                      - columnheader [ref=e210]
+                  - rowgroup [ref=e211]:
+                    - row "8 hour rote - £97.68 1 £97.68 £97.68" [ref=e212]:
+                      - cell "8 hour rote - £97.68" [ref=e213]:
+                        - generic [ref=e215] [cursor=pointer]:
+                          - generic "8 hour rote - £97.68" [ref=e217]
+                          - generic [ref=e218]:
+                            - button [ref=e219]:
+                              - img [ref=e220]
+                            - img [ref=e222]
+                      - cell "1" [ref=e224]:
+                        - generic [ref=e226]:
+                          - spinbutton [ref=e227]: "1"
+                          - group
+                      - cell "£97.68" [ref=e228]:
+                        - generic [ref=e231]:
+                          - textbox [disabled] [ref=e232]: £97.68
+                          - group
+                      - cell "£97.68" [ref=e233]:
+                        - generic [ref=e235]:
+                          - textbox [disabled] [ref=e236]: £97.68
+                          - group
+                      - cell [ref=e237]:
+                        - button [disabled]:
+                          - img
+                - generic [ref=e238]:
+                  - button "Add Income" [ref=e240] [cursor=pointer]:
+                    - img [ref=e241]
+                    - text: Add Income
+                  - generic [ref=e242]: "Total Income: £97.68"
+            - generic [ref=e243]:
+              - generic [ref=e244]: Deduction
+              - generic [ref=e245]:
+                - table [ref=e246]:
+                  - rowgroup [ref=e247]:
+                    - row "Deduction Name Deduction Type QTY Rate Total" [ref=e248]:
+                      - columnheader "Deduction Name" [ref=e249]:
+                        - generic [ref=e250]: Deduction Name
+                      - columnheader "Deduction Type" [ref=e251]:
+                        - generic [ref=e252]: Deduction Type
+                      - columnheader "QTY" [ref=e253]:
+                        - generic [ref=e254]: QTY
+                      - columnheader "Rate" [ref=e255]:
+                        - generic [ref=e256]: Rate
+                      - columnheader "Total" [ref=e257]:
+                        - generic [ref=e258]: Total
+                  - rowgroup [ref=e259]:
+                    - row "8 hour deduction without VAT (8 hour rote) Rate Card Deduction 1 £9.60 £9.60" [ref=e260]:
+                      - cell "8 hour deduction without VAT (8 hour rote)" [ref=e261]:
+                        - generic [ref=e263]: 8 hour deduction without VAT (8 hour rote)
+                      - cell "Rate Card Deduction" [ref=e264]:
+                        - generic [ref=e266]: Rate Card Deduction
+                      - cell "1" [ref=e267]:
+                        - generic [ref=e269]:
+                          - spinbutton [disabled] [ref=e270]: "1"
+                          - group
+                      - cell "£9.60" [ref=e271]:
+                        - generic [ref=e273]:
+                          - textbox [disabled] [ref=e274]: £9.60
+                          - group
+                      - cell "£9.60" [ref=e275]:
+                        - generic [ref=e277]:
+                          - textbox [disabled] [ref=e278]: £9.60
+                          - group
+                - generic [ref=e279]:
+                  - button "Add Deduction" [ref=e281] [cursor=pointer]:
+                    - img [ref=e282]
+                    - text: Add Deduction
+                  - generic [ref=e283]: "Total Deduction: £9.60"
+            - generic [ref=e284]:
+              - generic [ref=e285]: Repayment Deductions
+              - generic [ref=e286]:
+                - table [ref=e287]:
+                  - rowgroup [ref=e288]:
+                    - row "Deduction Name Deduction Type QTY Rate Total" [ref=e289]:
+                      - columnheader "Deduction Name" [ref=e290]:
+                        - generic [ref=e291]: Deduction Name
+                      - columnheader "Deduction Type" [ref=e292]:
+                        - generic [ref=e293]: Deduction Type
+                      - columnheader "QTY" [ref=e294]:
+                        - generic [ref=e295]: QTY
+                      - columnheader "Rate" [ref=e296]:
+                        - generic [ref=e297]: Rate
+                      - columnheader "Total" [ref=e298]:
+                        - generic [ref=e299]: Total
+                  - rowgroup [ref=e300]:
+                    - row "No repayment deductions added" [ref=e301]:
+                      - cell "No repayment deductions added" [ref=e302]:
+                        - generic [ref=e303]: No repayment deductions added
+                - generic [ref=e304]:
+                  - button "Add Repayment Deduction" [ref=e306] [cursor=pointer]:
+                    - img [ref=e307]
+                    - text: Add Repayment Deduction
+                  - generic [ref=e308]: "Total Repayment Deduction: £0.00"
+            - generic [ref=e309]:
+              - generic [ref=e310]: Admin Fee
+              - generic [ref=e311]:
+                - table [ref=e312]:
+                  - rowgroup [ref=e313]:
+                    - row "Admin Fee Name QTY Rate Total" [ref=e314]:
+                      - columnheader "Admin Fee Name" [ref=e315]:
+                        - generic [ref=e316]: Admin Fee Name
+                      - columnheader "QTY" [ref=e317]:
+                        - generic [ref=e318]: QTY
+                      - columnheader "Rate" [ref=e319]:
+                        - generic [ref=e320]: Rate
+                      - columnheader "Total" [ref=e321]:
+                        - generic [ref=e322]: Total
+                  - rowgroup [ref=e323]:
+                    - row "Admin fee with VAT - Invoicing 1 £15 £15" [ref=e324]:
+                      - cell "Admin fee with VAT - Invoicing" [ref=e325]:
+                        - generic [ref=e326]: Admin fee with VAT - Invoicing
+                      - cell "1" [ref=e327]:
+                        - generic [ref=e328]: "1"
+                      - cell "£15" [ref=e329]:
+                        - generic [ref=e330]: £15
+                      - cell "£15" [ref=e331]:
+                        - generic [ref=e332]: £15
+                - generic [ref=e334]: "Total Admin Fee: £15"
+          - generic [ref=e336]:
+            - generic [ref=e338]:
+              - generic [ref=e339]: Invoice fails NMWR
+              - generic [ref=e340]: "This invoice total forms a Hourly wage rate that is below the NMWR. The deductions need to be adjusted so that the Invoice total becomes equal to or greater than the NMWR. Note: Admin Fee is not included in NMWR calculation."
+              - generic [ref=e342] [cursor=pointer]: See Detail
+            - generic [ref=e344]:
+              - generic [ref=e345]: Invoice Summary
+              - generic [ref=e346]:
+                - generic [ref=e347]: Net
+                - generic [ref=e348]: £73.08
+              - generic [ref=e349]:
+                - generic [ref=e350]: VAT
+                - generic [ref=e351]: £19.54
+              - separator [ref=e352]
+              - generic [ref=e353]:
+                - generic [ref=e354]: Gross Total (Payable to the subcontractor)
+                - generic [ref=e355]: £92.62
+            - generic [ref=e357]:
+              - generic [ref=e358]: Payment Summary
+              - generic [ref=e359]:
+                - generic [ref=e360]: Payable to the subcontractor
+                - generic [ref=e361]: £--
+              - generic [ref=e362]:
+                - generic [ref=e363]: Paid to the subcontractor
+                - generic [ref=e364]: £--
+              - generic [ref=e365]:
+                - generic [ref=e366]: Balance
+                - generic [ref=e367]: £--
+            - generic [ref=e368]:
+              - button "Close" [ref=e369] [cursor=pointer]: Close
+              - button "Create Invoice" [active] [ref=e371] [cursor=pointer]: Create Invoice
+  - img
+```

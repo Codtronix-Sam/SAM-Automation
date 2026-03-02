@@ -1,0 +1,378 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading [level=6] [ref=e16]: Create Invoice
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - generic [ref=e21]:
+      - generic [ref=e23]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button [ref=e27] [cursor=pointer]:
+              - img [ref=e29]
+          - listitem [ref=e34]:
+            - button [ref=e35] [cursor=pointer]:
+              - img [ref=e37]
+          - listitem [ref=e43]:
+            - button [ref=e44] [cursor=pointer]:
+              - img [ref=e46]
+          - listitem [ref=e50]:
+            - button [ref=e51] [cursor=pointer]:
+              - img [ref=e53]
+          - listitem [ref=e60]:
+            - button [ref=e61] [cursor=pointer]:
+              - img [ref=e63]
+          - listitem [ref=e68]:
+            - button [ref=e69] [cursor=pointer]:
+              - img [ref=e71]
+          - listitem [ref=e73]:
+            - button [ref=e74] [cursor=pointer]:
+              - img [ref=e76]
+          - listitem [ref=e80]:
+            - button [ref=e81] [cursor=pointer]:
+              - img [ref=e83]
+          - listitem [ref=e88]:
+            - button [ref=e89] [cursor=pointer]:
+              - img [ref=e91]
+          - listitem [ref=e93]:
+            - button [ref=e94] [cursor=pointer]:
+              - img [ref=e96]
+          - listitem [ref=e99]:
+            - button [ref=e100] [cursor=pointer]:
+              - img [ref=e102]
+          - listitem [ref=e105]:
+            - button [ref=e106] [cursor=pointer]:
+              - img [ref=e108]
+        - generic [ref=e112]:
+          - button [ref=e113] [cursor=pointer]:
+            - img [ref=e114]
+          - button [ref=e119] [cursor=pointer]:
+            - img [ref=e120]
+      - main [ref=e124]:
+        - generic [ref=e129]:
+          - generic [ref=e132]:
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: Driver *
+                - generic [ref=e138] [cursor=pointer]:
+                  - generic [ref=e140]: OSMs AdminFeeVat
+                  - img [ref=e142]
+              - generic [ref=e144]:
+                - generic [ref=e145]: Admin Fee
+                - generic [ref=e148] [cursor=pointer]:
+                  - generic [ref=e150]: Admin fee with VAT - Invoicing
+                  - img [ref=e152]
+              - generic [ref=e154]:
+                - generic [ref=e155]: Invoice Status
+                - generic [ref=e157]:
+                  - generic [ref=e159]: pending
+                  - img [ref=e161]
+              - generic [ref=e163]:
+                - generic [ref=e164]: Week *
+                - generic [ref=e167]:
+                  - combobox [expanded] [ref=e168] [cursor=pointer]:
+                    - paragraph [ref=e169]: Select Week
+                  - img
+                  - group
+              - generic [ref=e170]:
+                - generic [ref=e171]: Invoice Creation Date *
+                - generic [ref=e173]:
+                  - textbox [disabled] [ref=e174]: 26/02/2026
+                  - group
+              - generic [ref=e175]:
+                - generic [ref=e176]: Driver Reference Number
+                - generic [ref=e178]:
+                  - textbox [disabled] [ref=e179]: RATNAM-088
+                  - group
+              - generic [ref=e180]:
+                - generic [ref=e181]: VAT Number
+                - generic [ref=e183]:
+                  - textbox [disabled] [ref=e184]: "232132132"
+                  - group
+              - generic [ref=e185]:
+                - generic [ref=e186]: Invoicing Model
+                - generic [ref=e188]:
+                  - textbox [disabled] [ref=e189]: Ratnam Invoicing
+                  - group
+              - generic [ref=e190]:
+                - generic [ref=e191]: Invoice Reference ID
+                - generic [ref=e193]:
+                  - textbox [disabled] [ref=e194]: "-----"
+                  - group
+            - generic [ref=e195]:
+              - generic [ref=e196]: Income
+              - generic [ref=e197]:
+                - table [ref=e198]:
+                  - rowgroup [ref=e199]:
+                    - row [ref=e200]:
+                      - columnheader [ref=e201]:
+                        - generic [ref=e202]: Income Name
+                      - columnheader [ref=e203]:
+                        - generic [ref=e204]: QTY
+                      - columnheader [ref=e205]:
+                        - generic [ref=e206]: Rate
+                      - columnheader [ref=e207]:
+                        - generic [ref=e208]: Total
+                      - columnheader [ref=e209]
+                  - rowgroup [ref=e210]:
+                    - row [ref=e211]:
+                      - cell [ref=e212]:
+                        - generic [ref=e214] [cursor=pointer]:
+                          - generic [ref=e216]: 8 hour rote - £97.68
+                          - generic [ref=e217]:
+                            - button [ref=e218]:
+                              - img [ref=e219]
+                            - img [ref=e221]
+                      - cell [ref=e223]:
+                        - generic [ref=e225]:
+                          - spinbutton [ref=e226]: "1"
+                          - group
+                      - cell [ref=e227]:
+                        - generic [ref=e230]:
+                          - textbox [disabled] [ref=e231]: £97.68
+                          - group
+                      - cell [ref=e232]:
+                        - generic [ref=e234]:
+                          - textbox [disabled] [ref=e235]: £97.68
+                          - group
+                      - cell [ref=e236]:
+                        - button [disabled]:
+                          - img
+                - generic [ref=e237]:
+                  - button [ref=e239] [cursor=pointer]:
+                    - img [ref=e240]
+                    - text: Add Income
+                  - generic [ref=e241]: "Total Income: £97.68"
+            - generic [ref=e242]:
+              - generic [ref=e243]: Deduction
+              - generic [ref=e244]:
+                - table [ref=e245]:
+                  - rowgroup [ref=e246]:
+                    - row [ref=e247]:
+                      - columnheader [ref=e248]:
+                        - generic [ref=e249]: Deduction Name
+                      - columnheader [ref=e250]:
+                        - generic [ref=e251]: Deduction Type
+                      - columnheader [ref=e252]:
+                        - generic [ref=e253]: QTY
+                      - columnheader [ref=e254]:
+                        - generic [ref=e255]: Rate
+                      - columnheader [ref=e256]:
+                        - generic [ref=e257]: Total
+                  - rowgroup [ref=e258]:
+                    - row [ref=e259]:
+                      - cell [ref=e260]:
+                        - generic [ref=e262]: 8 hour deduction without VAT (8 hour rote)
+                      - cell [ref=e263]:
+                        - generic [ref=e265]: Rate Card Deduction
+                      - cell [ref=e266]:
+                        - generic [ref=e268]:
+                          - spinbutton [disabled] [ref=e269]: "1"
+                          - group
+                      - cell [ref=e270]:
+                        - generic [ref=e272]:
+                          - textbox [disabled] [ref=e273]: £9.60
+                          - group
+                      - cell [ref=e274]:
+                        - generic [ref=e276]:
+                          - textbox [disabled] [ref=e277]: £9.60
+                          - group
+                - generic [ref=e278]:
+                  - button [ref=e280] [cursor=pointer]:
+                    - img [ref=e281]
+                    - text: Add Deduction
+                  - generic [ref=e282]: "Total Deduction: £9.60"
+            - generic [ref=e283]:
+              - generic [ref=e284]: Repayment Deductions
+              - generic [ref=e285]:
+                - table [ref=e286]:
+                  - rowgroup [ref=e287]:
+                    - row [ref=e288]:
+                      - columnheader [ref=e289]:
+                        - generic [ref=e290]: Deduction Name
+                      - columnheader [ref=e291]:
+                        - generic [ref=e292]: Deduction Type
+                      - columnheader [ref=e293]:
+                        - generic [ref=e294]: QTY
+                      - columnheader [ref=e295]:
+                        - generic [ref=e296]: Rate
+                      - columnheader [ref=e297]:
+                        - generic [ref=e298]: Total
+                  - rowgroup [ref=e299]:
+                    - row [ref=e300]:
+                      - cell [ref=e301]:
+                        - generic [ref=e302]: No repayment deductions added
+                - generic [ref=e303]:
+                  - button [ref=e305] [cursor=pointer]:
+                    - img [ref=e306]
+                    - text: Add Repayment Deduction
+                  - generic [ref=e307]: "Total Repayment Deduction: £0.00"
+            - generic [ref=e308]:
+              - generic [ref=e309]: Admin Fee
+              - generic [ref=e310]:
+                - table [ref=e311]:
+                  - rowgroup [ref=e312]:
+                    - row [ref=e313]:
+                      - columnheader [ref=e314]:
+                        - generic [ref=e315]: Admin Fee Name
+                      - columnheader [ref=e316]:
+                        - generic [ref=e317]: QTY
+                      - columnheader [ref=e318]:
+                        - generic [ref=e319]: Rate
+                      - columnheader [ref=e320]:
+                        - generic [ref=e321]: Total
+                  - rowgroup [ref=e322]:
+                    - row [ref=e323]:
+                      - cell [ref=e324]:
+                        - generic [ref=e325]: Admin fee with VAT - Invoicing
+                      - cell [ref=e326]:
+                        - generic [ref=e327]: "1"
+                      - cell [ref=e328]:
+                        - generic [ref=e329]: £15
+                      - cell [ref=e330]:
+                        - generic [ref=e331]: £15
+                - generic [ref=e333]: "Total Admin Fee: £15"
+          - generic [ref=e335]:
+            - generic [ref=e337]:
+              - generic [ref=e338]: Invoice fails NMWR
+              - generic [ref=e339]: "This invoice total forms a Hourly wage rate that is below the NMWR. The deductions need to be adjusted so that the Invoice total becomes equal to or greater than the NMWR. Note: Admin Fee is not included in NMWR calculation."
+              - generic [ref=e341] [cursor=pointer]: See Detail
+            - generic [ref=e343]:
+              - generic [ref=e344]: Invoice Summary
+              - generic [ref=e345]:
+                - generic [ref=e346]: Net
+                - generic [ref=e347]: £73.08
+              - generic [ref=e348]:
+                - generic [ref=e349]: VAT
+                - generic [ref=e350]: £19.54
+              - separator [ref=e351]
+              - generic [ref=e352]:
+                - generic [ref=e353]: Gross Total (Payable to the subcontractor)
+                - generic [ref=e354]: £92.62
+            - generic [ref=e356]:
+              - generic [ref=e357]: Payment Summary
+              - generic [ref=e358]:
+                - generic [ref=e359]: Payable to the subcontractor
+                - generic [ref=e360]: £--
+              - generic [ref=e361]:
+                - generic [ref=e362]: Paid to the subcontractor
+                - generic [ref=e363]: £--
+              - generic [ref=e364]:
+                - generic [ref=e365]: Balance
+                - generic [ref=e366]: £--
+            - generic [ref=e367]:
+              - button [ref=e368] [cursor=pointer]: Close
+              - button [ref=e370] [cursor=pointer]: Create Invoice
+  - listbox [ref=e373]:
+    - option "Week 1 (Dec 28 – Jan 3), 2026" [active] [ref=e374] [cursor=pointer]: Week 1 (Dec 28 – Jan 3), 2026
+    - option "Week 2 (Jan 4 – Jan 10), 2026" [ref=e375] [cursor=pointer]: Week 2 (Jan 4 – Jan 10), 2026
+    - option "Week 3 (Jan 11 – Jan 17), 2026" [ref=e376] [cursor=pointer]: Week 3 (Jan 11 – Jan 17), 2026
+    - option "Week 4 (Jan 18 – Jan 24), 2026" [ref=e377] [cursor=pointer]: Week 4 (Jan 18 – Jan 24), 2026
+    - option "Week 5 (Jan 25 – Jan 31), 2026" [ref=e378] [cursor=pointer]: Week 5 (Jan 25 – Jan 31), 2026
+    - option "Week 6 (Feb 1 – Feb 7), 2026" [ref=e379] [cursor=pointer]: Week 6 (Feb 1 – Feb 7), 2026
+    - option "Week 7 (Feb 8 – Feb 14), 2026" [ref=e380] [cursor=pointer]: Week 7 (Feb 8 – Feb 14), 2026
+    - option "Week 8 (Feb 15 – Feb 21), 2026" [ref=e381] [cursor=pointer]: Week 8 (Feb 15 – Feb 21), 2026
+    - option "Week 9 (Feb 22 – Feb 28), 2026" [ref=e382] [cursor=pointer]: Week 9 (Feb 22 – Feb 28), 2026
+    - option "Week 10 (Mar 1 – Mar 7), 2026" [ref=e383] [cursor=pointer]: Week 10 (Mar 1 – Mar 7), 2026
+    - option "Week 11 (Mar 8 – Mar 14), 2026" [ref=e384] [cursor=pointer]: Week 11 (Mar 8 – Mar 14), 2026
+    - option "Week 12 (Mar 15 – Mar 21), 2026" [ref=e385] [cursor=pointer]: Week 12 (Mar 15 – Mar 21), 2026
+    - option "Week 13 (Mar 22 – Mar 28), 2026" [ref=e386] [cursor=pointer]: Week 13 (Mar 22 – Mar 28), 2026
+    - option "Week 14 (Mar 29 – Apr 4), 2026" [ref=e387] [cursor=pointer]: Week 14 (Mar 29 – Apr 4), 2026
+    - option "Week 15 (Apr 5 – Apr 11), 2026" [ref=e388] [cursor=pointer]: Week 15 (Apr 5 – Apr 11), 2026
+    - option "Week 16 (Apr 12 – Apr 18), 2026" [ref=e389] [cursor=pointer]: Week 16 (Apr 12 – Apr 18), 2026
+    - option "Week 17 (Apr 19 – Apr 25), 2026" [ref=e390] [cursor=pointer]: Week 17 (Apr 19 – Apr 25), 2026
+    - option "Week 18 (Apr 26 – May 2), 2026" [ref=e391] [cursor=pointer]: Week 18 (Apr 26 – May 2), 2026
+    - option "Week 19 (May 3 – May 9), 2026" [ref=e392] [cursor=pointer]: Week 19 (May 3 – May 9), 2026
+    - option "Week 20 (May 10 – May 16), 2026" [ref=e393] [cursor=pointer]: Week 20 (May 10 – May 16), 2026
+    - option "Week 21 (May 17 – May 23), 2026" [ref=e394] [cursor=pointer]: Week 21 (May 17 – May 23), 2026
+    - option "Week 22 (May 24 – May 30), 2026" [ref=e395] [cursor=pointer]: Week 22 (May 24 – May 30), 2026
+    - option "Week 23 (May 31 – Jun 6), 2026" [ref=e396] [cursor=pointer]: Week 23 (May 31 – Jun 6), 2026
+    - option "Week 24 (Jun 7 – Jun 13), 2026" [ref=e397] [cursor=pointer]: Week 24 (Jun 7 – Jun 13), 2026
+    - option "Week 25 (Jun 14 – Jun 20), 2026" [ref=e398] [cursor=pointer]: Week 25 (Jun 14 – Jun 20), 2026
+    - option "Week 26 (Jun 21 – Jun 27), 2026" [ref=e399] [cursor=pointer]: Week 26 (Jun 21 – Jun 27), 2026
+    - option "Week 27 (Jun 28 – Jul 4), 2026" [ref=e400] [cursor=pointer]: Week 27 (Jun 28 – Jul 4), 2026
+    - option "Week 28 (Jul 5 – Jul 11), 2026" [ref=e401] [cursor=pointer]: Week 28 (Jul 5 – Jul 11), 2026
+    - option "Week 29 (Jul 12 – Jul 18), 2026" [ref=e402] [cursor=pointer]: Week 29 (Jul 12 – Jul 18), 2026
+    - option "Week 30 (Jul 19 – Jul 25), 2026" [ref=e403] [cursor=pointer]: Week 30 (Jul 19 – Jul 25), 2026
+    - option "Week 31 (Jul 26 – Aug 1), 2026" [ref=e404] [cursor=pointer]: Week 31 (Jul 26 – Aug 1), 2026
+    - option "Week 32 (Aug 2 – Aug 8), 2026" [ref=e405] [cursor=pointer]: Week 32 (Aug 2 – Aug 8), 2026
+    - option "Week 33 (Aug 9 – Aug 15), 2026" [ref=e406] [cursor=pointer]: Week 33 (Aug 9 – Aug 15), 2026
+    - option "Week 34 (Aug 16 – Aug 22), 2026" [ref=e407] [cursor=pointer]: Week 34 (Aug 16 – Aug 22), 2026
+    - option "Week 35 (Aug 23 – Aug 29), 2026" [ref=e408] [cursor=pointer]: Week 35 (Aug 23 – Aug 29), 2026
+    - option "Week 36 (Aug 30 – Sep 5), 2026" [ref=e409] [cursor=pointer]: Week 36 (Aug 30 – Sep 5), 2026
+    - option "Week 37 (Sep 6 – Sep 12), 2026" [ref=e410] [cursor=pointer]: Week 37 (Sep 6 – Sep 12), 2026
+    - option "Week 38 (Sep 13 – Sep 19), 2026" [ref=e411] [cursor=pointer]: Week 38 (Sep 13 – Sep 19), 2026
+    - option "Week 39 (Sep 20 – Sep 26), 2026" [ref=e412] [cursor=pointer]: Week 39 (Sep 20 – Sep 26), 2026
+    - option "Week 40 (Sep 27 – Oct 3), 2026" [ref=e413] [cursor=pointer]: Week 40 (Sep 27 – Oct 3), 2026
+    - option "Week 41 (Oct 4 – Oct 10), 2026" [ref=e414] [cursor=pointer]: Week 41 (Oct 4 – Oct 10), 2026
+    - option "Week 42 (Oct 11 – Oct 17), 2026" [ref=e415] [cursor=pointer]: Week 42 (Oct 11 – Oct 17), 2026
+    - option "Week 43 (Oct 18 – Oct 24), 2026" [ref=e416] [cursor=pointer]: Week 43 (Oct 18 – Oct 24), 2026
+    - option "Week 44 (Oct 25 – Oct 31), 2026" [ref=e417] [cursor=pointer]: Week 44 (Oct 25 – Oct 31), 2026
+    - option "Week 45 (Nov 1 – Nov 7), 2026" [ref=e418] [cursor=pointer]: Week 45 (Nov 1 – Nov 7), 2026
+    - option "Week 46 (Nov 8 – Nov 14), 2026" [ref=e419] [cursor=pointer]: Week 46 (Nov 8 – Nov 14), 2026
+    - option "Week 47 (Nov 15 – Nov 21), 2026" [ref=e420] [cursor=pointer]: Week 47 (Nov 15 – Nov 21), 2026
+    - option "Week 48 (Nov 22 – Nov 28), 2026" [ref=e421] [cursor=pointer]: Week 48 (Nov 22 – Nov 28), 2026
+    - option "Week 49 (Nov 29 – Dec 5), 2026" [ref=e422] [cursor=pointer]: Week 49 (Nov 29 – Dec 5), 2026
+    - option "Week 50 (Dec 6 – Dec 12), 2026" [ref=e423] [cursor=pointer]: Week 50 (Dec 6 – Dec 12), 2026
+    - option "Week 51 (Dec 13 – Dec 19), 2026" [ref=e424] [cursor=pointer]: Week 51 (Dec 13 – Dec 19), 2026
+    - option "Week 52 (Dec 20 – Dec 26), 2026" [ref=e425] [cursor=pointer]: Week 52 (Dec 20 – Dec 26), 2026
+    - option "Week 53 (Dec 27 – Jan 2), 2026" [ref=e426] [cursor=pointer]: Week 53 (Dec 27 – Jan 2), 2026
+    - option "Week 1 (Jan 3 – Jan 9), 2027" [ref=e427] [cursor=pointer]: Week 1 (Jan 3 – Jan 9), 2027
+    - option "Week 2 (Jan 10 – Jan 16), 2027" [ref=e428] [cursor=pointer]: Week 2 (Jan 10 – Jan 16), 2027
+    - option "Week 3 (Jan 17 – Jan 23), 2027" [ref=e429] [cursor=pointer]: Week 3 (Jan 17 – Jan 23), 2027
+    - option "Week 4 (Jan 24 – Jan 30), 2027" [ref=e430] [cursor=pointer]: Week 4 (Jan 24 – Jan 30), 2027
+    - option "Week 5 (Jan 31 – Feb 6), 2027" [ref=e431] [cursor=pointer]: Week 5 (Jan 31 – Feb 6), 2027
+    - option "Week 6 (Feb 7 – Feb 13), 2027" [ref=e432] [cursor=pointer]: Week 6 (Feb 7 – Feb 13), 2027
+    - option "Week 7 (Feb 14 – Feb 20), 2027" [ref=e433] [cursor=pointer]: Week 7 (Feb 14 – Feb 20), 2027
+    - option "Week 8 (Feb 21 – Feb 27), 2027" [ref=e434] [cursor=pointer]: Week 8 (Feb 21 – Feb 27), 2027
+    - option "Week 9 (Feb 28 – Mar 6), 2027" [ref=e435] [cursor=pointer]: Week 9 (Feb 28 – Mar 6), 2027
+    - option "Week 10 (Mar 7 – Mar 13), 2027" [ref=e436] [cursor=pointer]: Week 10 (Mar 7 – Mar 13), 2027
+    - option "Week 11 (Mar 14 – Mar 20), 2027" [ref=e437] [cursor=pointer]: Week 11 (Mar 14 – Mar 20), 2027
+    - option "Week 12 (Mar 21 – Mar 27), 2027" [ref=e438] [cursor=pointer]: Week 12 (Mar 21 – Mar 27), 2027
+    - option "Week 13 (Mar 28 – Apr 3), 2027" [ref=e439] [cursor=pointer]: Week 13 (Mar 28 – Apr 3), 2027
+    - option "Week 14 (Apr 4 – Apr 10), 2027" [ref=e440] [cursor=pointer]: Week 14 (Apr 4 – Apr 10), 2027
+    - option "Week 15 (Apr 11 – Apr 17), 2027" [ref=e441] [cursor=pointer]: Week 15 (Apr 11 – Apr 17), 2027
+    - option "Week 16 (Apr 18 – Apr 24), 2027" [ref=e442] [cursor=pointer]: Week 16 (Apr 18 – Apr 24), 2027
+    - option "Week 17 (Apr 25 – May 1), 2027" [ref=e443] [cursor=pointer]: Week 17 (Apr 25 – May 1), 2027
+    - option "Week 18 (May 2 – May 8), 2027" [ref=e444] [cursor=pointer]: Week 18 (May 2 – May 8), 2027
+    - option "Week 19 (May 9 – May 15), 2027" [ref=e445] [cursor=pointer]: Week 19 (May 9 – May 15), 2027
+    - option "Week 20 (May 16 – May 22), 2027" [ref=e446] [cursor=pointer]: Week 20 (May 16 – May 22), 2027
+    - option "Week 21 (May 23 – May 29), 2027" [ref=e447] [cursor=pointer]: Week 21 (May 23 – May 29), 2027
+    - option "Week 22 (May 30 – Jun 5), 2027" [ref=e448] [cursor=pointer]: Week 22 (May 30 – Jun 5), 2027
+    - option "Week 23 (Jun 6 – Jun 12), 2027" [ref=e449] [cursor=pointer]: Week 23 (Jun 6 – Jun 12), 2027
+    - option "Week 24 (Jun 13 – Jun 19), 2027" [ref=e450] [cursor=pointer]: Week 24 (Jun 13 – Jun 19), 2027
+    - option "Week 25 (Jun 20 – Jun 26), 2027" [ref=e451] [cursor=pointer]: Week 25 (Jun 20 – Jun 26), 2027
+    - option "Week 26 (Jun 27 – Jul 3), 2027" [ref=e452] [cursor=pointer]: Week 26 (Jun 27 – Jul 3), 2027
+    - option "Week 27 (Jul 4 – Jul 10), 2027" [ref=e453] [cursor=pointer]: Week 27 (Jul 4 – Jul 10), 2027
+    - option "Week 28 (Jul 11 – Jul 17), 2027" [ref=e454] [cursor=pointer]: Week 28 (Jul 11 – Jul 17), 2027
+    - option "Week 29 (Jul 18 – Jul 24), 2027" [ref=e455] [cursor=pointer]: Week 29 (Jul 18 – Jul 24), 2027
+    - option "Week 30 (Jul 25 – Jul 31), 2027" [ref=e456] [cursor=pointer]: Week 30 (Jul 25 – Jul 31), 2027
+    - option "Week 31 (Aug 1 – Aug 7), 2027" [ref=e457] [cursor=pointer]: Week 31 (Aug 1 – Aug 7), 2027
+    - option "Week 32 (Aug 8 – Aug 14), 2027" [ref=e458] [cursor=pointer]: Week 32 (Aug 8 – Aug 14), 2027
+    - option "Week 33 (Aug 15 – Aug 21), 2027" [ref=e459] [cursor=pointer]: Week 33 (Aug 15 – Aug 21), 2027
+    - option "Week 34 (Aug 22 – Aug 28), 2027" [ref=e460] [cursor=pointer]: Week 34 (Aug 22 – Aug 28), 2027
+    - option "Week 35 (Aug 29 – Sep 4), 2027" [ref=e461] [cursor=pointer]: Week 35 (Aug 29 – Sep 4), 2027
+    - option "Week 36 (Sep 5 – Sep 11), 2027" [ref=e462] [cursor=pointer]: Week 36 (Sep 5 – Sep 11), 2027
+    - option "Week 37 (Sep 12 – Sep 18), 2027" [ref=e463] [cursor=pointer]: Week 37 (Sep 12 – Sep 18), 2027
+    - option "Week 38 (Sep 19 – Sep 25), 2027" [ref=e464] [cursor=pointer]: Week 38 (Sep 19 – Sep 25), 2027
+    - option "Week 39 (Sep 26 – Oct 2), 2027" [ref=e465] [cursor=pointer]: Week 39 (Sep 26 – Oct 2), 2027
+    - option "Week 40 (Oct 3 – Oct 9), 2027" [ref=e466] [cursor=pointer]: Week 40 (Oct 3 – Oct 9), 2027
+    - option "Week 41 (Oct 10 – Oct 16), 2027" [ref=e467] [cursor=pointer]: Week 41 (Oct 10 – Oct 16), 2027
+    - option "Week 42 (Oct 17 – Oct 23), 2027" [ref=e468] [cursor=pointer]: Week 42 (Oct 17 – Oct 23), 2027
+    - option "Week 43 (Oct 24 – Oct 30), 2027" [ref=e469] [cursor=pointer]: Week 43 (Oct 24 – Oct 30), 2027
+    - option "Week 44 (Oct 31 – Nov 6), 2027" [ref=e470] [cursor=pointer]: Week 44 (Oct 31 – Nov 6), 2027
+    - option "Week 45 (Nov 7 – Nov 13), 2027" [ref=e471] [cursor=pointer]: Week 45 (Nov 7 – Nov 13), 2027
+    - option "Week 46 (Nov 14 – Nov 20), 2027" [ref=e472] [cursor=pointer]: Week 46 (Nov 14 – Nov 20), 2027
+    - option "Week 47 (Nov 21 – Nov 27), 2027" [ref=e473] [cursor=pointer]: Week 47 (Nov 21 – Nov 27), 2027
+    - option "Week 48 (Nov 28 – Dec 4), 2027" [ref=e474] [cursor=pointer]: Week 48 (Nov 28 – Dec 4), 2027
+    - option "Week 49 (Dec 5 – Dec 11), 2027" [ref=e475] [cursor=pointer]: Week 49 (Dec 5 – Dec 11), 2027
+    - option "Week 50 (Dec 12 – Dec 18), 2027" [ref=e476] [cursor=pointer]: Week 50 (Dec 12 – Dec 18), 2027
+    - option "Week 51 (Dec 19 – Dec 25), 2027" [ref=e477] [cursor=pointer]: Week 51 (Dec 19 – Dec 25), 2027
+    - option "Week 52 (Dec 26 – Jan 1), 2027" [ref=e478] [cursor=pointer]: Week 52 (Dec 26 – Jan 1), 2027
+```

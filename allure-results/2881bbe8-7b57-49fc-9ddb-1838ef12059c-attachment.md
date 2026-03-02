@@ -1,0 +1,118 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img [ref=e6]
+      - button "Profile Settings" [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+    - generic [ref=e17]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - button "Dashboard" [ref=e23] [cursor=pointer]:
+            - generic "Dashboard" [ref=e24]:
+              - img [ref=e25]
+        - listitem [ref=e30]:
+          - button "Payment Status" [ref=e31] [cursor=pointer]:
+            - generic "Payment Status" [ref=e32]:
+              - img [ref=e33]
+        - listitem [ref=e39]:
+          - button "VAT-UTR" [ref=e40] [cursor=pointer]:
+            - generic "VAT-UTR" [ref=e41]:
+              - img [ref=e42]
+        - listitem [ref=e48]:
+          - button "Customers" [ref=e49] [cursor=pointer]:
+            - generic "Customers" [ref=e50]:
+              - img [ref=e51]
+        - listitem [ref=e57]:
+          - button "Agreements Keys" [ref=e58] [cursor=pointer]:
+            - generic "Agreements Keys" [ref=e59]:
+              - img [ref=e60]
+        - listitem [ref=e63]:
+          - button "Accounts" [ref=e64] [cursor=pointer]:
+            - generic "Accounts" [ref=e65]:
+              - img [ref=e66]
+      - main [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: Hi super 👋
+            - generic [ref=e76]: Welcome Back
+          - generic [ref=e77]:
+            - generic [ref=e79]:
+              - generic [ref=e82]:
+                - img [ref=e84]
+                - generic [ref=e86]: Total DSPs
+              - generic [ref=e88]:
+                - generic [ref=e89]: All Delivery Service Partners associated with SAM Onboarding app.
+                - generic [ref=e92]: "0"
+            - generic [ref=e94]:
+              - generic [ref=e97]:
+                - img [ref=e99]
+                - generic [ref=e101]: Active Drivers
+              - generic [ref=e103]:
+                - generic [ref=e104]: Drivers who are currently active in the app.
+                - generic [ref=e107]: "412"
+            - generic [ref=e109]:
+              - generic [ref=e112]:
+                - img [ref=e114]
+                - generic [ref=e116]: Onboarding Drivers
+              - generic [ref=e118]:
+                - generic [ref=e119]: Drivers who are currently going through the onboarding process in the app.
+                - generic [ref=e122]: "501"
+            - generic [ref=e124]:
+              - generic [ref=e127]:
+                - img [ref=e128]
+                - generic [ref=e130]: Mobile app
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]: App User
+                  - generic [ref=e135]: "662"
+                - generic [ref=e137]:
+                  - generic [ref=e138]: Pending Request
+                  - generic [ref=e139]: "150"
+          - generic [ref=e140]:
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - heading "DSPs" [level=6] [ref=e144]
+                - generic [ref=e146]: 0 Dsps
+                - generic [ref=e148]:
+                  - generic [ref=e151] [cursor=pointer]: Active DSPs
+                  - generic [ref=e154] [cursor=pointer]: Inactive DSPs
+              - generic [ref=e155]:
+                - generic [ref=e157]:
+                  - button [ref=e159] [cursor=pointer]:
+                    - img [ref=e160]
+                  - textbox "Search by Name" [ref=e162]
+                  - group
+                - button "Add DSP" [ref=e163] [cursor=pointer]:
+                  - img [ref=e165]
+                  - text: Add DSP
+            - grid [ref=e168]:
+              - generic [ref=e169]:
+                - rowgroup [ref=e170]:
+                  - row "DSP Contact Number Status Products" [ref=e171]:
+                    - columnheader "DSP" [ref=e172]:
+                      - generic [ref=e174]: DSP
+                    - columnheader "Contact Number" [ref=e175]:
+                      - generic [ref=e177]: Contact Number
+                    - columnheader "Status" [ref=e178]:
+                      - generic [ref=e180]: Status
+                    - columnheader "Products" [ref=e181]:
+                      - generic [ref=e183]: Products
+                    - columnheader [ref=e184]
+                - progressbar [ref=e188]:
+                  - img [ref=e189]
+                - rowgroup
+              - navigation "pagination navigation" [ref=e192]:
+                - list [ref=e193]:
+                  - listitem [ref=e194]:
+                    - button "Go to previous page" [disabled]:
+                      - img
+                      - text: Previous
+                  - listitem [ref=e195]:
+                    - button "Go to next page" [disabled]:
+                      - text: Next
+                      - img
+  - img
+```

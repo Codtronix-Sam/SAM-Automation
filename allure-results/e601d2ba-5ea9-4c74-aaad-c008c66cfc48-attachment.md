@@ -1,0 +1,247 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading "Payments" [level=6] [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e21]: Amz Depot
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - textbox "Search..." [ref=e26]
+      - button "Profile Settings" [ref=e29] [cursor=pointer]:
+        - img [ref=e30]
+    - generic [ref=e31]:
+      - generic [ref=e33]:
+        - list [ref=e35]:
+          - listitem [ref=e36]:
+            - button "Dashboard" [ref=e37] [cursor=pointer]:
+              - generic "Dashboard" [ref=e38]:
+                - img [ref=e39]
+          - listitem [ref=e44]:
+            - button "My Drivers" [ref=e45] [cursor=pointer]:
+              - generic "My Drivers" [ref=e46]:
+                - img [ref=e47]
+          - listitem [ref=e53]:
+            - button "Scheduling" [ref=e54] [cursor=pointer]:
+              - generic "Scheduling" [ref=e55]:
+                - img [ref=e56]
+          - listitem [ref=e60]:
+            - button "Payments" [ref=e61] [cursor=pointer]:
+              - generic "Payments" [ref=e62]:
+                - img [ref=e63]
+          - listitem [ref=e70]:
+            - button "Reports" [ref=e71] [cursor=pointer]:
+              - generic "Reports" [ref=e72]:
+                - img [ref=e73]
+          - listitem [ref=e78]:
+            - button "Knowledge Base" [ref=e79] [cursor=pointer]:
+              - generic "Knowledge Base" [ref=e80]:
+                - img [ref=e81]
+          - listitem [ref=e83]:
+            - button "FAQ" [ref=e84] [cursor=pointer]:
+              - generic "FAQ" [ref=e85]:
+                - img [ref=e86]
+          - listitem [ref=e90]:
+            - button "Vehicle Management" [ref=e91] [cursor=pointer]:
+              - generic "Vehicle Management" [ref=e92]:
+                - img [ref=e93]
+          - listitem [ref=e98]:
+            - button "Devices" [ref=e99] [cursor=pointer]:
+              - generic "Devices" [ref=e100]:
+                - img [ref=e101]
+          - listitem [ref=e103]:
+            - button "Agreements" [ref=e104] [cursor=pointer]:
+              - generic "Agreements" [ref=e105]:
+                - img [ref=e106]
+          - listitem [ref=e109]:
+            - button "Depots" [ref=e110] [cursor=pointer]:
+              - generic "Depots" [ref=e111]:
+                - img [ref=e112]
+          - listitem [ref=e115]:
+            - button "Account Settings" [ref=e116] [cursor=pointer]:
+              - generic "Account Settings" [ref=e117]:
+                - img [ref=e118]
+        - generic [ref=e122]:
+          - button "Admin Dashboard" [ref=e123] [cursor=pointer]:
+            - img [ref=e124]
+          - button "Settings" [ref=e129] [cursor=pointer]:
+            - img [ref=e130]
+      - main [ref=e134]:
+        - generic [ref=e136]:
+          - generic [ref=e138]:
+            - link "Payments" [ref=e139] [cursor=pointer]:
+              - /url: /dsp/finance/payments
+            - link "Deductions" [ref=e140] [cursor=pointer]:
+              - /url: /dsp/finance/deductions
+          - generic [ref=e141]:
+            - generic [ref=e143] [cursor=pointer]: Few Actions Required for this week - View Insights
+            - generic [ref=e144]:
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - heading "Invoices" [level=6] [ref=e148]
+                  - generic [ref=e150]: 2 Invoices
+                  - generic [ref=e154] [cursor=pointer]:
+                    - button [ref=e155]:
+                      - img [ref=e156]
+                    - heading "Week 9" [level=6] [ref=e158]
+                    - paragraph [ref=e159]: 22-02-2026 - 28-02-2026
+                    - button [ref=e160]:
+                      - img [ref=e161]
+                - generic [ref=e163]:
+                  - generic [ref=e165]:
+                    - button "Add New Invoice" [ref=e166] [cursor=pointer]:
+                      - img [ref=e168]
+                      - text: Add New Invoice
+                    - button "Approve Payments" [disabled]
+                    - button [ref=e170] [cursor=pointer]:
+                      - img [ref=e171]
+                  - button "Filters" [ref=e173] [cursor=pointer]:
+                    - img [ref=e175]
+                    - text: Filters
+                  - button "Columns" [ref=e177] [cursor=pointer]:
+                    - img [ref=e179]
+                    - text: Columns
+              - grid [ref=e183]:
+                - generic [ref=e184]:
+                  - rowgroup [ref=e185]:
+                    - row "Select all rows Invoice Date Invoice Creation Date Driver Name Invoice Ref. No. Status Invoicing Model Net VAT Gross Total to be Paid to Driver Actions" [ref=e186]:
+                      - columnheader "Select all rows" [ref=e187]:
+                        - generic [ref=e189] [cursor=pointer]:
+                          - checkbox "Select all rows" [active] [ref=e190]
+                          - img [ref=e191]
+                      - columnheader "Invoice Date" [ref=e193] [cursor=pointer]:
+                        - generic [ref=e195]: Invoice Date
+                      - columnheader "Invoice Creation Date" [ref=e196] [cursor=pointer]:
+                        - generic [ref=e198]: Invoice Creation Date
+                      - columnheader "Driver Name" [ref=e199] [cursor=pointer]:
+                        - generic [ref=e201]: Driver Name
+                      - columnheader "Invoice Ref. No." [ref=e202] [cursor=pointer]:
+                        - generic [ref=e204]: Invoice Ref. No.
+                      - columnheader "Status" [ref=e205] [cursor=pointer]:
+                        - generic [ref=e207]: Status
+                      - columnheader "Invoicing Model" [ref=e208] [cursor=pointer]:
+                        - generic [ref=e210]: Invoicing Model
+                      - columnheader "Net" [ref=e211] [cursor=pointer]:
+                        - generic [ref=e213]: Net
+                      - columnheader "VAT" [ref=e214] [cursor=pointer]:
+                        - generic [ref=e216]: VAT
+                      - columnheader "Gross" [ref=e217] [cursor=pointer]:
+                        - generic [ref=e219]: Gross
+                      - columnheader "Total to be Paid to Driver" [ref=e220] [cursor=pointer]:
+                        - generic [ref=e222]: Total to be Paid to Driver
+                      - columnheader "Actions" [ref=e223]:
+                        - generic [ref=e225]: Actions
+                  - rowgroup [ref=e226]:
+                    - 'row "Select row Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR" [ref=e227] [cursor=pointer]':
+                      - cell "Select row" [ref=e228]:
+                        - generic [ref=e229]:
+                          - checkbox "Select row" [ref=e230]
+                          - img [ref=e231]
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e233]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e234]':
+                          - paragraph [ref=e235]: 28/02/2026
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e236]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e237]':
+                          - paragraph [ref=e238]: 25/02/2026
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e239]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e240]':
+                          - generic [ref=e241]:
+                            - generic [ref=e242]: FA
+                            - generic [ref=e243]:
+                              - paragraph [ref=e244]: Fleet AdminFeeVAT
+                              - paragraph [ref=e245]: baldealiu062@gmail.com
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e246]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e247]':
+                          - paragraph [ref=e248]: INV0257
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e249]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e250]':
+                          - generic [ref=e251]: Unpaid
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e252]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e253]':
+                          - paragraph [ref=e254]: Ratnam Invoicing
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e255]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e256]':
+                          - paragraph [ref=e257]: £75.00
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e258]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e259]':
+                          - paragraph [ref=e260]: £0.00
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e261]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e262]':
+                          - paragraph [ref=e263]: £75.00
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e264]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e265]':
+                          - paragraph [ref=e266]: £75.00
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e267]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e268]':
+                          - button [ref=e269]:
+                            - img [ref=e270]
+                    - 'row "Select row Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR Warning: The hourly wage for this invoice is below the NMWR" [ref=e272] [cursor=pointer]':
+                      - cell "Select row" [ref=e273]:
+                        - generic [ref=e274]:
+                          - checkbox "Select row" [ref=e275]
+                          - img [ref=e276]
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e278]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e279]':
+                          - paragraph [ref=e280]: 28/02/2026
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e281]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e282]':
+                          - paragraph [ref=e283]: 25/02/2026
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e284]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e285]':
+                          - generic [ref=e286]:
+                            - generic [ref=e287]: OA
+                            - generic [ref=e288]:
+                              - paragraph [ref=e289]: OSMs AdminFeeVat
+                              - paragraph [ref=e290]: aliabdelrazik2021@gmail.com
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e291]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e292]':
+                          - paragraph [ref=e293]: INV0256
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e294]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e295]':
+                          - generic [ref=e296]: Unpaid
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e297]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e298]':
+                          - paragraph [ref=e299]: Ratnam Invoicing
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e300]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e301]':
+                          - paragraph [ref=e302]: £73.08
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e303]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e304]':
+                          - paragraph [ref=e305]: £19.54
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e306]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e307]':
+                          - paragraph [ref=e308]: £92.62
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e309]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e310]':
+                          - paragraph [ref=e311]: £92.62
+                      - 'cell "Warning: The hourly wage for this invoice is below the NMWR" [ref=e312]':
+                        - 'generic "Warning: The hourly wage for this invoice is below the NMWR" [ref=e313]':
+                          - button [ref=e314]:
+                            - img [ref=e315]
+                - generic [ref=e317]:
+                  - generic [ref=e318]:
+                    - paragraph [ref=e319]: "Results per page:"
+                    - generic [ref=e320]:
+                      - combobox [ref=e321] [cursor=pointer]: "10"
+                      - textbox: "10"
+                      - img
+                      - group
+                  - navigation "pagination navigation" [ref=e323]:
+                    - list [ref=e324]:
+                      - listitem [ref=e325]:
+                        - button "Go to previous page" [disabled]:
+                          - img
+                      - listitem [ref=e326]:
+                        - button "page 1" [ref=e327] [cursor=pointer]: "1"
+                      - listitem [ref=e328]:
+                        - button "Go to next page" [disabled]:
+                          - img
+  - img
+```
