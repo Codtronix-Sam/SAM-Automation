@@ -16,40 +16,72 @@ async function setup(page) {
     return { dashboard, paymentsPage };
 }
 
-test('Verify add invoice functionality', async ({ page }) => {
+test('Verify delete all invoices functionality', async ({ page }) => {
 
-    const { paymentsPage } = await setup(page);
-    await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.openAmzExpressDepot();
-    //  await page.waitForTimeout(5000);
-    await paymentsPage.clickPaymentsAndInvociesDD();
-    await paymentsPage.addInvoice('Saad', '5', '5', '5', '5', '8', '6', '3', '2', '2', '5', '6', '7', '2', '4', '5', '5');
-    await paymentsPage.verifyInvoceIsAdded();
-});
-
-test('Verify Pay Day selection', async ({ page }) => {
-
-
-    const { paymentsPage } = await setup(page);
-    await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.openAmzExpressDepot();
-    await paymentsPage.clickPaymentsAndInvociesDD();
-    await paymentsPage.payDaySelection();
-});
-
-test('Create invoice with driver-priority rate card', async ({ page }) => {
     const { paymentsPage } = await setup(page);
 
     await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.createInvoiceWithDriverPriorityRateCard();
+    await paymentsPage.deleteAllInvoices();
 });
 
-test('Verify if payday is applied correctly in listing', async ({ page }) => {
+test('Verify bulk update invoices to Unpaid', async ({ page }) => {
+
     const { paymentsPage } = await setup(page);
 
     await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.createInvoiceWithDriverPriorityRateCard();
-    await paymentsPage.clickPaymentsAndInvociesDD();
-    await paymentsPage.verifyPaydayInListing();
+    await paymentsPage.bulkUpdateInvoicestoUnpaid();
 });
+
+test('Verify bulk update invoices to Paid', async ({ page }) => {
+
+    const { paymentsPage } = await setup(page);
+
+    await paymentsPage.gotoPaymentsModule();
+    await paymentsPage.bulkUpdateInvoicestoPaid();
+});
+
+test('Verify approve payments functionality', async ({ page }) => {
+
+    const { paymentsPage } = await setup(page);
+
+    await paymentsPage.gotoPaymentsModule();
+    await paymentsPage.approvePayments();
+});
+
+// test('Verify add invoice functionality', async ({ page }) => {
+
+//     const { paymentsPage } = await setup(page);
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.openAmzExpressDepot();
+//     //  await page.waitForTimeout(5000);
+//     await paymentsPage.clickPaymentsAndInvociesDD();
+//     await paymentsPage.addInvoice('Saad', '5', '5', '5', '5', '8', '6', '3', '2', '2', '5', '6', '7', '2', '4', '5', '5');
+//     await paymentsPage.verifyInvoceIsAdded();
+// });
+
+// test('Verify Pay Day selection', async ({ page }) => {
+
+
+//     const { paymentsPage } = await setup(page);
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.openAmzExpressDepot();
+//     await paymentsPage.clickPaymentsAndInvociesDD();
+//     await paymentsPage.payDaySelection();
+// });
+
+// test('Create invoice with driver-priority rate card', async ({ page }) => {
+//     const { paymentsPage } = await setup(page);
+
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.createInvoiceWithDriverPriorityRateCard();
+// });
+
+// test('Verify if payday is applied correctly in listing', async ({ page }) => {
+//     const { paymentsPage } = await setup(page);
+
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.createInvoiceWithDriverPriorityRateCard();
+//     await paymentsPage.clickPaymentsAndInvociesDD();
+//     await paymentsPage.verifyPaydayInListing();
+// });
 

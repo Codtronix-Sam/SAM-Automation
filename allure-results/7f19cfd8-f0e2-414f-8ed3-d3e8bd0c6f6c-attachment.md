@@ -1,0 +1,233 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img [ref=e6]
+      - button [ref=e14] [cursor=pointer]:
+        - img [ref=e15]
+    - generic [ref=e17]:
+      - list [ref=e21]:
+        - listitem [ref=e22]:
+          - button [ref=e23] [cursor=pointer]:
+            - img [ref=e25]
+        - listitem [ref=e30]:
+          - button [ref=e31] [cursor=pointer]:
+            - img [ref=e33]
+        - listitem [ref=e39]:
+          - button [ref=e40] [cursor=pointer]:
+            - img [ref=e42]
+        - listitem [ref=e48]:
+          - button [ref=e49] [cursor=pointer]:
+            - img [ref=e51]
+        - listitem [ref=e57]:
+          - button [ref=e58] [cursor=pointer]:
+            - img [ref=e60]
+        - listitem [ref=e63]:
+          - button [ref=e64] [cursor=pointer]:
+            - img [ref=e66]
+      - main [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: Hi super 👋
+            - generic [ref=e76]: Welcome Back
+          - generic [ref=e77]:
+            - generic [ref=e79]:
+              - generic [ref=e82]:
+                - img [ref=e84]
+                - generic [ref=e86]: Total DSPs
+              - generic [ref=e88]:
+                - generic [ref=e89]: All Delivery Service Partners associated with SAM Onboarding app.
+                - generic [ref=e92]: "18"
+            - generic [ref=e94]:
+              - generic [ref=e97]:
+                - img [ref=e99]
+                - generic [ref=e101]: Active Drivers
+              - generic [ref=e103]:
+                - generic [ref=e104]: Drivers who are currently active in the app.
+                - generic [ref=e107]: "414"
+            - generic [ref=e109]:
+              - generic [ref=e112]:
+                - img [ref=e114]
+                - generic [ref=e116]: Onboarding Drivers
+              - generic [ref=e118]:
+                - generic [ref=e119]: Drivers who are currently going through the onboarding process in the app.
+                - generic [ref=e122]: "560"
+            - generic [ref=e124]:
+              - generic [ref=e127]:
+                - img [ref=e128]
+                - generic [ref=e130]: Mobile app
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - generic [ref=e134]: App User
+                  - generic [ref=e135]: "662"
+                - generic [ref=e137]:
+                  - generic [ref=e138]: Pending Request
+                  - generic [ref=e139]: "150"
+          - generic [ref=e140]:
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - heading [level=6] [ref=e144]: DSPs
+                - generic [ref=e146]: 18 Dsps
+                - generic [ref=e148]:
+                  - generic [ref=e151] [cursor=pointer]: Active DSPs
+                  - generic [ref=e154] [cursor=pointer]: Inactive DSPs
+              - generic [ref=e155]:
+                - generic [ref=e157]:
+                  - button [ref=e159] [cursor=pointer]:
+                    - img [ref=e160]
+                  - textbox [ref=e162]:
+                    - /placeholder: Search by Name
+                    - text: For automation
+                  - button [ref=e164] [cursor=pointer]:
+                    - img [ref=e165]
+                  - group
+                - button [ref=e167] [cursor=pointer]:
+                  - img [ref=e169]
+                  - text: Add DSP
+            - grid [ref=e172]:
+              - generic [ref=e173]:
+                - rowgroup [ref=e174]:
+                  - row [ref=e175]:
+                    - columnheader [ref=e176]:
+                      - generic [ref=e178]: DSP
+                    - columnheader [ref=e179]:
+                      - generic [ref=e181]: Contact Number
+                    - columnheader [ref=e182]:
+                      - generic [ref=e184]: Status
+                    - columnheader [ref=e185]:
+                      - generic [ref=e187]: Products
+                    - columnheader [ref=e188]
+                - rowgroup [ref=e189]:
+                  - row [ref=e190]:
+                    - cell [ref=e191]:
+                      - generic [ref=e192]: SAM Onboarding Team
+                    - cell [ref=e193]:
+                      - generic [ref=e194]: "+4403206083111"
+                    - cell [ref=e195]:
+                      - generic [ref=e197]: Active
+                    - cell [ref=e198]:
+                      - img [ref=e199]
+                    - cell [ref=e200]:
+                      - button [ref=e201] [cursor=pointer]:
+                        - img [ref=e202]
+                  - row [ref=e205]:
+                    - cell [ref=e206]:
+                      - generic [ref=e207]: Corrda Logistics Ltd
+                    - cell [ref=e208]:
+                      - generic [ref=e209]: "+4479099939975"
+                    - cell [ref=e210]:
+                      - generic [ref=e212]: Active
+                    - cell [ref=e213]:
+                      - img [ref=e214]
+                    - cell [ref=e215]:
+                      - button [ref=e216] [cursor=pointer]:
+                        - img [ref=e217]
+                  - row [ref=e220]:
+                    - cell [ref=e221]:
+                      - generic [ref=e222]: Besa Logistics Ltd
+                    - cell [ref=e223]:
+                      - generic [ref=e224]: "+440776700819"
+                    - cell [ref=e225]:
+                      - generic [ref=e227]: Active
+                    - cell [ref=e228]:
+                      - img [ref=e229]
+                    - cell [ref=e230]:
+                      - button [ref=e231] [cursor=pointer]:
+                        - img [ref=e232]
+                  - row [ref=e235]:
+                    - cell [ref=e236]:
+                      - generic [ref=e237]: OJ Logistics Ltd
+                    - cell [ref=e238]:
+                      - generic [ref=e239]: "+447782555242"
+                    - cell [ref=e240]:
+                      - generic [ref=e242]: Active
+                    - cell [ref=e243]:
+                      - img [ref=e244]
+                    - cell [ref=e245]:
+                      - button [ref=e246] [cursor=pointer]:
+                        - img [ref=e247]
+                  - row [ref=e250]:
+                    - cell [ref=e251]:
+                      - generic [ref=e252]: Forge
+                    - cell [ref=e253]:
+                      - generic [ref=e254]: "+4412377463222"
+                    - cell [ref=e255]:
+                      - generic [ref=e257]: Active
+                    - cell [ref=e258]:
+                      - img [ref=e259]
+                    - cell [ref=e260]:
+                      - button [ref=e261] [cursor=pointer]:
+                        - img [ref=e262]
+                  - row [ref=e265]:
+                    - cell [ref=e266]:
+                      - generic [ref=e267]: Nexus11
+                    - cell [ref=e268]:
+                      - generic [ref=e269]: "+4409324324832"
+                    - cell [ref=e270]:
+                      - generic [ref=e272]: Active
+                    - cell [ref=e273]:
+                      - img [ref=e274]
+                    - cell [ref=e275]:
+                      - button [ref=e276] [cursor=pointer]:
+                        - img [ref=e277]
+                  - row [ref=e280]:
+                    - cell [ref=e281]:
+                      - generic [ref=e282]: Test DSP section
+                    - cell [ref=e283]:
+                      - generic [ref=e284]: "+4477854888555"
+                    - cell [ref=e285]:
+                      - generic [ref=e287]: Active
+                    - cell [ref=e288]:
+                      - img [ref=e289]
+                    - cell [ref=e290]:
+                      - button [ref=e291] [cursor=pointer]:
+                        - img [ref=e292]
+                  - row [ref=e295]:
+                    - cell [ref=e296]:
+                      - generic [ref=e297]: Nexus11
+                    - cell [ref=e298]:
+                      - generic [ref=e299]: +44undefined
+                    - cell [ref=e300]:
+                      - generic [ref=e302]: Active
+                    - cell [ref=e303]:
+                      - img [ref=e304]
+                    - cell [ref=e305]:
+                      - button [ref=e306] [cursor=pointer]:
+                        - img [ref=e307]
+                  - row [ref=e310]:
+                    - cell [ref=e311]:
+                      - generic [ref=e312]: cod
+                    - cell [ref=e313]:
+                      - generic [ref=e314]: "+4409007860333"
+                    - cell [ref=e315]:
+                      - generic [ref=e317]: Active
+                    - cell [ref=e318]:
+                      - img [ref=e319]
+                    - cell [ref=e320]:
+                      - button [ref=e321] [cursor=pointer]:
+                        - img [ref=e322]
+              - navigation [ref=e326]:
+                - list [ref=e327]:
+                  - listitem [ref=e328]:
+                    - button [disabled]:
+                      - img
+                      - text: Previous
+                  - listitem [ref=e329]:
+                    - button [ref=e330] [cursor=pointer]: "1"
+                  - listitem [ref=e331]:
+                    - button [ref=e332] [cursor=pointer]: "2"
+                  - listitem [ref=e333]:
+                    - button [ref=e334] [cursor=pointer]:
+                      - text: Next
+                      - img [ref=e335]
+  - menu [ref=e339]:
+    - menuitem "DSP Panel" [ref=e340] [cursor=pointer]:
+      - button "DSP Panel" [active] [ref=e341]:
+        - progressbar [ref=e343]:
+          - img [ref=e344]
+        - text: DSP Panel
+    - menuitem "Deactivate DSP" [ref=e346] [cursor=pointer]:
+      - button "Deactivate DSP" [ref=e347]: Deactivate DSP
+```
