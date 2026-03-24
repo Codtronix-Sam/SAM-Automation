@@ -18,7 +18,7 @@ module.exports = defineConfig({
   projects: [
     {
       name: 'setup',
-      testMatch: /auth\/setupAuth\.js/, // ✅ FIXED
+      testMatch: '**/auth/setupAuth.js', // ✅ FIXED
       use: {
         baseURL: process.env.BASE_URL,
         headless: true,
