@@ -1,0 +1,35 @@
+name: Run Playwright Test Daily
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 8 AM PKT
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      ENV: staging
+      ROLE: superadmin
+      HEADLESS: true
+      BASE_URL: ${{ secrets.BASE_URL }}
+      SUPERADMIN_EMAIL: ${{ secrets.SUPERADMIN_EMAIL }}
+      SUPERADMIN_PASSWORD: ${{ secrets.SUPERADMIN_PASSWORD }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm ci
+
+      - run: npx playwright install --with-deps
+
+      # 🔑 Step 1: login
+      - run: node auth/setupAuth.js
+
+      # 🧪 Step 2: run ONE test
+      - run: npx playwright test tests/payments.spec.js -g "Verify bulk update invoices to Unpaid"
