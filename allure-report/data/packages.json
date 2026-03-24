@@ -1,1 +1,1 @@
-{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[]}
+{"uid":"83edc06c07f9ae9e47eb6dd1b683e4e2","name":"packages","children":[{"name":"payments.spec.js","children":[{"name":"Verify bulk update invoices to Unpaid","uid":"10d5ad597392b7a6","parentUid":"c123b64287ede9d597563c1f01552f24","status":"passed","time":{"start":1774365745917,"stop":1774365766119,"duration":20202},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]}],"uid":"payments.spec.js"}]}

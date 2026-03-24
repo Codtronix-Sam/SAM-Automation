@@ -28,8 +28,14 @@ test('Verify bulk update invoices to Unpaid', async ({ page }) => {
 
     const { paymentsPage } = await setup(page);
 
-    await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.bulkUpdateInvoicestoUnpaid();
+    await test.step('Go to Payments Module', async () => {
+        await paymentsPage.gotoPaymentsModule();
+    });
+
+    await test.step('Bulk update invoices to Unpaid', async () => {
+        await paymentsPage.bulkUpdateInvoicestoUnpaid();
+    });
+
 });
 
 // test('Verify bulk update invoices to Paid', async ({ page }) => {

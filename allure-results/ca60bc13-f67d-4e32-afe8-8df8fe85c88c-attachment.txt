@@ -1,4 +1,0 @@
---- Starting createOrUpdateShift Process (Playwright POM) ---
-[Action] Clicked the service type dropdown trigger.
-[Action] Selected the service option: 'Standard 9 Hour route - £130.50'.
-[Action] Clicked the 'Update' or 'Create' button.
