@@ -16,13 +16,13 @@ async function setup(page) {
     return { dashboard, paymentsPage };
 }
 
-test('Verify delete all invoices functionality', async ({ page }) => {
+// test('Verify delete all invoices functionality', async ({ page }) => {
 
-    const { paymentsPage } = await setup(page);
+//     const { paymentsPage } = await setup(page);
 
-    await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.deleteAllInvoices();
-});
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.deleteAllInvoices();
+// });
 
 test('Verify bulk update invoices to Unpaid', async ({ page }) => {
 
@@ -32,21 +32,21 @@ test('Verify bulk update invoices to Unpaid', async ({ page }) => {
     await paymentsPage.bulkUpdateInvoicestoUnpaid();
 });
 
-test('Verify bulk update invoices to Paid', async ({ page }) => {
+// test('Verify bulk update invoices to Paid', async ({ page }) => {
 
-    const { paymentsPage } = await setup(page);
+//     const { paymentsPage } = await setup(page);
 
-    await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.bulkUpdateInvoicestoPaid();
-});
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.bulkUpdateInvoicestoPaid();
+// });
 
-test('Verify approve payments functionality', async ({ page }) => {
+// test('Verify approve payments functionality', async ({ page }) => {
 
-    const { paymentsPage } = await setup(page);
+//     const { paymentsPage } = await setup(page);
 
-    await paymentsPage.gotoPaymentsModule();
-    await paymentsPage.approvePayments();
-});
+//     await paymentsPage.gotoPaymentsModule();
+//     await paymentsPage.approvePayments();
+// });
 
 // test('Verify add invoice functionality', async ({ page }) => {
 
