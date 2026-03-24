@@ -85,7 +85,7 @@ class PaymentsPage {
         this.bulkStatusDD = page.getByText('Select invoice status', { exact: true })
         this.bulkStatusUnpaidOption = page.locator("//li[normalize-space()='Unpaid']")
         this.bulkStatusPaidOption = page.locator("//li[normalize-space()='Paid']")
-        this.confirmBulkUpdateBtn = page.getByRole('button', { name: /^Update/ }).click();
+        this.confirmBulkUpdateBtn = page.getByRole('button', { name: /^Update/ });
         this.bulkUpdateSuccessMsg = page.getByText('Bulk update status to Unpaid successful', { exact: true })
         this.approvePaymentsBtn = page.getByRole('button', { name: 'Approve Payments' })
         this.approvePaymentsSuccessMsg = page.getByText(/Successfully approved \d+ invoice\(s\)/).isVisible();

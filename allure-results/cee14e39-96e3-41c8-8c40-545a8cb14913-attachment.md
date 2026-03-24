@@ -1,0 +1,275 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - img [ref=e6]
+        - img [ref=e13] [cursor=pointer]
+        - heading [level=6] [ref=e16]: Payments
+      - generic [ref=e17]:
+        - generic [ref=e18] [cursor=pointer]:
+          - img [ref=e19]
+          - generic [ref=e21]: Amazon Express Depot
+        - generic [ref=e22]:
+          - img [ref=e23]
+          - textbox [ref=e26]:
+            - /placeholder: Search...
+      - generic [ref=e27]:
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button [ref=e33] [cursor=pointer]:
+          - img [ref=e34]
+        - button [ref=e38] [cursor=pointer]:
+          - img [ref=e39]
+    - generic [ref=e40]:
+      - generic [ref=e42]:
+        - list [ref=e44]:
+          - listitem [ref=e45]:
+            - button [ref=e46] [cursor=pointer]:
+              - img [ref=e48]
+          - listitem [ref=e53]:
+            - button [ref=e54] [cursor=pointer]:
+              - img [ref=e56]
+          - listitem [ref=e62]:
+            - button [ref=e63] [cursor=pointer]:
+              - img [ref=e65]
+          - listitem [ref=e69]:
+            - button [ref=e70] [cursor=pointer]:
+              - img [ref=e72]
+          - listitem [ref=e79]:
+            - button [ref=e80] [cursor=pointer]:
+              - img [ref=e82]
+          - listitem [ref=e87]:
+            - button [ref=e88] [cursor=pointer]:
+              - img [ref=e90]
+          - listitem [ref=e92]:
+            - button [ref=e93] [cursor=pointer]:
+              - img [ref=e95]
+          - listitem [ref=e99]:
+            - button [ref=e100] [cursor=pointer]:
+              - img [ref=e102]
+          - listitem [ref=e107]:
+            - button [ref=e108] [cursor=pointer]:
+              - img [ref=e110]
+          - listitem [ref=e112]:
+            - button [ref=e113] [cursor=pointer]:
+              - img [ref=e115]
+          - listitem [ref=e118]:
+            - button [ref=e119] [cursor=pointer]:
+              - img [ref=e121]
+          - listitem [ref=e124]:
+            - button [ref=e125] [cursor=pointer]:
+              - img [ref=e127]
+        - generic [ref=e131]:
+          - button [ref=e132] [cursor=pointer]:
+            - img [ref=e133]
+          - button [ref=e138] [cursor=pointer]:
+            - img [ref=e139]
+      - main [ref=e143]:
+        - generic [ref=e145]:
+          - generic [ref=e147]:
+            - link [ref=e148] [cursor=pointer]:
+              - /url: /dsp/finance/payments
+              - text: Payments
+            - link [ref=e149] [cursor=pointer]:
+              - /url: /dsp/finance/deductions
+              - text: Deductions
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154]:
+                  - heading [level=6] [ref=e155]: Invoices
+                  - generic [ref=e157]: 3 Invoices
+                  - generic [ref=e161] [cursor=pointer]:
+                    - button [ref=e162]:
+                      - img [ref=e163]
+                    - heading [level=6] [ref=e165]: Week 13
+                    - paragraph [ref=e166]: 22-03-2026 - 28-03-2026
+                    - button [ref=e167]:
+                      - img [ref=e168]
+                - generic [ref=e170]:
+                  - generic [ref=e172]:
+                    - button [ref=e173] [cursor=pointer]:
+                      - img [ref=e175]
+                      - text: Add New Invoice
+                    - button [ref=e177] [cursor=pointer]: Approve Payments
+                    - button [ref=e178] [cursor=pointer]: Bulk Update
+                    - button [ref=e179] [cursor=pointer]:
+                      - img [ref=e180]
+                  - button [ref=e182] [cursor=pointer]:
+                    - img [ref=e184]
+                    - text: Filters
+                  - button [ref=e186] [cursor=pointer]:
+                    - img [ref=e188]
+                    - text: Columns
+              - button [ref=e194] [cursor=pointer]: Delete (3)
+            - grid [ref=e196]:
+              - generic [ref=e197]:
+                - rowgroup [ref=e198]:
+                  - row [ref=e199]:
+                    - columnheader [ref=e200]:
+                      - generic [ref=e202] [cursor=pointer]:
+                        - checkbox [checked] [ref=e203]
+                        - img [ref=e204]
+                    - columnheader [ref=e206] [cursor=pointer]:
+                      - generic [ref=e208]: Invoice Date
+                    - columnheader [ref=e209] [cursor=pointer]:
+                      - generic [ref=e211]: Invoice Creation Date
+                    - columnheader [ref=e212] [cursor=pointer]:
+                      - generic [ref=e214]: Driver Name
+                    - columnheader [ref=e215] [cursor=pointer]:
+                      - generic [ref=e217]: Invoice Ref. No.
+                    - columnheader [ref=e218] [cursor=pointer]:
+                      - generic [ref=e220]: Status
+                    - columnheader [ref=e221] [cursor=pointer]:
+                      - generic [ref=e223]: Invoicing Model
+                    - columnheader [ref=e224] [cursor=pointer]:
+                      - generic [ref=e226]: Net
+                    - columnheader [ref=e227] [cursor=pointer]:
+                      - generic [ref=e229]: VAT
+                    - columnheader [ref=e230] [cursor=pointer]:
+                      - generic [ref=e232]: Gross
+                    - columnheader [ref=e233] [cursor=pointer]:
+                      - generic [ref=e235]: Total to be Paid to Driver
+                    - columnheader [ref=e236]:
+                      - generic [ref=e238]: Actions
+                - rowgroup [ref=e239]:
+                  - row [selected] [ref=e240] [cursor=pointer]:
+                    - cell [ref=e241]:
+                      - generic [ref=e242]:
+                        - checkbox [checked] [ref=e243]
+                        - img [ref=e244]
+                    - cell [ref=e246]:
+                      - paragraph [ref=e247]: 28/03/2026
+                    - cell [ref=e248]:
+                      - paragraph [ref=e249]: 06/03/2026
+                    - cell [ref=e250]:
+                      - generic [ref=e251]:
+                        - generic [ref=e252]: CT
+                        - generic [ref=e253]:
+                          - paragraph [ref=e254]: Christopher Test
+                          - paragraph [ref=e255]: Christopher@OUTlook.com
+                    - cell [ref=e256]:
+                      - paragraph [ref=e257]: INV0121
+                    - cell [ref=e258]:
+                      - generic [ref=e259]: scheduled
+                    - cell [ref=e260]:
+                      - paragraph [ref=e261]: Ratnam Invoicing
+                    - cell [ref=e262]:
+                      - paragraph [ref=e263]: £207.60
+                    - cell [ref=e264]:
+                      - paragraph [ref=e265]: £44.40
+                    - cell [ref=e266]:
+                      - paragraph [ref=e267]: £252.00
+                    - cell [ref=e268]:
+                      - paragraph [ref=e269]: £252.00
+                    - cell [ref=e270]:
+                      - button [ref=e271]:
+                        - img [ref=e272]
+                  - row [selected] [ref=e274] [cursor=pointer]:
+                    - cell [ref=e275]:
+                      - generic [ref=e276]:
+                        - checkbox [checked] [ref=e277]
+                        - img [ref=e278]
+                    - cell [ref=e280]:
+                      - paragraph [ref=e281]: 28/03/2026
+                    - cell [ref=e282]:
+                      - paragraph [ref=e283]: 05/03/2026
+                    - cell [ref=e284]:
+                      - generic [ref=e285]:
+                        - generic [ref=e286]: AN
+                        - generic [ref=e287]:
+                          - paragraph [ref=e288]: Affan Nadir
+                          - paragraph [ref=e289]: rules@regs.com
+                    - cell [ref=e290]:
+                      - paragraph [ref=e291]: INV0120
+                    - cell [ref=e292]:
+                      - generic [ref=e293]: scheduled
+                    - cell [ref=e294]:
+                      - paragraph [ref=e295]: Ratnam Invoicing
+                    - cell [ref=e296]:
+                      - paragraph [ref=e297]: £624.24
+                    - cell [ref=e298]:
+                      - paragraph [ref=e299]: £130.50
+                    - cell [ref=e300]:
+                      - paragraph [ref=e301]: £754.74
+                    - cell [ref=e302]:
+                      - paragraph [ref=e303]: £754.74
+                    - cell [ref=e304]:
+                      - button [ref=e305]:
+                        - img [ref=e306]
+                  - row [selected] [ref=e308] [cursor=pointer]:
+                    - cell [ref=e309]:
+                      - generic [ref=e310]:
+                        - checkbox [checked] [ref=e311]
+                        - img [ref=e312]
+                    - cell [ref=e314]:
+                      - paragraph [ref=e315]: 28/03/2026
+                    - cell [ref=e316]:
+                      - paragraph [ref=e317]: 30/01/2026
+                    - cell [ref=e318]:
+                      - generic [ref=e319]:
+                        - generic [ref=e320]: MS
+                        - generic [ref=e321]:
+                          - paragraph [ref=e322]: Muzammil Shabbir 1
+                          - paragraph [ref=e323]: muzammilsaeed49+samonboarding1@gmail.com
+                    - cell [ref=e324]:
+                      - paragraph [ref=e325]: INV0110
+                    - cell [ref=e326]:
+                      - generic [ref=e327]: Unpaid
+                    - cell [ref=e328]:
+                      - paragraph [ref=e329]: Ratnam Invoicing
+                    - cell [ref=e330]:
+                      - paragraph [ref=e331]: £282.20
+                    - cell [ref=e332]:
+                      - paragraph [ref=e333]: £74.20
+                    - cell [ref=e334]:
+                      - paragraph [ref=e335]: £356.40
+                    - cell [ref=e336]:
+                      - paragraph [ref=e337]: £356.40
+                    - cell [ref=e338]:
+                      - button [ref=e339]:
+                        - img [ref=e340]
+              - generic [ref=e342]:
+                - generic [ref=e343]:
+                  - paragraph [ref=e344]: "Results per page:"
+                  - generic [ref=e345]:
+                    - combobox [ref=e346] [cursor=pointer]: "10"
+                    - textbox: "10"
+                    - img
+                    - group
+                - navigation [ref=e348]:
+                  - list [ref=e349]:
+                    - listitem [ref=e350]:
+                      - button [disabled]:
+                        - img
+                    - listitem [ref=e351]:
+                      - button [ref=e352] [cursor=pointer]: "1"
+                    - listitem [ref=e353]:
+                      - button [disabled]:
+                        - img
+  - generic [ref=e355]:
+    - generic [ref=e356]:
+      - generic [ref=e357]:
+        - heading "Bulk Update Invoices" [level=6] [ref=e358]
+        - paragraph
+      - button [ref=e359] [cursor=pointer]:
+        - img [ref=e360]
+    - generic [ref=e364]:
+      - generic [ref=e365]: Update status for 3 selected invoices
+      - generic [ref=e368]:
+        - combobox [active] [ref=e369] [cursor=pointer]: Unpaid
+        - img
+        - group
+      - generic [ref=e370]:
+        - button "Cancel" [ref=e371] [cursor=pointer]: Cancel
+        - button "Update 3 Invoices" [ref=e372] [cursor=pointer]: Update 3 Invoices
+  - listbox [ref=e375]:
+    - option "Incorrect" [ref=e376] [cursor=pointer]: Incorrect
+    - option "Payment On Hold" [ref=e377] [cursor=pointer]: Payment On Hold
+    - option "Unpaid" [selected] [ref=e378] [cursor=pointer]: Unpaid
+    - option "Paid" [ref=e379] [cursor=pointer]: Paid
+    - option "Test pagination 2" [ref=e380] [cursor=pointer]: Test pagination 2
+```
