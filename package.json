@@ -11,6 +11,7 @@
     "test:clone": "dotenv -e .env.clone -- npx playwright test",
     "test:prod": "dotenv -e .env.production -- npx playwright test",
     "auth:setup": "dotenv -e .env.staging -- node auth/setupAuth.js",
+    "test:e2e:codegen": "playwright codegen --output=codegen/recorded.spec.js https://www.staging.samonboarding.com",
     "wdio": "wdio run ./wdio.conf.js",
     "test:onboarding2": "dotenv -e .env.staging -- npx playwright test tests/onBoardingStage2.spec.js --headed"
   },

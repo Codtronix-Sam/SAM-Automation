@@ -92,6 +92,22 @@ class PaymentsPage {
         this.deleteAllInvoicesBtn = page.locator("//button[contains(normalize-space(),'Delete')]")
         this.confirmDeleteBtn = page.getByText('Delete', { exact: true })
         this.deletionSuccessMsg = page.getByText(/\d+ invoice\(s\) deleted successfully/);
+
+        // ------------------ ADD NEW INVOICE (driver + admin fee + week + income + deductions) ------------------ //
+        // Depot must be selected before the "Payments" nav button is usable - same
+        // pattern as SuperAdminSettings.selectDepot.
+        this.depotStatusCell = page.getByRole('cell', { name: 'Active' });
+        this.selectDepotBtn = page.getByRole('button', { name: 'Select Depot' });
+        this.paymentsNavBtn = page.getByRole('button', { name: 'Payments', exact: true });
+        this.addNewInvoiceBtn = page.getByRole('button', { name: 'Add New Invoice' });
+        this.selectDriverLabel = page.getByText('Select driver', { exact: true });
+        this.selectAdminFeeLabel = page.getByText('Select admin fee', { exact: true });
+        this.selectWeekLabel = page.getByText('Select Week', { exact: true });
+        this.incomeSearchLabel = page.getByText('Search income name', { exact: true });
+        this.incomeSearchInput = page.getByRole('textbox', { name: 'Search...' });
+        this.assignDeductionBtn = page.getByRole('button', { name: 'Assign Deduction' });
+        this.addRepaymentDeductionBtn = page.getByRole('button', { name: 'Add Repayment Deduction' });
+        this.invoiceSaveBtn = page.getByRole('button', { name: 'Save' });
     }
 
     async gotoPaymentsModule() {
@@ -141,6 +157,81 @@ class PaymentsPage {
         await this.selectAllBtn.click();
         await this.approvePaymentsBtn.click();
         await expect(this.approvePaymentsSuccessMsg).toBeVisible();
+    }
+
+    // Test 15: select a depot, open the Add New Invoice form, pick driver + admin fee.
+    async selectDepotForPayments(depotName) {
+
+        await this.depotStatusCell.first().click();
+        await this.selectDepotBtn.click();
+        await this.page.getByRole('option', { name: depotName }).click();
+    }
+
+    async openAddNewInvoice() {
+
+        await this.paymentsNavBtn.click();
+        await this.addNewInvoiceBtn.click();
+    }
+
+    async selectDriverForNewInvoice(driverButtonName) {
+
+        await this.selectDriverLabel.click();
+        await this.page.getByRole('button', { name: driverButtonName }).first().click();
+    }
+
+    async selectAdminFeeForInvoice(adminFeeButtonName) {
+
+        await this.selectAdminFeeLabel.click();
+        await this.page.getByRole('button', { name: adminFeeButtonName }).click();
+    }
+
+    // Test 16: select the pay week for the invoice. Available weeks shift with the
+    // calendar, so pick by name only if given, otherwise take the first option -
+    // a hardcoded week string goes stale fast.
+    async selectInvoiceWeek(weekOptionName) {
+
+        await this.selectWeekLabel.click();
+        if (weekOptionName) {
+            await this.page.getByRole('option', { name: weekOptionName }).click();
+        } else {
+            await this.page.getByRole('option').first().click();
+        }
+    }
+
+    // Test 17: search and add an income line item, then set its quantity.
+    async addIncomeLineItem(searchTerm, incomeButtonName, quantity, rowIndex = 0) {
+
+        await this.incomeSearchLabel.click();
+        await this.incomeSearchInput.fill(searchTerm);
+        await this.page.getByRole('button', { name: new RegExp(incomeButtonName) }).first().click();
+        const quantityInput = this.page.locator(`input[name="incomeRows.${rowIndex}.quantity"]`);
+        await quantityInput.fill(quantity.toString());
+    }
+
+    // Test 18: assign an existing deduction with an amount.
+    // Reconstructed from an exploratory codegen pass (the recorded click sequence was
+    // inconsistent) - re-verify against a clean walkthrough before relying on this in CI.
+    async assignDeductionToInvoice(deductionSearchText, amount) {
+
+        await this.page.getByText(deductionSearchText).click();
+        await this.page.getByRole('spinbutton').first().fill(amount.toString());
+        await this.assignDeductionBtn.click();
+    }
+
+    // Test 19: add a repayment deduction.
+    async addRepaymentDeduction(amount) {
+
+        await this.addRepaymentDeductionBtn.click();
+        await this.page.getByRole('checkbox').first().check();
+        await this.page.getByRole('spinbutton').first().fill(amount.toString());
+        await this.invoiceSaveBtn.click();
+    }
+
+    // Test 20: submit the invoice.
+    async submitCreateInvoice() {
+
+        await this.createInvoiceBtn.click();
+        await this.successMsg.waitFor({ state: 'visible', timeout: 15000 });
     }
 
 

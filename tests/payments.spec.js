@@ -24,6 +24,42 @@ async function setup(page) {
 //     await paymentsPage.deleteAllInvoices();
 // });
 
+// Tests 15-20: create a new invoice for a driver end to end - select driver + their
+// admin fee rate, pick a week, add income lines, assign a deduction, add a repayment
+// deduction, then submit. Not independently reachable steps, so modelled as one flow.
+test('Create a new invoice for a driver with income and deductions', async ({ page }) => {
+
+    const { paymentsPage } = await setup(page);
+    const data = testData.newInvoice;
+
+    await test.step('Open Add New Invoice and select driver + admin fee', async () => {
+        await paymentsPage.selectDepotForPayments(data.depotName);
+        await paymentsPage.openAddNewInvoice();
+        await paymentsPage.selectDriverForNewInvoice(data.driverButtonName);
+        await paymentsPage.selectAdminFeeForInvoice(data.adminFeeButtonName);
+    });
+
+    await test.step('Select the pay week', async () => {
+        await paymentsPage.selectInvoiceWeek(data.weekOptionName);
+    });
+
+    await test.step('Add an income line item', async () => {
+        await paymentsPage.addIncomeLineItem(data.incomeSearchTerm, data.incomeButtonName, data.incomeQuantity);
+    });
+
+    await test.step('Assign a deduction', async () => {
+        await paymentsPage.assignDeductionToInvoice(data.deductionSearchText, data.deductionAmount);
+    });
+
+    await test.step('Add a repayment deduction', async () => {
+        await paymentsPage.addRepaymentDeduction(data.repaymentAmount);
+    });
+
+    await test.step('Submit the invoice', async () => {
+        await paymentsPage.submitCreateInvoice();
+    });
+});
+
 test('Verify bulk update invoices to Unpaid', async ({ page }) => {
 
     const { paymentsPage } = await setup(page);
