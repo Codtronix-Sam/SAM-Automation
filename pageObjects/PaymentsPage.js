@@ -93,6 +93,24 @@ class PaymentsPage {
         this.confirmDeleteBtn = page.getByText('Delete', { exact: true })
         this.deletionSuccessMsg = page.getByText(/\d+ invoice\(s\) deleted successfully/);
 
+        // ------------------ IMPORT INVOICE (Excel upload, create + duplicate/override) ------------------ //
+        // No stable aria-label on the import trigger - it's an icon-only button
+        // identified by this CSS class in the current build.
+        this.importMenuIcon = page.locator('.css-1e2hd8e');
+        this.importInvoiceMenuItem = page.getByText('Import Invoice', { exact: true });
+        this.invoiceCountLabel = page.getByText(/^\d+ Invoices$/);
+        // The week control is a combobox whose own text IS the currently selected
+        // value (e.g. "Week 33 (Aug 9 - Aug 15), 2026") - not a separate label.
+        this.importWeekCombobox = page.getByRole('combobox');
+        this.importFileInput = page.locator('input[type="file"]');
+        this.importSubmitBtn = page.getByRole('button', { name: 'Submit', exact: true });
+        this.importCloseBtn = page.getByRole('button', { name: 'Close', exact: true });
+        this.importTotalImported = page.getByText('Total Invoices Imported');
+        this.importDuplicateCount = page.getByText('Duplicate Invoices');
+        this.importErrorCount = page.getByText('Errors');
+        this.invoiceDetailCloseBtn = page.getByRole('button', { name: 'Close', exact: true });
+        this.totalIncomeLine = page.getByText(/^Total Income: £/);
+
         // ------------------ ADD NEW INVOICE (driver + admin fee + week + income + deductions) ------------------ //
         // Depot must be selected before the "Payments" nav button is usable - same
         // pattern as SuperAdminSettings.selectDepot.
@@ -225,6 +243,98 @@ class PaymentsPage {
         await this.page.getByRole('checkbox').first().check();
         await this.page.getByRole('spinbutton').first().fill(amount.toString());
         await this.invoiceSaveBtn.click();
+    }
+
+    // ------------------ IMPORT INVOICE ------------------ //
+
+    // Deletes all invoices currently listed for the selected week, if any exist.
+    // No-ops cleanly when the week is already empty - safe to call unconditionally
+    // before/after an import test run.
+    async deleteAllInvoicesForSelectedWeekIfAny() {
+
+        const countText = await this.invoiceCountLabel.textContent().catch(() => '0 Invoices');
+        const count = parseInt(countText, 10) || 0;
+        if (count === 0) return;
+
+        await this.selectAllBtn.click();
+        await this.page.waitForTimeout(1000);
+        await this.page.getByRole('button', { name: /Delete \(\d+\)/ }).click();
+        await this.page.getByRole('dialog').getByRole('button', { name: 'Delete', exact: true }).click();
+        await expect(this.deletionSuccessMsg).toBeVisible();
+    }
+
+    async openImportInvoiceDialog() {
+
+        await this.importMenuIcon.click();
+        await this.importInvoiceMenuItem.click();
+    }
+
+    // The dialog defaults to whichever week the list is currently filtered to, which
+    // is normally already correct - this only needs to act if it shows something else.
+    async selectImportWeek(weekOptionName) {
+
+        const current = await this.importWeekCombobox.textContent().catch(() => '');
+        if (current.includes(weekOptionName)) return;
+        await this.importWeekCombobox.click();
+        await this.page.getByRole('option', { name: weekOptionName }).click();
+    }
+
+    async uploadImportSheet(filePath) {
+
+        await this.importFileInput.setInputFiles(filePath);
+    }
+
+    async submitImport() {
+
+        await this.importSubmitBtn.click();
+    }
+
+    // Verifies the import result summary (imported/duplicate/error counts). When there
+    // are duplicates, the same screen also holds the override table below the summary -
+    // pass closeDialog: false to leave it open so overrideDuplicateInvoice() can act on it.
+    // File processing time varies, so this allows a generous window for the result to render.
+    async verifyImportResult({ imported, duplicates, errors, closeDialog = true }) {
+
+        await expect(this.page.getByText(`Total Invoices Imported${imported}`)).toBeVisible({ timeout: 20000 });
+        await expect(this.page.getByText(`Duplicate Invoices${duplicates}`)).toBeVisible();
+        await expect(this.page.getByText(`Errors${errors}`)).toBeVisible();
+        if (closeDialog) {
+            await this.importCloseBtn.click();
+        }
+    }
+
+    // When a re-import matches an existing invoice, toggles Override for that driver's
+    // row in the duplicate-review table and submits.
+    async overrideDuplicateInvoice(driverName) {
+
+        // This review table is a plain HTML <table> with no explicit role attributes,
+        // so a role-based row locator finds nothing - the tag selector also happens to
+        // avoid any collision with the background invoice list, which uses div-based
+        // DataGrid rows (role="row") rather than real <tr> elements.
+        const row = this.page.locator('tr').filter({ hasText: driverName });
+        await row.locator('input[type="checkbox"]').check();
+        await this.importSubmitBtn.click();
+    }
+
+    // Opens an invoice by locating the driver's row in the list and clicking its
+    // Invoice Ref. No. cell - clicking the driver name directly is ambiguous, since
+    // the same text also appears as a link to the driver's profile elsewhere on the page.
+    // Uses a visible-text filter rather than getByRole's accessible-name matching -
+    // this MUI DataGrid's rows don't expose driver name via their accessible name.
+    async openInvoiceForDriver(driverName) {
+
+        const row = this.page.locator('[role="row"]').filter({ hasText: driverName });
+        await row.getByText(/^INV\d+$/).click();
+    }
+
+    async getIncomeLineQuantity(rowIndex) {
+
+        return this.page.locator(`input[name="incomeRows.${rowIndex}.quantity"]`).inputValue();
+    }
+
+    async closeInvoiceDetail() {
+
+        await this.invoiceDetailCloseBtn.click();
     }
 
     // Test 20: submit the invoice.
