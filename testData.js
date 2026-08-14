@@ -98,6 +98,17 @@ module.exports = {
     deductionSearchText: 'DE0112',
     deductionAmount: 10,
     repaymentAmount: 10
+  },
+
+  importPayments: {
+    depotName: 'Amazon Express Depot',
+    weekLabel: 'Week 33',
+    driverName: 'Joshua Smith',
+    sheetAPath: 'fixtures/import-payments/week33-driver-A.xlsx',
+    sheetBPath: 'fixtures/import-payments/week33-driver-B.xlsx',
+    // Row order on the invoice detail page: incomeRows.0 = Other Pay, incomeRows.1 = Spendify.
+    sheetA: { otherPayQty: '10.00', spendifyQty: '10.00', totalIncome: 'Total Income: £550.00' },
+    sheetB: { otherPayQty: '10.00', spendifyQty: '20.00', totalIncome: 'Total Income: £1,200.00' }
   }
 };
 105645
