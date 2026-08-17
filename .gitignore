@@ -5,3 +5,11 @@ test-results/
 playwright-report/
 *.log
 codegen/
+allure-results
+allure-report
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
