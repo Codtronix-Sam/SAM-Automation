@@ -23,7 +23,7 @@ module.exports = defineConfig({
 
   reporter: [
     ['list'], // 👈 shows results in terminal (optional but useful)
-    ['html', { open: 'never' }],
+    ['html', { open: 'on-failure' }],
     ['allure-playwright']
   ],
 });

@@ -14,8 +14,8 @@ class LoginPage {
   }
 
   async login(email, password) {
-    await this.emailInput.fill(process.env.EMAIL);
-    await this.passwordInput.fill(process.env.PASSWORD);
+    await this.emailInput.fill(process.env.LOGIN_EMAIL);
+    await this.passwordInput.fill(process.env.LOGIN_PASSWORD);
     await this.loginButton.click();
   }
 }
