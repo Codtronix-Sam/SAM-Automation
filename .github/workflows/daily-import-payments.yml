@@ -53,13 +53,10 @@ jobs:
           path: playwright-report/
           retention-days: 14
 
-      # The HTML report isn't a single self-contained file (it references separate
-      # JS/data assets), so it's zipped here rather than emailing index.html alone,
-      # which would just show blank/broken when opened outside the full folder.
-      - name: Zip report for email
-        if: always()
-        run: zip -r playwright-report.zip playwright-report/
-
+      # No attachment - Gmail blocks zip attachments containing HTML/JS (like the
+      # Playwright report) as a phishing/malware precaution, regardless of how the
+      # SMTP step itself is configured. The report link below is the only way to
+      # get the full report; it's already uploaded as a workflow artifact above.
       - name: Send email report
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -76,12 +73,10 @@ jobs:
 
             Suite run: Import Payments (create + re-import/override)
 
-            Full HTML report is attached (unzip and open index.html). Logs and
-            artifacts are also on the workflow run itself:
+            Full HTML report (download the "playwright-report" artifact) and logs:
             https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
             Triggered by: ${{ github.event_name }}
-          attachments: playwright-report.zip
 
       - name: Fail the job if tests failed
         if: steps.run_tests.outcome != 'success'
