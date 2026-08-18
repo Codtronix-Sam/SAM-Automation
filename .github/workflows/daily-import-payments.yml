@@ -1,0 +1,88 @@
+name: Daily Import Payments Tests
+
+# Runs the growing "daily" test suite once a day and emails a pass/fail report.
+# To add a new test as it's built, append its spec file path to the `run` line
+# in the "Run daily test suite" step below - one line per file, so it's obvious
+# what's included at a glance.
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 8 AM PKT (matches the existing test.yml cadence)
+  workflow_dispatch:        # allows manual triggering from the Actions tab
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    env:
+      ENV: staging
+      ROLE: superadmin
+      HEADLESS: true
+      BASE_URL: ${{ secrets.BASE_URL }}
+      SUPERADMIN_EMAIL: ${{ secrets.SUPERADMIN_EMAIL }}
+      SUPERADMIN_PASSWORD: ${{ secrets.SUPERADMIN_PASSWORD }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Setup Auth
+        run: node auth/setupAuth.js
+
+      - name: Run daily test suite
+        id: run_tests
+        continue-on-error: true
+        run: |
+          npx playwright test \
+            tests/import-payments.spec.js
+
+      - name: Upload Playwright HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
+
+      # The HTML report isn't a single self-contained file (it references separate
+      # JS/data assets), so it's zipped here rather than emailing index.html alone,
+      # which would just show blank/broken when opened outside the full folder.
+      - name: Zip report for email
+        if: always()
+        run: zip -r playwright-report.zip playwright-report/
+
+      - name: Send email report
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "SAM Daily Tests: ${{ steps.run_tests.outcome == 'success' && 'PASSED' || 'FAILED' }} - ${{ github.run_id }}"
+          to: affan@codtronix.com
+          from: SAM Automation <${{ secrets.EMAIL_USERNAME }}>
+          body: |
+            Daily test suite result: ${{ steps.run_tests.outcome == 'success' && 'PASSED ✅' || 'FAILED ❌' }}
+
+            Suite run: Import Payments (create + re-import/override)
+
+            Full HTML report is attached (unzip and open index.html). Logs and
+            artifacts are also on the workflow run itself:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Triggered by: ${{ github.event_name }}
+          attachments: playwright-report.zip
+
+      - name: Fail the job if tests failed
+        if: steps.run_tests.outcome != 'success'
+        run: exit 1
